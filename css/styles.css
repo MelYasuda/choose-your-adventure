@@ -1,4 +1,4 @@
-#seconchoice, #thirdchoice {
+#seconchoice, #thirdchoice, #fourthchoice, #fifthchoice {
   display: none;
 }
 
@@ -7,6 +7,6 @@
 }
 
 
-#firstEnd {
+#firstEnd, #secondEnd {
   display: none;
 }

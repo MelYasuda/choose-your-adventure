@@ -22,11 +22,26 @@ function hideEscape(clicked_id) {
 //   $("#secondchoice").hide();
 // }
 
+function majorChoice(clicked_id) {
+  $("#fourthchoice").show();
+  if (clicked_id === "dwarf") {
+  }
+  $("#thirdchoice").hide();
+}
+
+function trustDwarf(clicked_id) {
+
+}
+
+
 function END(clicked_id) {
   if(clicked_id === "fight" || clicked_id === "fight2") {
   $("#firstEnd").show();
   $("#firstchoice, #secondchoice").hide();
-  }
+} else if (clicked_id === "notrust") {
+  $("#secondEnd").show();
+  $("#fourthchoice").hide();
+}
 }
 
 

@@ -30,9 +30,21 @@
 
       <div id="thirdchoice">
         <p>You ran away and hide until the dwarves were gone. You're safe for now. What next?</p>
-        <p>Go after the dwarves yourself</p>
+        <button id="dwarf" onclick="majorChoice(this.id)">Go after the dwarves yourself</button>
         <p>Run itno the countryside looking for adults to help</p>
         <p>Go to the city yourself to warn the prince</p>
+      </div>
+
+      <div id="fourthchoice">
+        <p>You get captured by dowarves and taken to their hideout. You meed an old blind dowarf.</p>
+        <button id="trust" onclick="trustDwarf(this.id)">You decide to trust the old dwarf</button>
+        <button id="notrust" onclick="END(this.id)">You decide you must not trust any dwarves</button>
+      </div>
+
+      <div id="fifthchoice">
+        <p>You get captured by dowarves and taken to their hideout. You meed an old blind dowarf.</p>
+        <button id="trust" onclick="trustDwarf(this.id)">You decide to trust the old dwarf</button>
+        <button id="notrust" onclick="END(this.id)">You decide you must not trust any dwarves</button>
       </div>
 
 
@@ -203,6 +215,10 @@
 
       <div id="firstEnd">
         <p>You tried to fight the dwarves but you failed.</p>
+      </div>
+
+      <div id="secondEnd">
+        <p>You refused to help and tied forever. END.</p>
       </div>
 
       <!-- </div>
