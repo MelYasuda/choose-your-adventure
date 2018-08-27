@@ -13,53 +13,33 @@
 <!-- <button id="pickdruid" onclick="this.innerHTML=Pick()">The Druid</button>  -->
 
 <!-- CHOICES -->
-    <div class="choiceOne" id="firstchoice">
-      <p>You start on this page and see three people in the room. Who do you want to talk to?</p>
-      <button id="pickdrunk" onclick="Pick(this.id)">The Drunk</button>
-      <button id="pickbard" onclick="Pick(this.id)">The Bard</button>
-      <button id="pickdruid" onclick="Pick(this.id)">The Druid</button>
+
+    <div id="firstchoice">
+      <p>Starter page. Your family is riding in a wagon and is attacked by Dwarves</p>
+      <button id="fight" onclick="END(this.id)">Fight the dwarves</button>
+      <button id="hide" onclick="hideEscape(this.id)">Continue to hide in the wagon</button>
+      <button id="escape" onclick="hideEscape(this.id)">Try to escape</button>
     </div>
 
       <div id="secondchoice">
-        <p id="prompt">What do you want to say to this person?</p>
-        <div id=pickdrunk2>
-          <img src="img/Deef.jpg" alt=""/>
-          <button id="drunktalk1" onclick="drunkTalk(this.id)">Whatcha drinking friend?</button>
-          <button id="drunktalk2" onclick="drunkTalk(this.id)">You are drunk and should go home</button>
-        </div>
-        <div id=pickbard2>
-              <img src="img/Ferdinandeau.jpg" alt=""/>
-        </div>
-        <div id=pickdruid2>
-            <img src="img/gosiannah(1).jpg" alt=""/>
+        <div id="hide2">
+          <button id="fight2" onclick="END(this.id)">You're hiding and you decide to fight now</button>
+          <button id="escape2" onclick="hideEscape(this.id)">You try to run away</button>
         </div>
       </div>
 
-
-        <p id="whatdrink">My favorite ale!!!!!</p>
-        <p id="sirdrunk">SHUTUP I CAN DRINK WHAT I WANT</p>
-
-
-
-
-
-    <!-- <div class="choiceThree">
-      <div id="thirdChoice">
-        <p>You start on this page and see three people in the room. Who do you want to talk to?</p>
-        <button id="pickdrunk" onclick="Pick(this.id)">The Drunk</button>
-        <button id="pickbard" onclick="Pick(this.id)">The Bard</button>
-        <button id="pickdruid" onclick="Pick(this.id)">The Druid</button>
+      <div id="thirdchoice">
+        <p>You ran away and hide until the dwarves were gone. You're safe for now. What next?</p>
+        <p>Go after the dwarves yourself</p>
+        <p>Run itno the countryside looking for adults to help</p>
+        <p>Go to the city yourself to warn the prince</p>
       </div>
-      <p id="demo">
-      What do you want to say to this person?
-      </p>
-      <img id="drunk" src="img/Deef.jpg" alt=""/>
-      <img id="bard" src="img/Ferdinandeau.jpg" alt=""/>
-      <img id="druid" src="img/gosiannah(1).jpg" alt=""/>
-      <p id=whatyousay></p>
-    </div>
 
-    <div class="choiceFour">
+
+
+
+
+    <!-- <div class="choiceFour">
       <div id="fourthChoice">
         <p>You start on this page and see three people in the room. Who do you want to talk to?</p>
         <button id="pickdrunk" onclick="Pick(this.id)">The Drunk</button>
@@ -217,20 +197,20 @@
       <img id="bard" src="img/Ferdinandeau.jpg" alt=""/>
       <img id="druid" src="img/gosiannah(1).jpg" alt=""/>
       <p id=whatyousay></p>
-    </div>
-
+    </div> -->
 
     <!-- ENDINGS -->
-    <div class="endOne">
-      <div id="firstEnd">
-        <p>You have died.</p>
 
+      <div id="firstEnd">
+        <p>You tried to fight the dwarves but you failed.</p>
       </div>
+
+      <!-- </div>
       <p id="demo">
       Would you like to try again?
       </p>
-      <!-- button hold to restart. -->
-    </div>
+      <! button hold to restart. -->
+    <!-- </div>
 
     <div class="endTwo">
       <div id="secondEnd">
@@ -239,9 +219,9 @@
       </div>
       <p id="demo">
       Would you like to try again?
-      </p>
+      </p> -->
       <!-- button hold to restart. -->
-    </div>
+    <!-- </div>
 
     <div class="endThree">
       <div id="thirdEnd">
@@ -250,20 +230,20 @@
       </div>
       <p id="demo">
       Would you like to try again?
-      </p>
+      </p> -->
       <!-- button hold to restart. -->
-    </div>
+    <!-- </div>
 
     <div class="endFour">
-      <div id="fourthEnd">
-        <p>You have died.</p>
+      <div id="fourthEnd"> -->
+        <!-- <p>You have died.</p>
 
       </div>
       <p id="demo">
       Would you like to try again?
-      </p>
+      </p> -->
       <!-- button hold to restart. -->
-    </div>
+    <!-- </div>
 
     <div class="endFive">
       <div id="fifthEnd">
@@ -272,9 +252,9 @@
       </div>
       <p id="demo">
       Would you like to try again?
-      </p>
+      </p> -->
       <!-- button hold to restart. -->
-    </div>
+    <!-- </div>
 
     <div class="endSix">
       <div id="sixthEnd">
@@ -283,9 +263,9 @@
       </div>
       <p id="demo">
       Would you like to play again?
-      </p>
+      </p> -->
       <!-- button hold to restart. -->
-    </div>
+    <!-- </div> -->
 
   </body>
 </html>
