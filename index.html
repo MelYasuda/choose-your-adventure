@@ -10,16 +10,7 @@
   <body>
 
 
-
-    <!-- <button id="pickdrunk" onclick="Pick()">The Drunk</button>
-
-
-    <button id="pickbard" onclick="Pick()">The Bard</button> -->
-
-
-    <!-- <button id="pickdruid" onclick="this.innerHTML=Pick()">The Druid</button>  -->
-
-
+<!-- THIS IS FIRST PAGE with three choices: Talk to Drunk, Bard or Druid -->
     <div id="firstchoice">
       <p>You start on this page and see three people in the room. Who do you want to talk to?</p>
       <button id="pickdrunk" onclick="Pick(this.id)">The Drunk</button>
@@ -30,16 +21,40 @@
       <button id="pickdruid" onclick="Pick(this.id)">The Druid</button>
     </div>
 
+<!-- THIS IS SECOND PAGE DEPENDING on who was chosen in first page -->
 
-      <p id="demo">
+    <div id="secondchoice">
+      <p id="prompt">
       What do you want to say to this person?
       </p>
 
+    <div id="pickdrunk2">
       <img id="drunk" src="img/Deef.jpg" alt=""/>
-      <img id="bard" src="img/Ferdinandeau.jpg" alt=""/>
-      <img id="druid" src="img/gosiannah(1).jpg" alt=""/>
 
-      <p id=whatyousay></p>
+      <button id="drunktalk1" onclick="drunkTalk(this.id)">Whatcha drinkin</button>
+
+      <button id="drunktalk2" onclick="drunkTalk(this.id)">You sir are drunk</button>
+
+    </div>
+
+    <div id="pickbard2">
+      <img id="bard" src="img/Ferdinandeau.jpg" alt=""/>
+    </div>
+
+    <div id="pickdruid2">
+      <img id="druid" src="img/gosiannah(1).jpg" alt=""/>
+    </div>
+  </div>
+
+
+<!-- THIRD CHOICE -->
+  <div id="thirdchoice">
+
+    <p id="whatdrink">I am drinking my favorite!</p>
+
+    <p id="sirdrunk">I DON"T CARE IM AN ADULT!!!!</p>
+
+  </div>
 
   </body>
 </html>
