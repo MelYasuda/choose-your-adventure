@@ -1,3 +1,34 @@
 #pickdrunk2, #pickbard2, #pickdruid2, #prompt, #secondchoice, #whatdrink, #sirdrunk {
   display: none;
 }
+
+  #background{
+  background-image: url("../img/page1.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity:0.7;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+p {
+  margin-left: 8%;
+  margin-right: 51%;
+  margin-top: 15%;}
+
+  button {
+    margin-left: 8%;
+    margin-right: 51%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  #pickdrunk2{
+    margin-right: 8%;
+    margin-left: 55%;
+    margin-top: -5%;
+    image-orientation: blur(5px);
+  }
