@@ -41,6 +41,8 @@ function END(clicked_id) {
 } else if (clicked_id === "notrust") {
   $("#secondEnd").show();
   $("#fourthchoice").hide();
+} else if (clicked_id === "") {
+
 }
 }
 
