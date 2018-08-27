@@ -15,6 +15,7 @@ function Pick(clicked_id) {
 }
 
 function drunkTalk(clicked_id) {
+  // $("#thirdchoice").show();
   if(clicked_id === "drunktalk1") {
     $("#whatdrink").show();
   } else if (clicked_id === "drunktalk2") {
