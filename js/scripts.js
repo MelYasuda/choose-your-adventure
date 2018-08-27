@@ -30,7 +30,8 @@ function majorChoice(clicked_id) {
 }
 
 function trustDwarf(clicked_id) {
-
+  $("#fifthchoice").show();
+  $("#fourthchoice").hide();
 }
 
 
@@ -41,8 +42,9 @@ function END(clicked_id) {
 } else if (clicked_id === "notrust") {
   $("#secondEnd").show();
   $("#fourthchoice").hide();
-} else if (clicked_id === "") {
-
+} else if (clicked_id === "nomission") {
+  $("#thirdEnd").show();
+  $("#fifthchoice").hide();
 }
 }
 
