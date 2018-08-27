@@ -1,4 +1,4 @@
-#pickdrunk2, #pickbard2, #pickdruid2, #prompt, #secondchoice, #whatdrink, #sirdrunk {
+/*#pickdrunk2, #pickbard2, #pickdruid2, #prompt, #secondchoice, #whatdrink, #sirdrunk {
   display: none;
 }
 
@@ -30,5 +30,17 @@ p {
     margin-right: 8%;
     margin-left: 55%;
     margin-top: -5%;
-    image-orientation: blur(5px);
-  }
+  }*/
+
+  #seconchoice, #thirdchoice {
+  display: none;
+}
+
+#hide2, #escape3 {
+  display: none;
+}
+
+
+#firstEnd {
+  display: none;
+}
