@@ -54,16 +54,16 @@ p {
   }
 
 
-#seconChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #seventhChoice, #eigthChoice {
+#seconChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #seventhChoice, #eigthChoice, #ninethChoice, #tenthChoice, #eleventhChoice {
   display: none;
 }
 
-#hide2, #escape3, #trickGuard2, #attackGuard2, #findParents2 {
+#hide2, #escape3, #trickGuard2, #attackGuard2, #findParents2, #goRight2 {
   display: none;
 }
 
 
-#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd {
+#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd {
   display: none;
 }
 
