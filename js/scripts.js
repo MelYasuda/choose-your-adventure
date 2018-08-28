@@ -18,8 +18,16 @@ function hideEscape(clicked_id) {
 }
 
 function majorChoice(clicked_id) {
-  $("#fourthChoice").show();
   if (clicked_id === "dwarf") {
+    $("#fourthChoice").show();
+  } else if (clicked_id === "grownUpsTrack") {
+    $("#grownUpsOne86").show();
+    // $("#dwarvesCaughtOne34").hide();
+    // $("#princeOne19").hide()
+  } else if (clicked_id === "princeTrack") {
+    $("#princeOne19").show();
+    // $("#dwarvesCaughtOne34").hide();
+    // $("#grownUpsOne86").hide();
   }
   $("#thirdChoice").hide();
 }
@@ -101,21 +109,6 @@ function END(clicked_id) {
 
 
 
-  function branchingQuest64(clicked_id){
-    if(clicked_id === "followDwarvesTrack") {
-      $("#dwarvesCaughtOne34").show();
-      $("#grownUpsOne86").hide();
-      $("#princeOne19").hide();
-    } else if (clicked_id === "grownUpsTrack") {
-      $("#grownUpsOne86").show();
-      $("#dwarvesCaughtOne34").hide();
-      $("#princeOne19").hide()
-    } else if (clicked_id === "princeTrack") {
-      $("#princeOne19").show();
-      $("#dwarvesCaughtOne34").hide();
-      $("#grownUpsOne86").hide();
-    }
-  }
 
 
   //PRINCE--Pixie Storyline
