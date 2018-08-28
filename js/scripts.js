@@ -38,59 +38,59 @@ function trustDwarf(clicked_id) {
 
 function dwarfRoute(clicked_id) {
   if (clicked_id === "continue1" || clicked_id === "continue2") {
-  $("#trickGuard2, #attackGuard2").hide();
-  $("#seventhChoice").show();
-} else if (clicked_id === "findParents") {
-  $("#findParents2").show();
-  $("#seventhChoice").hide();
-} else if (clicked_id === "goDwarf" || clicked_id === "pickFather") {
-  $("#findParents2, #seventhChoice").hide();
-  $("#eigthChoice").show();
-} else if (clicked_id === "swerveHorse" || clicked_id === "stayOnHorse") {
-  $("#ninethChoice").show();
-  $("#eigthChoice").hide();
-} else if (clicked_id === "FindAnotherWay" || clicked_id === "turnAround") {
-  $("#tenthChoice").show();
-  $("#ninethChoice").hide();
-  $("#goRight2").hide();
-} else if (clicked_id === "goRight") {
-  $("#goRight2").show();
-  $("#tenthChoice").hide();
-} else if (clicked_id === "goStraight") {
-  $("#eleventhChoice").show();
-  $("#tenthChoice").hide();
-}
+    $("#trickGuard2, #attackGuard2").hide();
+    $("#seventhChoice").show();
+  } else if (clicked_id === "findParents") {
+    $("#findParents2").show();
+    $("#seventhChoice").hide();
+  } else if (clicked_id === "goDwarf" || clicked_id === "pickFather") {
+    $("#findParents2, #seventhChoice").hide();
+    $("#eigthChoice").show();
+  } else if (clicked_id === "swerveHorse" || clicked_id === "stayOnHorse") {
+    $("#ninethChoice").show();
+    $("#eigthChoice").hide();
+  } else if (clicked_id === "FindAnotherWay" || clicked_id === "turnAround") {
+    $("#tenthChoice").show();
+    $("#ninethChoice").hide();
+    $("#goRight2").hide();
+  } else if (clicked_id === "goRight") {
+    $("#goRight2").show();
+    $("#tenthChoice").hide();
+  } else if (clicked_id === "goStraight") {
+    $("#eleventhChoice").show();
+    $("#tenthChoice").hide();
+  }
 }
 
 function END(clicked_id) {
   if(clicked_id === "fight" || clicked_id === "fight2") {
-  $("#firstEnd").show();
-  $("#firstChoice, #secondChoice").hide();
-} else if (clicked_id === "notrust") {
-  $("#secondEnd").show();
-  $("#fourthChoice").hide();
-} else if (clicked_id === "nomission") {
-  $("#thirdEnd").show();
-  $("#fifthChoice").hide();
-} else if (clicked_id === "stopSneed") {
-  $("#fourthEnd").show();
-  $("#seventhChoice").hide();
-} else if (clicked_id === "pickMother") {
-  $("#fifthEnd").show();
-  $("#findParents2").hide();
-} else if (clicked_id === "waitTillMorning") {
-  $("#sixthEnd").show();
-  $("#ninethChoice").hide();
-} else if (clicked_id === "goLeft") {
-  $("#seventhEnd").show();
-  $("#tenthChoice").hide();
-} else if (clicked_id === "keepTricking") {
-  $("#eighthEnd").show();
-  $("#eleventhChoice").hide();
-} else if (clicked_id === "askForRescue") {
-  $("#ninethEnd").show();
-  $("#eleventhChoice").hide();
-}
+    $("#firstEnd").show();
+    $("#firstChoice, #secondChoice").hide();
+  } else if (clicked_id === "notrust") {
+    $("#secondEnd").show();
+    $("#fourthChoice").hide();
+  } else if (clicked_id === "nomission") {
+    $("#thirdEnd").show();
+    $("#fifthChoice").hide();
+  } else if (clicked_id === "stopSneed") {
+    $("#fourthEnd").show();
+    $("#seventhChoice").hide();
+  } else if (clicked_id === "pickMother") {
+    $("#fifthEnd").show();
+    $("#findParents2").hide();
+  } else if (clicked_id === "waitTillMorning") {
+    $("#sixthEnd").show();
+    $("#ninethChoice").hide();
+  } else if (clicked_id === "goLeft") {
+    $("#seventhEnd").show();
+    $("#tenthChoice").hide();
+  } else if (clicked_id === "keepTricking") {
+    $("#eighthEnd").show();
+    $("#eleventhChoice").hide();
+  } else if (clicked_id === "askForRescue") {
+    $("#ninethEnd").show();
+    $("#eleventhChoice").hide();
+  }
 }
 
 
@@ -199,6 +199,7 @@ function thePixieKing109(clicked_id) {
   }
 }
 
+//end - Pixies
 function rideOnYourOwn(clicked_id) {
   if (clicked_id === "waitForTheDoor") {
     $("#noTimeForThat").show();
@@ -309,6 +310,7 @@ function islandThing18(clicked_id){
   }
 }
 
+//end - lizard men
 function trustLizard(clicked_id){
   if (clicked_id === "trustLizardmen"){
     $("#trustLizards98").show();
