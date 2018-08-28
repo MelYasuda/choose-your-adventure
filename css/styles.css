@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*#pickdrunk2, #pickbard2, #pickdruid2, #prompt, #secondchoice, #whatdrink, #sirdrunk {
   display: none;
 }*/
@@ -41,6 +42,9 @@ p {
   }
 
   #seconchoice, #thirdchoice {
+=======
+#seconchoice, #thirdchoice, #fourthchoice, #fifthchoice {
+>>>>>>> newbranch
   display: none;
 }
 
@@ -49,7 +53,7 @@ p {
 }
 
 
-#firstEnd {
+#firstEnd, #secondEnd, #thirdEnd {
   display: none;
 }
 
