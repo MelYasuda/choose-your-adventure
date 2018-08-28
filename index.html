@@ -3,7 +3,7 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash|Germania+One|Playfair+Display" rel="stylesheet">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Choose your own adventure test run</title>
@@ -33,7 +33,7 @@
 <!-- CHOICES -->
 
 <div class="container2">
-  <div id="background"></div>
+  <div id="background">
     <div id="firstchoice">
       <p>Starter page. Your family is riding in a wagon and is attacked by Dwarves</p>
       <img id="warrior" src="img/warrior.jpg" alt="pic of the dwarf" width="440px" height="550px">
@@ -45,7 +45,7 @@
       <div id="secondchoice">
         <div id="hide2">
           <button id="fight2" onclick="END(this.id)">You're hiding and you decide to fight now</button>
-          <img id="hidepic" src="img/hide1.png" alt="pic of the carridge" width="480px" height="340px">
+          <img id="hidepic" src="img/hidepic.png" alt="pic of the carridge" width="480px" height="340px">
           <button id="escape2" onclick="hideEscape(this.id)">You try to run away</button>
         </div>
       </div>
@@ -228,6 +228,7 @@
         <p>You tried to fight the dwarves but you failed.</p>
         <img id="winner" src="img/win.jpg" alt="pic of the dwarf" width="480px" height="340px">
       </div>
+        </div>
       </div>
 
   </body>
