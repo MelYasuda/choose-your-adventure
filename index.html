@@ -17,7 +17,7 @@
     <span class="shiny">
       <span class="inner-shiny">Revolt of the Dwarves</span>
     </span>
-    <!-- <h1>Revolt of the Dwarves</h1> -->
+    <h1>Revolt of the Dwarves</h1>
     <h3>Choose Your Adventure!</h3>
   </div>
 </div>
@@ -31,17 +31,59 @@
 <!-- <button id="pickdruid" onclick="this.innerHTML=Pick()">The Druid</button>  -->
 
 <!-- CHOICES -->
-
+<div id="background"></div>
 <div class="container2">
-  <div id="background">
+  <div class="row">
+      <div class="col-md-6">
+
     <div id="firstchoice">
-      <p>Starter page. Your family is riding in a wagon and is attacked by Dwarves</p>
+          <p>“Look, Dad! What's that dark cloud over there? It's not the storm, is it?” Looking over the backs of the
+    four horses that pull your cart, your father squints, then says, “Riders. Lots of them and coming fast.”
+    “Are they bandits, Paul?” asks your mother fearfully, clutching her shawl to her throat. “No, Martha.
+    They can't be bandits. The Dwarven Guard cleaned up the last of them then years ago. I don't know
+    who they are, but the way they're riding we'll soon find out. “Galen, grab that puppy of yours and get
+    under cover in that pile of bedclothes.” “But I want to stay here. If there's trouble, I can help too.” “Do
+    as your father says,” snaps your mother. “And don't come out till we say it's safe.” You know better
+    than to argue with your mother, so you get off the narrow wooden seat and wriggle through the
+    crowded cart. “Well, no one said I couldn't watch,” you whisper to Woofy, who licks your face in reply.
+    Snuggling down into the pile of blankets, you quiet the puppy, who thinks you're trying to play. Then
+    you arrange the blankets so that you can see. Soon, a faint rumble becomes the drumming thunder of
+    horses' hoofs. “Hold your team!” demands a harsh voice. “Oh, Paul! It's the Guard!” cries your mother.
+    “Thank heavens, we're safe.” Pulling the team to a complete stop, your father calls, “Ho! Guard! What
+    is your business with us? We are anxious to camp before the storm breaks. Speak, and let us be on our
+    way.” “Do you dare to speak so to the King's Guard?” snarls a menacing voice. “Teach the humans to
+    be polite!” urges another of the uniformed dwarves. Your mother clings to your father's arm. Train
+    begins to fall. All around you are the sounds of horses. Saddle leather creaks beneath the weight of the
+    armored Dwarven Guard, and you feel the presence of unseen riders closing in. “Now, now, lads. Is this
+    any way to speak to those we have vowed to protect?” asks a honeyed voice. “Come, let us not be
+    hasty. Let's find out how the situation lies. After all, lads, we wouldn't want to make a mistake now,
+    would we?” There is a long moment of silence. Then a few voices mutter, “Sneed's right.” “Well, then.
+    There we all are. Nice and pleasant,” says Sneed. “Surely all a mistake. But these are lads with quick
+    tempers, so please humor us by answering a few questions.” “I'm sure we've done no wrong,” says your
+    mother. “What do you want to know?” “Just a few questions, “says Sneed. “Like where you've been
+    and where you're going.” “Why, Captain, we're going to the prince's coronation, of course. And as to
+    where we've been, we've been mapping. My husband is the royal mapmaker.” “Royal mapmaker, eh?
+    Splendid occupation. So useful. And are you traveling alone?” Your father answers quickly, “Yes,
+    Captain, quite alone. Just me and the missus.” “All by yourselves. Splendid, just splendid,” Sneed
+    beams. “You see, lads, what comes of talking first? Now we know who these fine people are. Avoid
+    mistakes, I always say. Now we know they are alone. Seize them!” Before your father can protest,
+    heavy hands pull him and your mother from the cart. Your mother screams and your father curses, but
+    rough laughter drowns out their cries. “You see, lads. It is as I told you. Who would suspect the king's
+    own Dwarven Guard of treachery? No one, until it's far too late. Soon, all that is owed to us for long
+    years of protecting humans will be ours. Now, tie these two up. We'll take them back to the caves. A
+    mapmaker will be useful to our new kingdom. Soon we will launch our attack, With the price in our
+    hands, the kingdom is ours! Drive the wagon int othe rocks and search it for gold and maps. Then burn
+    it!”</p>
       <img id="warrior" src="img/warrior.jpg" alt="pic of the dwarf" width="440px" height="550px">
       <button id="fight" onclick="END(this.id)">Fight the dwarves</button>
       <button id="hide" onclick="hideEscape(this.id)">Continue to hide in the wagon</button>
       <button id="escape" onclick="hideEscape(this.id)">Try to escape</button>
     </div>
+  </div>
+<!-- </div> -->
 
+<!-- <div class="row"> -->
+    <div class="col-md-6">
       <div id="secondchoice">
         <div id="hide2">
           <button id="fight2" onclick="END(this.id)">You're hiding and you decide to fight now</button>
@@ -49,6 +91,8 @@
           <button id="escape2" onclick="hideEscape(this.id)">You try to run away</button>
         </div>
       </div>
+    </div>
+
 
       <div id="thirdchoice">
         <p>You ran away and hide until the dwarves were gone. You're safe for now. What next?</p>
@@ -69,6 +113,10 @@
         <button id="mission" onclick="trustDwarf(this.id)">You decide to go on the mission.</button>
         <button id="nomission" onclick="END(this.id)">You decide it's too dangerous and you just want to rescue your parents.</button>
       </div>
+    </div>
+
+        <!-- background closing div -->
+
 
 
 
@@ -248,7 +296,7 @@
           <p>THE END.</p>
         </div>
       </div>
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
       <p id="demo">Would you like to try again?</p>
     </div>
 
@@ -290,7 +338,7 @@
       </div>
       <p id="demo">Would you like to try again?</p>
     </div>
-
+</div>
     <div class="endFive">
       <div id="fifthEnd">
         <div id="P108">
@@ -300,16 +348,18 @@
         <p>Below you, the dwarves army returns victorious.</p>
         <p>Years later, as apprentice mapmaker to Sneed the Supreme, you wonder for the millionth time if you made a mistake in not going with Bork and Hume. If so, perhaps you will get a chance to correct that mistake. You have been contacted by Bork the Second, and you have agreed to help overthrow the evil Sneed. This time you will succeed.</p>
         </div> 
-=======
+<!-- ======= -->
         <p>You tried to fight the dwarves but you failed.</p>
         <img id="winner" src="img/win.jpg" alt="pic of the dwarf" width="480px" height="340px">
       </div>
         </div>
->>>>>>> newRegVic
-      </div>
+<!-- >>>>>>> newRegVic -->
+
       <p id="demo">Would you like to try again?</p>
     </div>
 
+
+    <div class="row">
     <div class="endSix">
       <div id="sixthEnd">
         <div id="P127">
@@ -328,7 +378,7 @@
           <p>“It will also give me a chance to talk to my warriors. Once they know I am free, they will revolt. By morning Iron Mountain will be ours and your parents and the prince will be free and safe.”</p>
           <p>Happily, you turn and ride toward the caves in the mountains.</p>
           <p>THE END.</p>
-
+        </div>
         </div>
       </div>
       <p id="demo">Would you like to try again?</p>

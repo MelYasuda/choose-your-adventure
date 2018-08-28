@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 /*#pickdrunk2, #pickbard2, #pickdruid2, #prompt, #secondchoice, #whatdrink, #sirdrunk {
   display: none;
 }*/
@@ -14,12 +14,15 @@
 
 
 p {
-  margin-left: 8%;
-  margin-right: 51%;
+  margin-left: 16%;
+  margin-right: 11%;
   margin-top: 15%;
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-size: 140%;
   font-weight: bold;
+  float:  left;
+  text-align:left;
+  /*display: inline-flex;*/
 
 }
 
@@ -40,9 +43,6 @@ p {
   }
 
   #seconchoice, #thirdchoice {
-=======
-#seconchoice, #thirdchoice, #fourthchoice, #fifthchoice {
->>>>>>> newbranch
   display: none;
 }
 
@@ -167,9 +167,11 @@ h3{
 /*Images*/
 #warrior{
   float: right;
-  margin-top: -4%;
+  margin-top: -10%;
   margin-right: 10%;
-/*display: none;*/
+display: none;
+/*position:relative;*/
+
 }
 
 #winner{
@@ -210,9 +212,11 @@ background-size: contain;
 /*opacity:0.9;*/
 position: absolute;
 z-index: -1;
-width: 100%;
-height: 100%;
-margin-top: 5%;
+width: 300%;
+height: 140%;
+margin-top: 2%;
+left:0px;
+top:0px;
 }
 
 img{
@@ -220,4 +224,14 @@ img{
   box-shadow: 0 0 20px 10px #E1C698;
 
 }
-/*end of the images*/
+
+@media only screen and (max-width: 1024px) {
+    #background {
+        visibility: collapse;
+        width: 0%;
+    }
+
+    #background {
+        width: 100%;
+    }
+}
