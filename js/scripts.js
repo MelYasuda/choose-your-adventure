@@ -2,49 +2,79 @@
 
 
 function hideEscape(clicked_id) {
-  $("#secondchoice").show();
+  $("#secondChoice").show();
    if (clicked_id === "hide") {
     $("#hide2").show();
   } else if (clicked_id === "escape" || clicked_id === "escape2") {
-    $("#thirdchoice").show();
-    $("#secondchoice").hide();
+    $("#thirdChoice").show();
+    $("#secondChoice").hide();
   }
-    $("#firstchoice").hide();
+    $("#firstChoice").hide();
 }
 
 // function Two(clicked_id) {
-//   $("#thirdchoice").show();
+//   $("#thirdChoice").show();
 //   if(clicked_id === "drunktalk1") {
 //     $("#escape2").show();
 //   } else if (clicked_id === "drunktalk2") {
 //     $("#sirdrunk").show();
 //   }
-//   $("#secondchoice").hide();
+//   $("#secondChoice").hide();
 // }
 
 function majorChoice(clicked_id) {
-  $("#fourthchoice").show();
+  $("#fourthChoice").show();
   if (clicked_id === "dwarf") {
   }
-  $("#thirdchoice").hide();
+  $("#thirdChoice").hide();
 }
 
 function trustDwarf(clicked_id) {
-  $("#fifthchoice").show();
-  $("#fourthchoice").hide();
+  $("#fifthChoice").show();
+  if (clicked_id === "mission") {
+    $("#sixthChoice").show();
+    $("#fifthChoice").hide();
+  } else if (clicked_id === "trickGuard") {
+    $("#trickGuard2").show();
+    $("#sixthChoice").hide();
+    $("#fifthChoice").hide();
+  } else if (clicked_id === "attackGuard") {
+    $("#attackGuard2").show();
+    $("#sixthChoice").hide();
+    $("#fifthChoice").hide();
+  }
+  $("#fourthChoice").hide();
 }
 
+function dwarfRoute(clicked_id) {
+  if (clicked_id === "continue1" || clicked_id === "continue2") {
+  $("#trickGuard2, #attackGuard2").hide();
+  $("#seventhChoice").show();
+} else if (clicked_id === "findParents") {
+  $("#findParents2").show();
+  $("#seventhChoice").hide();
+} else if (clicked_id === "goDwarf" || clicked_id === "pickFather") {
+  $("#findParents2, #seventhChoice").hide();
+  $("#eigthChoice").show();
+}
+}
 
 function END(clicked_id) {
   if(clicked_id === "fight" || clicked_id === "fight2") {
   $("#firstEnd").show();
-  $("#firstchoice, #secondchoice").hide();
+  $("#firstChoice, #secondChoice").hide();
 } else if (clicked_id === "notrust") {
   $("#secondEnd").show();
-  $("#fourthchoice").hide();
+  $("#fourthChoice").hide();
 } else if (clicked_id === "nomission") {
   $("#thirdEnd").show();
-  $("#fifthchoice").hide();
+  $("#fifthChoice").hide();
+} else if (clicked_id === "stopSneed") {
+  $("#fourthEnd").show();
+  $("#seventhChoice").hide();
+} else if (clicked_id === "pickMother") {
+  $("#fifthEnd").show();
+  $("#findParents2").hide();
 }
 }
 
