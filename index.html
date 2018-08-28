@@ -32,13 +32,11 @@
 
 <!-- CHOICES -->
 <div id="background"></div>
-<div class="container2">
-<<<<<<< HEAD
-  <div class="row">
+  <div class="container">
+    <div class="row">
       <div class="col-md-6">
-
-    <div id="firstchoice">
-          <p>“Look, Dad! What's that dark cloud over there? It's not the storm, is it?” Looking over the backs of the
+        <p>“Look, Dad!
+          What's that dark cloud over there? It's not the storm, is it?” Looking over the backs of the
     four horses that pull your cart, your father squints, then says, “Riders. Lots of them and coming fast.”
     “Are they bandits, Paul?” asks your mother fearfully, clutching her shawl to her throat. “No, Martha.
     They can't be bandits. The Dwarven Guard cleaned up the last of them then years ago. I don't know
@@ -75,33 +73,31 @@
     mapmaker will be useful to our new kingdom. Soon we will launch our attack, With the price in our
     hands, the kingdom is ours! Drive the wagon int othe rocks and search it for gold and maps. Then burn
     it!”</p>
-=======
-  <div id="background"></div>
-    <div id="firstChoice">
-      <p>Starter page. Your family is riding in a wagon and is attacked by Dwarves</p>
->>>>>>> master
+
+
+      <div id="firstChoice">
+        <button id="fight" onclick="END(this.id)">Fight the dwarves</button>
+        <button id="hide" onclick="hideEscape(this.id)">Continue to hide in the wagon</button>
+        <button id="escape" onclick="hideEscape(this.id)">Try to escape</button>
+      </div>
+    </div>
+
+    <div class="col-md-6">
       <img id="warrior" src="img/warrior.jpg" alt="pic of the dwarf" width="440px" height="550px">
-      <button id="fight" onclick="END(this.id)">Fight the dwarves</button>
-      <button id="hide" onclick="hideEscape(this.id)">Continue to hide in the wagon</button>
-      <button id="escape" onclick="hideEscape(this.id)">Try to escape</button>
     </div>
   </div>
+</div>
 <!-- </div> -->
 
-<<<<<<< HEAD
-<!-- <div class="row"> -->
-    <div class="col-md-6">
-      <div id="secondchoice">
-=======
+
       <div id="secondChoice">
->>>>>>> master
         <div id="hide2">
           <button id="fight2" onclick="END(this.id)">You're hiding and you decide to fight now</button>
           <img id="hidepic" src="img/hidepic.png" alt="pic of the carridge" width="480px" height="340px">
           <button id="escape2" onclick="hideEscape(this.id)">You try to run away</button>
         </div>
       </div>
-    </div>
+
 
 
       <div id="thirdChoice">
@@ -411,7 +407,7 @@
         <p>You tried to fight the dwarves but you failed.</p>
         <img id="winner" src="img/win.jpg" alt="pic of the dwarf" width="480px" height="340px">
       </div>
-        </div>
+
 <!-- >>>>>>> newRegVic -->
 
       <p id="demo">Would you like to try again?</p>
