@@ -12,16 +12,6 @@ function hideEscape(clicked_id) {
     $("#firstChoice").hide();
 }
 
-// function Two(clicked_id) {
-//   $("#thirdChoice").show();
-//   if(clicked_id === "drunktalk1") {
-//     $("#escape2").show();
-//   } else if (clicked_id === "drunktalk2") {
-//     $("#sirdrunk").show();
-//   }
-//   $("#secondChoice").hide();
-// }
-
 function majorChoice(clicked_id) {
   $("#fourthChoice").show();
   if (clicked_id === "dwarf") {
@@ -66,6 +56,9 @@ function dwarfRoute(clicked_id) {
 } else if (clicked_id === "goRight") {
   $("#goRight2").show();
   $("#tenthChoice").hide();
+} else if (clicked_id === "goStraight") {
+  $("#eleventhChoice").show();
+  $("#tenthChoice").hide();
 }
 }
 
@@ -91,6 +84,12 @@ function END(clicked_id) {
 } else if (clicked_id === "goLeft") {
   $("#seventhEnd").show();
   $("#tenthChoice").hide();
+} else if (clicked_id === "keepTricking") {
+  $("#eighthEnd").show();
+  $("#eleventhChoice").hide();
+} else if (clicked_id === "askForRescue") {
+  $("#ninethEnd").show();
+  $("#eleventhChoice").hide();
 }
 }
 

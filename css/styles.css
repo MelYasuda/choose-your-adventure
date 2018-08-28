@@ -42,7 +42,7 @@ p {
   }
 
 
-#seconChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #seventhChoice, #eigthChoice, #ninethChoice, #tenthChoice {
+#seconChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #seventhChoice, #eigthChoice, #ninethChoice, #tenthChoice, #eleventhChoice {
   display: none;
 }
 
@@ -51,7 +51,7 @@ p {
 }
 
 
-#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd {
+#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd {
   display: none;
 }
 
