@@ -93,7 +93,7 @@ function END(clicked_id) {
 }
 }
 
-
+// user interface
 $(document).ready(function(event){
 
 
