@@ -69,18 +69,6 @@ function dwarfRoute(clicked_id) {
 
 function END(clicked_id) {
   if(clicked_id === "fight" || clicked_id === "fight2") {
-<<<<<<< HEAD
-  $("#firstEnd").show();
-  $("#firstchoice, #secondchoice").hide();
-} else if ()
-} else if (clicked_id === "notrust") {
-  $("#secondEnd").show();
-  $("#fourthchoice").hide();
-} else if (clicked_id === "nomission") {
-  $("#thirdEnd").show();
-  $("#fifthchoice").hide();
-}
-=======
     $("#firstEnd").show();
     $("#firstChoice, #secondChoice").hide();
   } else if (clicked_id === "notrust") {
@@ -108,7 +96,6 @@ function END(clicked_id) {
     $("#ninethEnd").show();
     $("#eleventhChoice").hide();
   }
->>>>>>> dwarfRoute
 }
 
 
@@ -129,15 +116,12 @@ function END(clicked_id) {
       $("#grownUpsOne86").hide();
     }
   }
-<<<<<<< HEAD
-}
-=======
->>>>>>> dwarfRoute
+
 
   //PRINCE--Pixie Storyline
   function pixieChoices19(clicked_id){
     if(clicked_id === "trustWhimsy"){
-    } $("#shrinkingBoy92").show();
+      $("#shrinkingBoy92").show();
       $("#dwarvesCaughtOne34").hide();
     } else if (clicked_id === "rejectSandy") {
       $("#dwarvesCaughtOne34").show();
@@ -159,11 +143,11 @@ function pixieDryad116(clicked_id){
     $("#pixieGetSmall26").show();
     $("#thingsDryadsKnow53").hide();
     $("#runAway122").hide();
-  } else if{
+  } else if (clicked_id === "dryadSecrets"){
     $("#thingsDryadsKnow53").show();
     $("#pixieGetSmall26").hide();
     $("#runAway122").hide();
-  } else if {
+  } else if (clicked_id === "runAwayFromHere") {
     $("#runAway122").show();
     $("#pixieGetSmall26").hide();
     $("#thingsDryadsKnow53").hide();
@@ -174,7 +158,7 @@ function ohAWitch26(clicked_id) {
   if (clicked_id === "goIntoClearing"){
     $("#hungryWitch33").show();
     $("#avoidTheClearing129").hide();
-  } else if (clicked_id === "aoidClearing"){
+  } else if (clicked_id === "avoidClearing"){
     $("#avoidTheClearing129").show();
     $("#hungryWitch33").hide();
   }
@@ -184,7 +168,7 @@ function trustAPixie129(clicked_id) {
   if (clicked_id === "takeANap") {
     $("#trustAndSleep32").show();
     $("#avoidThatSpider11").hide();
-  } else if {
+  } else if (clicked_id === "avoidTheSpider") {
     $("#avoidThatSpider11").show();
     $("#trustAndSleep32").hide();
   }
@@ -210,11 +194,11 @@ function thePixieKing109(clicked_id) {
     $("#rideIntoCity144").show();
     $("#flyIntoCity75").hide();
     $("#letPixiesHandleIt58").hide();
-  } if else (clicked_id === "flyWithPixies") {
+  } else if (clicked_id === "flyWithPixies") {
     $("#flyIntoCity75").show();
     $("#rideIntoCity144").hide();
     $("#letPixiesHandleIt58").hide();
-  } if else (clicked_id === "goWithoutYou") {
+  } else if (clicked_id === "goWithoutYou") {
     $("#letPixiesHandleIt58").show();
     $("#rideIntoCity144").hide();
     $("#flyIntoCity75").hide();
@@ -346,3 +330,4 @@ function trustLizard(clicked_id){
 
 // user interface
 $(document).ready(function(event){
+});
