@@ -93,6 +93,11 @@ function END(clicked_id) {
 }
 }
 
+function start() {
+    $("#firstChoice").show();
+    $("#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd").hide();
+}
+
 // user interface
 $(document).ready(function(event){
 
