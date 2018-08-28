@@ -54,7 +54,7 @@
         <p>You ran away and hide until the dwarves were gone. You're safe for now. What next?</p>
         <img id="think" src="img/think.jpg" alt="pic of the boy thinking" width="400px" height="540px">
         <button id="dwarf" onclick="majorChoice(this.id)"> Go after the dwarves yourself</button>
-        <button id="dwagrownUpsTrack" onclick="majorChoice(this.id)">Run itno the countryside looking for adults to help</button>
+        <button id="grownUpsTrack" onclick="majorChoice(this.id)">Run itno the countryside looking for adults to help</button>
         <button id="princeTrack" onclick="majorChoice(this.id)">Go to the city yourself to warn the prince</button>
       </div>
 
@@ -132,8 +132,36 @@
         <button id="askForRescue" onclick="END(this.id)"> You want to tell someone to rescue you from the drainage pipes</button>
       </div>
 
+      <div id="princeOne19">
+        <p>You have decided to go to warn the prince you meet a fairy</p>
+        <button id="trustWhimsy" onclick="pixieChoices19(this.id)"> You decide to trust the fairy and be shrunk</button>
+        <button id="returnDwarf" onclick="trustDwarf(this.id)">You decide to change your mind and follow the dwarves</button>
+      </div>
 
+      <div id="shrinkingBoy92">
+        <p>You're shrunk and small. You're hiding and seeing two dwarves.</p>
+        <button id="LetWhimsy" onclick="pixieChoices19(this.id)"> Let Whimsy handle it</button>
+        <button id="ignoreWhimsy" onclick="END(this.id)">Attack the dwarves</button>
+      </div>
 
+      <div id="letThePixieDoIt116">
+        <p>You meet Druidr</p>
+        <button id="goDruid" onclick="END(this.id)"> Do you want to go with Druid</button>
+        <button id="stayWithPixy" onclick="pixieChoices19(this.id)">Stay with the pixy</button>
+        <button id="runaway" onclick="END(this.id)">Run away from both</button>
+      </div>
+
+      <div id="pixieGetSmall26">
+        <p>You get shrunk and you meed a whitch</p>
+        <button id="goWitch" onclick="END(this.id)"> Go with the witch</button>
+        <button id="stayWithPixy2" onclick="pixieChoices19(this.id)">Stay with the pixy</button>
+      </div>
+
+      <div id="pixieGetSmall26">
+        <p>You get shrunk and you meed a whitch</p>
+        <button id="goWitch" onclick="END(this.id)"> </button>
+        <button id="stayWithPixy2" onclick="pixieChoices19(this.id)"></button>
+      </div>
 
     <!-- <div class="choiceEight">
       <div id="eighthChoice">
@@ -357,6 +385,26 @@
 
       <div id="ninethEnd">
         <p> The dwarves ignore you and keep throwing rocks forever. THE END YOU LOSE</p>
+        <button onclick="start()"> Back to Start</button>
+      </div>
+
+      <div id="fairyFirstEnd">
+        <p> You attack the dwarves. You're too small. They squished you. THE END YOU LOSE</p>
+        <button onclick="start()"> Back to Start</button>
+      </div>
+
+      <div id="fairySecondEnd">
+        <p> Druid turns you into a tree. THE END YOU LOSE</p>
+        <button onclick="start()"> Back to Start</button>
+      </div>
+
+      <div id="fairyThirdEnd">
+        <p> You run away and nobody belives you. THE END YOU LOSE</p>
+        <button onclick="start()"> Back to Start</button>
+      </div>
+
+      <div id="fairyFourthEnd">
+        <p> The witch eats you. THE END YOU LOSE</p>
         <button onclick="start()"> Back to Start</button>
       </div>
 
