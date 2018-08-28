@@ -30,9 +30,21 @@
 
       <div id="thirdchoice">
         <p>You ran away and hide until the dwarves were gone. You're safe for now. What next?</p>
-        <p>Go after the dwarves yourself</p>
+        <button id="dwarf" onclick="majorChoice(this.id)">Go after the dwarves yourself</button>
         <p>Run itno the countryside looking for adults to help</p>
         <p>Go to the city yourself to warn the prince</p>
+      </div>
+
+      <div id="fourthchoice">
+        <p>You get captured by dowarves and taken to their hideout. You meed an old blind dowarf.</p>
+        <button id="trust" onclick="trustDwarf(this.id)">You decide to trust the old dwarf</button>
+        <button id="notrust" onclick="END(this.id)">You decide you must not trust any dwarves</button>
+      </div>
+
+      <div id="fifthchoice">
+        <p>The old dwarf explains the dangerous mission. You must choose to go with the old dwarf on a dangerous mission or refuse</p>
+        <button id="mission" onclick="trustDwarf(this.id)">You decide to go on the mission.</button>
+        <button id="nomission" onclick="END(this.id)">You decide it's too dangerous and you just want to rescue your parents.</button>
       </div>
 
 
@@ -213,7 +225,21 @@
           <p>THE END.</p>
         </div>
       </div>
-    <p id="demo">Would you like to try again?</p>
+
+      <div id="secondEnd">
+        <p>You refused to help and tied forever. END.</p>
+      </div>
+
+      <div id="thirdEnd">
+        <p>The old dwarf frees your parents. You all become slaves underground to death. END.</p>
+      </div>
+
+      <!-- </div>
+      <p id="demo">
+      Would you like to try again?
+      </p>
+      button hold to restart.
+    </div>
 
     <div class="endTwo">
       <div id="secondEnd">
