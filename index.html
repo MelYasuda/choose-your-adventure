@@ -3,24 +3,24 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash|Germania+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash|Germania+One|Playfair+Display" rel="stylesheet">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Choose your own adventure test run</title>
   </head>
   <body>
-    <div class="container">
-      <div id="cover">
-        <span class="shiny">
-          <span class="inner-shiny">Revolt of the Dwarves</span>
-        </span>
-        <!-- <h1>Revolt of the Dwarves</h1> -->
-        <h3>Choose Your Adventure!</h3>
-      </div>
-    </div>
+
 
 <!-- TITLE PAGE -->
-
+<div class="container">
+  <div id="cover">
+    <span class="shiny">
+      <span class="inner-shiny">Revolt of the Dwarves</span>
+    </span>
+    <!-- <h1>Revolt of the Dwarves</h1> -->
+    <h3>Choose Your Adventure!</h3>
+  </div>
+</div>
 
 <!-- END TITLE PAGE -->
 
@@ -33,9 +33,10 @@
 <!-- CHOICES -->
 
 <div class="container2">
-  <div id="background"></div>
+  <div id="background">
     <div id="firstchoice">
       <p>Starter page. Your family is riding in a wagon and is attacked by Dwarves</p>
+      <img id="warrior" src="img/warrior.jpg" alt="pic of the dwarf" width="440px" height="550px">
       <button id="fight" onclick="END(this.id)">Fight the dwarves</button>
       <button id="hide" onclick="hideEscape(this.id)">Continue to hide in the wagon</button>
       <button id="escape" onclick="hideEscape(this.id)">Try to escape</button>
@@ -44,13 +45,15 @@
       <div id="secondchoice">
         <div id="hide2">
           <button id="fight2" onclick="END(this.id)">You're hiding and you decide to fight now</button>
+          <img id="hidepic" src="img/hidepic.png" alt="pic of the carridge" width="480px" height="340px">
           <button id="escape2" onclick="hideEscape(this.id)">You try to run away</button>
         </div>
       </div>
 
       <div id="thirdchoice">
         <p>You ran away and hide until the dwarves were gone. You're safe for now. What next?</p>
-        <button id="dwarf" onclick="majorChoice(this.id)">Go after the dwarves yourself</button>
+        <img id="think" src="img/think.jpg" alt="pic of the boy thinking" width="400px" height="540px">
+        <p>Go after the dwarves yourself</p>
         <p>Run itno the countryside looking for adults to help</p>
         <p>Go to the city yourself to warn the prince</p>
       </div>
@@ -247,22 +250,6 @@
       </div>
 <<<<<<< HEAD
       <p id="demo">Would you like to try again?</p>
-=======
-
-      <div id="secondEnd">
-        <p>You refused to help and tied forever. END.</p>
-      </div>
-
-      <div id="thirdEnd">
-        <p>The old dwarf frees your parents. You all become slaves underground to death. END.</p>
-      </div>
-
-      <!-- </div>
-      <p id="demo">
-      Would you like to try again?
-      </p>
-      button hold to restart.
->>>>>>> newbranch
     </div>
 
     <div class="endTwo">
@@ -313,6 +300,12 @@
         <p>Below you, the dwarves army returns victorious.</p>
         <p>Years later, as apprentice mapmaker to Sneed the Supreme, you wonder for the millionth time if you made a mistake in not going with Bork and Hume. If so, perhaps you will get a chance to correct that mistake. You have been contacted by Bork the Second, and you have agreed to help overthrow the evil Sneed. This time you will succeed.</p>
         </div> 
+=======
+        <p>You tried to fight the dwarves but you failed.</p>
+        <img id="winner" src="img/win.jpg" alt="pic of the dwarf" width="480px" height="340px">
+      </div>
+        </div>
+>>>>>>> newRegVic
       </div>
       <p id="demo">Would you like to try again?</p>
     </div>
