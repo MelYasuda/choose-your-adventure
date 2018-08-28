@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 /*#pickdrunk2, #pickbard2, #pickdruid2, #prompt, #secondchoice, #whatdrink, #sirdrunk {
   display: none;
 }*/
 
-.container {
+#cover {
   display: none;
 }
 
@@ -11,7 +11,8 @@
   display: none;
 }*/
 
-  #background{
+<<<<<<< HEAD
+  /*#background{
   background-image: url("../img/page1.jpeg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -21,12 +22,20 @@
   width: 100%;
   height: 100%;
   margin-top: 5%;
-}
+}*/
+=======
+
+>>>>>>> c7cf7571df68782dc4c40a9e0b0b44646f4140f4
 
 p {
   margin-left: 8%;
   margin-right: 51%;
-  margin-top: 15%;}
+  margin-top: 15%;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: bold;
+
+}
 
   button {
     margin-left: 8%;
@@ -34,6 +43,9 @@ p {
     margin-bottom: 5px;
     margin-top: 5px;
   }
+  /*#firstchoice{
+    margin-top: 20%;
+  }*/
 
   #pickdrunk2{
     margin-right: 8%;
@@ -41,34 +53,21 @@ p {
     margin-top: -5%;
   }
 
-  #seconchoice, #thirdchoice {
-=======
-#seconchoice, #thirdchoice, #fourthchoice, #fifthchoice {
->>>>>>> newbranch
+
+#seconChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #seventhChoice, #eigthChoice, #ninethChoice, #tenthChoice, #eleventhChoice {
   display: none;
 }
 
-#hide2, #escape3 {
+#hide2, #escape3, #trickGuard2, #attackGuard2, #findParents2, #goRight2 {
   display: none;
 }
 
 
-#firstEnd, #secondEnd, #thirdEnd {
+#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd {
   display: none;
 }
 
-#cover{
-  background-image: url("../img/cover.jpeg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity:0.8;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  margin-top: 5%;
 
-}
 
 h1{
   color:#D4AF37;
@@ -175,3 +174,62 @@ h3{
   60%  { opacity: 0; }
   100% { opacity: 0; }
 }
+/*end of shiny text*/
+
+/*Images*/
+#warrior{
+  float: right;
+  margin-top: -4%;
+  margin-right: 10%;
+/*display: none;*/
+}
+
+#winner{
+  float: right;
+  margin-top: 1%;
+  margin-right: 8%;
+}
+
+#hidepic{
+  float: right;
+  margin-top: 22%;
+  margin-right: 8%;
+}
+
+#think{
+  float: right;
+  margin-top:-4%;
+  margin-right: 10%;
+}
+
+#cover{
+  background-image: url("../img/cover.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  /*opacity:0.8;*/
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+
+}
+
+#background{
+background-image: url("../img/page1.jpeg");
+background-repeat: no-repeat;
+background-size: contain;
+/*opacity:0.9;*/
+position: absolute;
+z-index: -1;
+width: 100%;
+height: 100%;
+margin-top: 5%;
+}
+
+img{
+  border-radius: 11px;
+  box-shadow: 0 0 20px 10px #E1C698;
+
+}
+/*end of the images*/

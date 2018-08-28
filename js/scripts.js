@@ -1,42 +1,75 @@
 
+function start() {
+    $("#firstChoice").show();
+    $("#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd").hide();
+}
+
 
 
 function hideEscape(clicked_id) {
-  $("#secondchoice").show();
+  $("#secondChoice").show();
    if (clicked_id === "hide") {
     $("#hide2").show();
   } else if (clicked_id === "escape" || clicked_id === "escape2") {
-    $("#thirdchoice").show();
-    $("#secondchoice").hide();
+    $("#thirdChoice").show();
+    $("#secondChoice").hide();
   }
-    $("#firstchoice").hide();
+    $("#firstChoice").hide();
 }
 
-// function Two(clicked_id) {
-//   $("#thirdchoice").show();
-//   if(clicked_id === "drunktalk1") {
-//     $("#escape2").show();
-//   } else if (clicked_id === "drunktalk2") {
-//     $("#sirdrunk").show();
-//   }
-//   $("#secondchoice").hide();
-// }
-
 function majorChoice(clicked_id) {
-  $("#fourthchoice").show();
+  $("#fourthChoice").show();
   if (clicked_id === "dwarf") {
   }
-  $("#thirdchoice").hide();
+  $("#thirdChoice").hide();
 }
 
 function trustDwarf(clicked_id) {
-  $("#fifthchoice").show();
-  $("#fourthchoice").hide();
+  $("#fifthChoice").show();
+  if (clicked_id === "mission") {
+    $("#sixthChoice").show();
+    $("#fifthChoice").hide();
+  } else if (clicked_id === "trickGuard") {
+    $("#trickGuard2").show();
+    $("#sixthChoice").hide();
+    $("#fifthChoice").hide();
+  } else if (clicked_id === "attackGuard") {
+    $("#attackGuard2").show();
+    $("#sixthChoice").hide();
+    $("#fifthChoice").hide();
+  }
+  $("#fourthChoice").hide();
 }
 
+function dwarfRoute(clicked_id) {
+  if (clicked_id === "continue1" || clicked_id === "continue2") {
+    $("#trickGuard2, #attackGuard2").hide();
+    $("#seventhChoice").show();
+  } else if (clicked_id === "findParents") {
+    $("#findParents2").show();
+    $("#seventhChoice").hide();
+  } else if (clicked_id === "goDwarf" || clicked_id === "pickFather") {
+    $("#findParents2, #seventhChoice").hide();
+    $("#eigthChoice").show();
+  } else if (clicked_id === "swerveHorse" || clicked_id === "stayOnHorse") {
+    $("#ninethChoice").show();
+    $("#eigthChoice").hide();
+  } else if (clicked_id === "FindAnotherWay" || clicked_id === "turnAround") {
+    $("#tenthChoice").show();
+    $("#ninethChoice").hide();
+    $("#goRight2").hide();
+  } else if (clicked_id === "goRight") {
+    $("#goRight2").show();
+    $("#tenthChoice").hide();
+  } else if (clicked_id === "goStraight") {
+    $("#eleventhChoice").show();
+    $("#tenthChoice").hide();
+  }
+}
 
 function END(clicked_id) {
   if(clicked_id === "fight" || clicked_id === "fight2") {
+<<<<<<< HEAD
   $("#firstEnd").show();
   $("#firstchoice, #secondchoice").hide();
 } else if ()
@@ -47,125 +80,80 @@ function END(clicked_id) {
   $("#thirdEnd").show();
   $("#fifthchoice").hide();
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function branchingQuest64(clicked_id){
-  if(clicked_id === "followDwarvesTrack") {
-    $("#dwarvesCaughtOne34").show();
-    $("#grownUpsOne86").hide();
-    $("#princeOne19").hide();
-  } else if (clicked_id === "grownUpsTrack") {
-    $("#grownUpsOne86").show();
-    $("#dwarvesCaughtOne34").hide();
-    $("#princeOne19").hide()
-  } else if (clicked_id === "princeTrack") {
-    $("#princeOne19").show();
-    $("#dwarvesCaughtOne34").hide();
-    $("#grownUpsOne86").hide();
+=======
+    $("#firstEnd").show();
+    $("#firstChoice, #secondChoice").hide();
+  } else if (clicked_id === "notrust") {
+    $("#secondEnd").show();
+    $("#fourthChoice").hide();
+  } else if (clicked_id === "nomission") {
+    $("#thirdEnd").show();
+    $("#fifthChoice").hide();
+  } else if (clicked_id === "stopSneed") {
+    $("#fourthEnd").show();
+    $("#seventhChoice").hide();
+  } else if (clicked_id === "pickMother") {
+    $("#fifthEnd").show();
+    $("#findParents2").hide();
+  } else if (clicked_id === "waitTillMorning") {
+    $("#sixthEnd").show();
+    $("#ninethChoice").hide();
+  } else if (clicked_id === "goLeft") {
+    $("#seventhEnd").show();
+    $("#tenthChoice").hide();
+  } else if (clicked_id === "keepTricking") {
+    $("#eighthEnd").show();
+    $("#eleventhChoice").hide();
+  } else if (clicked_id === "askForRescue") {
+    $("#ninethEnd").show();
+    $("#eleventhChoice").hide();
   }
+>>>>>>> dwarfRoute
 }
 
-//PRINCE--Pixie Storyline
-function pixieChoices19(clicked_id){
-  if(clicked_id === "trustWhimsy"){
-  } $("#shrinkingBoy92").show();
-    $("#dwarvesCaughtOne34").hide();
-  } else if (clicked_id === "rejectSandy") {
-    $("#dwarvesCaughtOne34").show();
-    $("#shrinkingBoy92").hide();
+
+
+
+  function branchingQuest64(clicked_id){
+    if(clicked_id === "followDwarvesTrack") {
+      $("#dwarvesCaughtOne34").show();
+      $("#grownUpsOne86").hide();
+      $("#princeOne19").hide();
+    } else if (clicked_id === "grownUpsTrack") {
+      $("#grownUpsOne86").show();
+      $("#dwarvesCaughtOne34").hide();
+      $("#princeOne19").hide()
+    } else if (clicked_id === "princeTrack") {
+      $("#princeOne19").show();
+      $("#dwarvesCaughtOne34").hide();
+      $("#grownUpsOne86").hide();
+    }
   }
+<<<<<<< HEAD
 }
+=======
+>>>>>>> dwarfRoute
 
-function pixieTrust92(clicked_id){
-  if (clicked_id === "LetWhimsy") {
-    $("#letThePixieDoIt116").show();
-    $("#thePixieIsProbablyWrong").hide();
-  } else if (clicked_id === "WhimsyWho") {
-    $("#thePixieIsProbablyWrong").show();
-    $("#letThePixieDoIt116").hide();
+  //PRINCE--Pixie Storyline
+  function pixieChoices19(clicked_id){
+    if(clicked_id === "trustWhimsy"){
+    } $("#shrinkingBoy92").show();
+      $("#dwarvesCaughtOne34").hide();
+    } else if (clicked_id === "rejectSandy") {
+      $("#dwarvesCaughtOne34").show();
+      $("#shrinkingBoy92").hide();
+    }
   }
-}
 
+  function pixieTrust92(clicked_id){
+    if (clicked_id === "LetWhimsy") {
+      $("#letThePixieDoIt116").show();
+      $("#thePixieIsProbablyWrong").hide();
+    } else if (clicked_id === "WhimsyWho") {
+      $("#thePixieIsProbablyWrong").show();
+      $("#letThePixieDoIt116").hide();
+    }
+  }
 function pixieDryad116(clicked_id){
   if (clicked_id === "getShrunk") {
     $("#pixieGetSmall26").show();
@@ -233,6 +221,7 @@ function thePixieKing109(clicked_id) {
   }
 }
 
+//end - Pixies
 function rideOnYourOwn(clicked_id) {
   if (clicked_id === "waitForTheDoor") {
     $("#noTimeForThat").show();
@@ -343,6 +332,7 @@ function islandThing18(clicked_id){
   }
 }
 
+//end - lizard men
 function trustLizard(clicked_id){
   if (clicked_id === "trustLizardmen"){
     $("#trustLizards98").show();
@@ -352,3 +342,7 @@ function trustLizard(clicked_id){
     $("#trustLizards98").hide();
   }
 }
+
+
+// user interface
+$(document).ready(function(event){
