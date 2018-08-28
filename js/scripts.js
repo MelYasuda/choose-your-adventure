@@ -56,7 +56,13 @@ function dwarfRoute(clicked_id) {
 } else if (clicked_id === "goDwarf" || clicked_id === "pickFather") {
   $("#findParents2, #seventhChoice").hide();
   $("#eigthChoice").show();
+} else if (clicked_id === "swerveHorse" || clicked_id === "stayOnHorse") {
+  $("#ninethChoice").show();
+  $("#eigthChoice").hide();
+} else if (clicked_id === "FindAnotherWay") {
+
 }
+
 }
 
 function END(clicked_id) {
@@ -75,6 +81,9 @@ function END(clicked_id) {
 } else if (clicked_id === "pickMother") {
   $("#fifthEnd").show();
   $("#findParents2").hide();
+} else if (clicked_id === "waitTillMorning") {
+  $("#sixthEnd").show();
+  $("#ninethChoice").hide();
 }
 }
 
