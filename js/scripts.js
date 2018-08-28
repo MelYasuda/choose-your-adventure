@@ -1,7 +1,7 @@
 
 function start() {
     $("#firstChoice").show();
-    $("#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd").hide();
+    $("#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd, #fairyFirstEnd, #fairySecondEnd, #fairyThirdEnd, #fairyFourthEnd").hide();
 }
 
 
@@ -127,14 +127,34 @@ function END(clicked_id) {
   function pixieChoices19(clicked_id){
     if(clicked_id === "trustWhimsy"){
       $("#shrinkingBoy92").show();
-      // $("#dwarvesCaughtOne34").hide();
+      $("#princeOne19").hide();
     } else if (clicked_id === "LetWhimsy") {
       $("#letThePixieDoIt116").show();
+      $("#shrinkingBoy92").hide();
     } else if (clicked_id === "stayWithPixy") {
       $("#pixieGetSmall26").show();
       $("#letThePixieDoIt116").hide();
-    } 
+    } else if (clicked_id === "stayWithPixy2") {
+      $("#spiderDen").show();
+      $("#pixieGetSmall26").hide();
+    } else if (clicked_id === "sleepInDen") {
+      $("#spiderDenDetour1").show();
+      $("#spiderDen").hide();
+    } else if (clicked_id === "sleepOutside") {
+      $("#spiderDenDetour2").show();
+      $("#spiderDen").hide();
+    }else if (clicked_id === "sleepInDen2" || clicked_id === "sleepOutside2") {
+      $("#spiderDenDetour1").hide();
+      $("#spiderDenDetour2").hide();
+      $("#").show();
+    }
   }
+
+
+
+
+
+
 
 
 

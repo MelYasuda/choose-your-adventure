@@ -54,7 +54,8 @@ p {
   }
 
 
-#seconChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #seventhChoice, #eigthChoice, #ninethChoice, #tenthChoice, #eleventhChoice {
+#seconChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #seventhChoice, #eigthChoice, #ninethChoice, #tenthChoice, #eleventhChoice,
+#princeOne19,  #shrinkingBoy92, #letThePixieDoIt116, #pixieGetSmall26 {
   display: none;
 }
 
@@ -62,8 +63,8 @@ p {
   display: none;
 }
 
-
-#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd {
+#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd,
+#fairyFirstEnd, #fairySecondEnd, #fairyThirdEnd, #fairyFourthEnd {
   display: none;
 }
 
