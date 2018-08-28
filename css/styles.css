@@ -11,31 +11,35 @@
   display: none;
 }*/
 
-<<<<<<< HEAD
-  /*#background{
-  background-image: url("../img/page1.jpeg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity:0.7;
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  margin-top: 5%;
-}*/
-=======
 
->>>>>>> c7cf7571df68782dc4c40a9e0b0b44646f4140f4
+#background{
+background-image: url("../img/page1.jpeg");
+background-repeat: no-repeat;
+background-size: contain;
+/*opacity:0.9;*/
+position: absolute;
+z-index: -1;
+width: 300%;
+height: 140%;
+margin-top: 2%;
+left:0px;
+top:0px;
+}
+
+
+
 
 p {
-  margin-left: 8%;
-  margin-right: 51%;
+  margin-left: 16%;
+  margin-right: 11%;
   margin-top: 15%;
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
+  font-size: 140%;
   font-weight: bold;
-
+  float:  left;
+  text-align:left;
 }
+
 
   button {
     margin-left: 8%;
@@ -53,8 +57,7 @@ p {
     margin-top: -5%;
   }
 
-
-#seconChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #seventhChoice, #eigthChoice, #ninethChoice, #tenthChoice, #eleventhChoice {
+  #seconchoice, #thirdchoice {
   display: none;
 }
 
@@ -179,9 +182,11 @@ h3{
 /*Images*/
 #warrior{
   float: right;
-  margin-top: -4%;
+  margin-top: -10%;
   margin-right: 10%;
-/*display: none;*/
+display: none;
+/*position:relative;*/
+
 }
 
 #winner{
@@ -215,21 +220,21 @@ h3{
 
 }
 
-#background{
-background-image: url("../img/page1.jpeg");
-background-repeat: no-repeat;
-background-size: contain;
-/*opacity:0.9;*/
-position: absolute;
-z-index: -1;
-width: 100%;
-height: 100%;
-margin-top: 5%;
-}
+
 
 img{
   border-radius: 11px;
   box-shadow: 0 0 20px 10px #E1C698;
 
 }
-/*end of the images*/
+
+@media only screen and (max-width: 1024px) {
+    #background {
+        visibility: collapse;
+        width: 0%;
+    }
+
+    #background {
+        width: 100%;
+    }
+}
