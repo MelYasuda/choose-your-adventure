@@ -42,16 +42,16 @@ p {
   }
 
 
-#seconChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #seventhChoice, #eigthChoice, #ninethChoice {
+#seconChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #seventhChoice, #eigthChoice, #ninethChoice, #tenthChoice {
   display: none;
 }
 
-#hide2, #escape3, #trickGuard2, #attackGuard2, #findParents2 {
+#hide2, #escape3, #trickGuard2, #attackGuard2, #findParents2, #goRight2 {
   display: none;
 }
 
 
-#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd {
+#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd {
   display: none;
 }
 

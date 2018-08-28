@@ -108,6 +108,18 @@
         <button id="FindAnotherWay" onclick="dwarfRoute(this.id)">You try to find another way into the city</button>
       </div>
 
+      <div id="tenthChoice">
+        <p>You are in a drainage pipe. The tunnel branches three ways:</p>
+        <button id="goLeft" onclick="END(this.id)"> Go left towards the sound of running water</button>
+        <button id="goRight" onclick="dwarfRoute(this.id)">Go right towards an open space.</button>
+        <button id="goStraight" onclick="dwarfRoute(this.id)">Continue straight</button>
+      </div>
+
+      <div id="goRight2">
+        <p>Ooops! It's an empty pit! Turn around and choose another way!</p>
+        <button id="turnAround" onclick="dwarfRoute(this.id)"> Turn Around</button>
+      </div>
+
 
 
 
@@ -239,6 +251,10 @@
       <div id="sixthEnd">
         <p> The city is taken but you manage to get the keys to the human prince's cell. You and the
  dwarves plan to get him out while raising an army of Bork's followers. THE END YOU WIN</p>
+      </div>
+
+      <div id="seventhEnd">
+        <p> Oh no! Pushed far away by the water! Can't go back in time! THE END YOU LOSE</p>
       </div>
 
       <!-- <p id="demo">Would you like to try again?</p> -->

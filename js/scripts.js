@@ -59,10 +59,14 @@ function dwarfRoute(clicked_id) {
 } else if (clicked_id === "swerveHorse" || clicked_id === "stayOnHorse") {
   $("#ninethChoice").show();
   $("#eigthChoice").hide();
-} else if (clicked_id === "FindAnotherWay") {
-
+} else if (clicked_id === "FindAnotherWay" || clicked_id === "turnAround") {
+  $("#tenthChoice").show();
+  $("#ninethChoice").hide();
+  $("#goRight2").hide();
+} else if (clicked_id === "goRight") {
+  $("#goRight2").show();
+  $("#tenthChoice").hide();
 }
-
 }
 
 function END(clicked_id) {
@@ -84,6 +88,9 @@ function END(clicked_id) {
 } else if (clicked_id === "waitTillMorning") {
   $("#sixthEnd").show();
   $("#ninethChoice").hide();
+} else if (clicked_id === "goLeft") {
+  $("#seventhEnd").show();
+  $("#tenthChoice").hide();
 }
 }
 
