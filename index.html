@@ -9,18 +9,18 @@
     <title>Choose your own adventure test run</title>
   </head>
   <body>
-    <div class="container">
-      <div id="cover">
-        <span class="shiny">
-          <span class="inner-shiny">Revolt of the Dwarves</span>
-        </span>
-        <!-- <h1>Revolt of the Dwarves</h1> -->
-        <h3>Choose Your Adventure!</h3>
-      </div>
-    </div>
+
 
 <!-- TITLE PAGE -->
-
+<div class="container">
+  <div id="cover">
+    <span class="shiny">
+      <span class="inner-shiny">Revolt of the Dwarves</span>
+    </span>
+    <!-- <h1>Revolt of the Dwarves</h1> -->
+    <h3>Choose Your Adventure!</h3>
+  </div>
+</div>
 
 <!-- END TITLE PAGE -->
 
@@ -36,6 +36,7 @@
   <div id="background"></div>
     <div id="firstchoice">
       <p>Starter page. Your family is riding in a wagon and is attacked by Dwarves</p>
+      <img id="warrior" src="img/warrior.jpg" alt="pic of the dwarf" width="440px" height="550px">
       <button id="fight" onclick="END(this.id)">Fight the dwarves</button>
       <button id="hide" onclick="hideEscape(this.id)">Continue to hide in the wagon</button>
       <button id="escape" onclick="hideEscape(this.id)">Try to escape</button>
@@ -44,12 +45,14 @@
       <div id="secondchoice">
         <div id="hide2">
           <button id="fight2" onclick="END(this.id)">You're hiding and you decide to fight now</button>
+          <img id="hidepic" src="img/hide1.png" alt="pic of the carridge" width="480px" height="340px">
           <button id="escape2" onclick="hideEscape(this.id)">You try to run away</button>
         </div>
       </div>
 
       <div id="thirdchoice">
         <p>You ran away and hide until the dwarves were gone. You're safe for now. What next?</p>
+        <img id="think" src="img/think.jpg" alt="pic of the boy thinking" width="400px" height="540px">
         <p>Go after the dwarves yourself</p>
         <p>Run itno the countryside looking for adults to help</p>
         <p>Go to the city yourself to warn the prince</p>
@@ -223,6 +226,7 @@
 
       <div id="firstEnd">
         <p>You tried to fight the dwarves but you failed.</p>
+        <img id="winner" src="img/win.jpg" alt="pic of the dwarf" width="480px" height="340px">
       </div>
       </div>
 
