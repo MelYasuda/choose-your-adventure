@@ -1,4 +1,11 @@
 
+//Turn Pages//
+$("#flipbook").turn({
+    width: 400,
+    height: 300,
+    autoCenter: true
+});
+
 function start() {
     $("#intro01").show();
     $("#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd").hide();
@@ -252,6 +259,21 @@ $(document).ready(function(){
     if (Password === "Wizard" || Password === "wizard"){
       $("#secretCharacters").show();
     }
+  });
+
+  // assign user name to the story and hide the modal button
+  $("#name-input").submit(function(event){
+    event.preventDefault();
+    var userName = $("#nameText").val();
+    $(".user-name").append(userName);
+    $("#modal-btn").hide();
+    $(".welcome").fadeIn(3000);
+    $("#startGame").fadeIn(3000);
+  });
+
+  // close modal when submit user name
+  $('#submit-btm').click(function() {
+   $('#myModal').modal('hide');
   });
 
 });
