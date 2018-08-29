@@ -151,109 +151,111 @@ function END(clicked_id) {
   }
 
 
-//GROWN-UPS -- Lizard Men Storyline
-// function grownUps86(clicked_id){
-//   if(clicked_id === "trustSandy") {
-//     $("#riverPrince134").show();
-//     $("#dwarvsCaughtOne34").hide();
-//   } else if (clicked_id === "rejectSandy") {
-//     $("#dwarvesCaughtOne34").show();
-//     $("#riverPrince134").hide();
-//   }
-// }
-//
-// function riverPrince134(clicked_id){
-//   if(clicked_id === "turnAround"){
-//     $("#dwarvesCaughtReturn72").show();
-//     $("#attackDragon49").hide();
-//     $("#sneakDragon24").hide();
-//     $("#pastDragon141").hide();
-//   } else if (clicked_id === "fightDragon"){
-//     $("#attackDragon49").show();
-//     $("#sneakDragon24").hide();
-//     $("#pastDragon141").hide();
-//     $("#dwarvesCaughtReturn72").hide();
-//   } else if (clicked_id === "avoidDragon"){
-//     $("#sneakDragon24").show();
-//     $("#pastDragon141").hide();
-//     $("#dwarvesCaughtReturn72").hide();
-//     $("#attackDragon49").hide();
-//   } else if (clicked_id === carryRaft){
-//     $("#pastDragon141").show();
-//     $("#dwarvesCaughtReturn72").hide();
-//     $("#attackDragon49").hide();
-//     $("#sneakDragon24").hide();
-//   }
-// }
-//
-// function rightRiverBank141(clicked_id){
-//   if (clicked_id === "rollIntoRiver"){
-//     $("#riverSnakes93").show();
-//     $("#fireSnakes91").hide();
-//     $("#doNothing10").hide();
-//   } else if (clicked_id === "rollIntoEmbers"){
-//     $("#fireSnakes91").show();
-//     $("#riversnakes93").hide();
-//     $("#doNothing10").hide();
-//   } else if (clicked_id === "confused"){
-//     $("#doNothing10").show();
-//     $("#riverSnakes93").hide();
-//     $("#fireSnakes91").hide();
-//   }
-// }
-//
-// function swampRats114(clicked_id){
-//   if (clicked_id === "jumpInRiver"){
-//     $("#swimForIt66").show();
-//     $("#scareRatsOff73").hide();
-//   } else if (clicked_id === "scareRats") {
-//     $("#scareRatsOff73").show();
-//     ("#swimForIt66").hide();
-//   }
-// }
-//
-// function waterFall70(clicked_id){
-//   if (clicked_id === "jumpLeft"){
-//     $("#waterFallJumpLeft147").show();
-//     $("#giantSteps84").hide();
-//     $("#islandProspects18").hide();
-//   } else if (clicked_id === "jumpRight") {
-//     $("#giantSteps84").show();
-//     $("#islandProspects18").hide();
-//     $("#waterFallJumpLeft147").hide();
-//   } else if (clicked_id === "goToIsland") {
-//     $("#islandProspects18").show();
-//     $("#waterFallJumpLeft147").hide();
-//     $("#giantSteps84").hide();
-//   }
-// }
-//
-// function islandThing18(clicked_id){
-//   if (clicked_id === "waterfall"){
-//     $("#waterFallJumpLeft147").show();
-//     $("#giantSteps84").hide();
-//     $("#monstertalk48").hide();
-//   } else if (clicked_id === "giantSteps"){
-//     $("#giantSteps84").show();
-//     $("#monstertalk48").hide();
-//     $("#waterFallJumpLeft147").hide();
-//   } else if (clicked_id === "monsterChat"){
-//     $("#monstertalk48").show();
-//     $("#waterFallJumpLeft147").hide();
-//     $("#giantSteps84").hide();
-//   }
-// }
-//
-// //end - lizard men
-// function trustLizard(clicked_id){
-//   if (clicked_id === "trustLizardmen"){
-//     $("#trustLizards98").show();
-//     $("#distrustLizards").hide();
-//   } else if (clicked_id === "neverTrustLizardmen"){
-//     $("#distrustLizards25").show();
-//     $("#trustLizards98").hide();
-//   }
-// }
+// GROWN-UPS -- Lizard Men Storyline
+function grownUps86(clicked_id){
+  if(clicked_id === "trustSandy") {
+    $("#riverPrince134").show();
+    $("#dwarvesCaughtOne34").hide();
+  } else if (clicked_id === "rejectSandy") {
+    $("#riverPrince134").hide();
+    $("#dwarvesCaughtOne34").show();
+  }
+  $("#grownUpsOne86").hide();
+}
+
+function riverPrince134(clicked_id){
+  if(clicked_id === "turnAround"){
+    $("#dwarvesCaughtReturn72").show();
+    $("#attackDragon49", "#sneakDragon24", "#pastDragon141").hide();
+    // $("#sneakDragon24").hide();
+    // $("#pastDragon141").hide();
+  } else if (clicked_id === "fightDragon"){
+    $("#attackDragon49").show();
+    $("#sneakDragon24", "#pastDragon141", "#dwarvesCaughtReturn72").hide();
+    // $("#pastDragon141").hide();
+    // $("#dwarvesCaughtReturn72").hide();
+  } else if (clicked_id === "avoidDragon"){
+    $("#sneakDragon24").show();
+    $("#pastDragon141", "#dwarvesCaughtReturn72", "attackDragon49").hide();
+    // $("#dwarvesCaughtReturn72").hide();
+    // $("#attackDragon49").hide();
+  } else if (clicked_id === "carryRaft"){
+    $("#pastDragon141").show();
+    $("#dwarvesCaughtReturn72", "#attackDragon49", "#sneakDragon24").hide();
+    // $("#attackDragon49").hide();
+    // $("#sneakDragon24").hide();
+  }
+  $("#riverPrince134").hide();
+}
+
+function rightRiverBank141(clicked_id){
+  if (clicked_id === "rollIntoRiver"){
+    $("#riverSnakes93").show();
+    $("#doNothing10").hide();
+  } else if (clicked_id === "confused"){
+    $("#riverSnakes93").hide();
+    $("#doNothing10").show();
+  }
+  $("#pastDragon141").hide();
+}
+
+function swampRats114(clicked_id){
+  if (clicked_id === "jumpInRiver"){
+    $("#swimForIt66").show();
+    $("#scareRatsOff73").hide();
+  } else if (clicked_id === "scareRats") {
+    $("#scareRatsOff73").show();
+    $("#swimForIt66").hide();
+  }
+  $("#riverSnakes93").hide();
+}
+
+function waterFall70(clicked_id){
+  if (clicked_id === "jumpLeft"){
+    $("#waterFallJumpLeft147").show();
+    $("#giantSteps84", "#islandProspects18").hide();
+    // $("#islandProspects18").hide();
+  } else if (clicked_id === "jumpRight") {
+    $("#giantSteps84").show();
+    $("#islandProspects18", "#waterFallJumpLeft147").hide();
+    // $("#waterFallJumpLeft147").hide();
+  } else if (clicked_id === "goToIsland") {
+    $("#islandProspects18").show();
+    $("#waterFallJumpLeft147", "#giantSteps84").hide();
+    // $("#giantSteps84").hide();
+  }
+  $("#swimForIt66").hide();
+}
+
+function islandThing18(clicked_id){
+  if (clicked_id === "waterfall"){
+    $("#waterFallJumpLeft147").show();
+    $("#giantSteps84", "#monstertalk48").hide();
+    // $("#monstertalk48").hide();
+  } else if (clicked_id === "giantSteps"){
+    $("#giantSteps84").show();
+    $("#monstertalk48", "#waterFallJumpLeft147").hide();
+    // $("#waterFallJumpLeft147").hide();
+  } else if (clicked_id === "monsterChat"){
+    $("#monstertalk48").show();
+    $("#waterFallJumpLeft147", "#giantSteps84").hide();
+    // $("#giantSteps84").hide();
+  }
+  $("#islandProspects18").hide();
+}
+
+//end - lizard men
+function trustLizard(clicked_id){
+  if (clicked_id === "trustLizardmen"){
+    $("#trustLizards98").show();
+    $("#distrustLizards").hide();
+  } else if (clicked_id === "neverTrustLizardmen"){
+    $("#distrustLizards25").show();
+    $("#trustLizards98").hide();
+  }
+  $("#giantSteps84").hide();
+  $("#waterFallJumpLeft147").hide();
+}
 
 
 // user interface
