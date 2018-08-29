@@ -215,16 +215,16 @@ function END(clicked_id) {
 // function waterFall70(clicked_id){
 //   if (clicked_id === "jumpLeft"){
 //     $("#waterFallJumpLeft147").show();
-//     $("#waterFallJumpRight84").hide();
+//     $("#giantSteps84").hide();
 //     $("#islandProspects18").hide();
 //   } else if (clicked_id === "jumpRight") {
-//     $("#waterFallJumpRight84").show();
+//     $("#giantSteps84").show();
 //     $("#islandProspects18").hide();
 //     $("#waterFallJumpLeft147").hide();
 //   } else if (clicked_id === "goToIsland") {
 //     $("#islandProspects18").show();
 //     $("#waterFallJumpLeft147").hide();
-//     $("#waterFallJumpRight84").hide();
+//     $("#giantSteps84").hide();
 //   }
 // }
 //
