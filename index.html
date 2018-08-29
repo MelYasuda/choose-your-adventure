@@ -20,7 +20,7 @@
               <label for="password">Do you know the password?</label>
               <input type="text" class="form-control" placeholder="Enter the password" id="passwordText" />
             </div>
-            <button type="submit" class="btn btn-danger">Discover your fate.</button>
+            <button type="submit">Discover your fate.</button>
           </form>
           <div id="secretCharacters">
             <span id="revealText"><h4>You have done well to make it this far. Now it is time to choose a new hero.<h1>BEHOLD!</h1></h4></span>
@@ -53,9 +53,12 @@
         </div>
       </div>
 <!-- INTRO -->
-      <div id="firstChoice" class="row">
-        <div id="introStory" class="col-md-6">
-          <p>“Look, Dad! What's that dark cloud over there? It's not the storm, is it?” Looking over the backs of the
+    <div id="firstChoice">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+          <div class="storyLeft">
+          <p class="panel panel-default">“Look, Dad! What's that dark cloud over there? It's not the storm, is it?” Looking over the backs of the
           four horses that pull your cart, your father squints, then says, “Riders. Lots of them and coming fast.”
           “Are they bandits, Paul?” asks your mother fearfully, clutching her shawl to her throat. “No, Martha.
           They can't be bandits. The Dwarven Guard cleaned up the last of them then years ago. I don't know
@@ -93,12 +96,22 @@
           hands, the kingdom is ours! Drive the wagon int othe rocks and search it for gold and maps. Then burn
           it!”</p>
         </div>
+        </div>
         <div class="col-md-6">
+          <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+          <img class="sideImgFormat" src="img/warrior.jpg" alt="firstimage">
+        </div>
+        </div>
+        <div class="row">
           <button id="fight" onclick="END(this.id)">Fight the dwarves</button>
           <button id="hide" onclick="hideEscape(this.id)">Continue to hide in the wagon</button>
           <button id="escape" onclick="hideEscape(this.id)">Try to escape</button>
         </div>
       </div>
+
+
+
+        <!-- containerend  -->
     </div>
 
 
