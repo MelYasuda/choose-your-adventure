@@ -20,6 +20,10 @@
   text-align: center;
 }
 
+.welcome {
+  display: none;
+}
+
 
 /* .container2 {
   display: none;

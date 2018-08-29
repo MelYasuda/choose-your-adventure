@@ -18,9 +18,14 @@
           <p>the dwarves, who had long served as the King's Own Guard, decided to take the kingdom from their human masters. YOU are thrust into action as...<br>
 
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+          <button id="modal-btn" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
             Enter your name
           </button>
+
+          <div class="welcome">
+            <p>Welcome, <span class="user-name"></span>! To start the game, click the button on the book!</p>
+          </div>
+
 
           <form id="passwordInput">
             <div class="form-group">
@@ -29,6 +34,7 @@
             </div>
             <button type="submit" class="btn btn-danger">Discover your fate.</button>
           </form>
+
           <div id="secretCharacters">
             <span id="revealText"><h4>You have done well to make it this far.<h1>BEHOLD!</h1></h4></span>
             <div class="row" id="secretCharRows">

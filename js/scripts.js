@@ -268,16 +268,18 @@ $(document).ready(function(){
     }
   });
 
-  // assign user name to
+  // assign user name to the story and hide the modal button
   $("#name-input").submit(function(event){
     event.preventDefault();
     var userName = $("#nameText").val();
     $(".user-name").append(userName);
+    $("#modal-btn").hide();
+    $(".welcome").show();
   });
 
   // close modal when submit user name
   $('#submit-btm').click(function() {
    $('#myModal').modal('hide');
-});
+  });
 
 });
