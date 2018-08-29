@@ -4,7 +4,10 @@ function start() {
     $("#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd").hide();
 }
 
-
+function intro() {
+  $("#menu").hide();
+  $("#firstChoice").show();
+}
 
 function hideEscape(clicked_id) {
   $("#secondChoice").show();
@@ -133,7 +136,7 @@ function END(clicked_id) {
     } else if (clicked_id === "stayWithPixy") {
       $("#pixieGetSmall26").show();
       $("#letThePixieDoIt116").hide();
-    } 
+    }
   }
 
 
