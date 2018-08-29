@@ -355,6 +355,22 @@ img.sideImgFormat {
     opacity:0.8;
 }
 
+/*#image-container {
+background-image: url("../img/warrior.jpg");
+background-size: cover;
+position: absolute;
+box-shadow: 25px 25px 50px 0 yellow inset, -20px -20px 50px 0 yellow inset;
+width: 420px;
+height: 422px;
+top: 8%;
+right: 20%;
+max-width: 100%;
+max-height: 100%;
+transform: rotate(-2deg);
+opacity:0.8;
+
+}*/
+
 /*.password{
   font-family: 'MedievalSharp', cursive;
 }*/
