@@ -91,8 +91,7 @@ top:0px;
 } */
 
 /* Start of Code for metallic effect title page*/
-.shiny
-{
+.shiny {
   color: #F5C21B;
   background: -webkit-gradient(linear, left top, left bottom, from(#F5C21B), to(#D17000));
   -webkit-background-clip: text;
@@ -115,7 +114,7 @@ top:0px;
   background-image: linear-gradient(65deg, transparent 20%, rgba(255, 255, 255, 0.2) 20%, rgba(255, 255, 255, 0.3) 27%, transparent 27%, transparent 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  content: "Shiny";
+  content: "Revolt of the Dwarves";
   color: #FFF;
   display: block;
   padding-right: 140px;
@@ -124,7 +123,7 @@ top:0px;
 
 .shiny::after
 {
-  content: "Shiny";
+  content: "Revolt of the Dwarves";
   color: #FFF;
   display: block;
   position: absolute;
@@ -161,6 +160,27 @@ top:0px;
 {
   top: 0.32em;
   right: -5px;
+}
+
+/*start your adventure button style*/
+button:hover{
+    background-color: #900C3F;
+    color: #0F114D;
+    -webkit-transition-duration: 0.4s;
+    background-image: linear-gradient(#900C3F,#D57387);
+
+}
+
+button{
+  padding: 3%;
+  font-family:'Germania One', cursive;
+  font-size: 22px;
+  margin-top: 15%;
+  border-radius: 16%;
+  background-color:#EA7412;
+  border-color: #EAE912;
+  margin-left: 6%;
+
 }
 
 @-webkit-keyframes flare
