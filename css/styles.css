@@ -30,6 +30,11 @@
   float: left;
   padding-right: 10px;
 }
+#haroldStory{
+  display: none;
+}
+#gogolStory{display: none;
+}
 
 /* .container2 {
   display: none;
