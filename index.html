@@ -2,19 +2,35 @@
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/animista.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Cherry+Swash|Germania+One|Playfair+Display|MedievalSharp" rel="stylesheet">
     <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>Choose Your Adventure</title>
   </head>
   <body>
 <!-- MENU -->
+
+
     <div class="container">
       <div id="menu" class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 animated fadeIn slow">
           <h3>Once upon a time,</h3>
           <p>the dwarves, who had long served as the King's Own Guard, decided to take the kingdom from their human masters. YOU are thrust into action as...<br>
+
+          <!-- Button trigger modal -->
+          <button id="modal-btn" type="button" data-toggle="modal" data-target="#myModal">
+            Enter your name
+          </button>
+
+          <div class="welcome">
+            <p>Welcome, <span class="user-name"></span>.<br> To start the game, click the button on the book...</p>
+          </div>
+
+
           <form id="passwordInput">
             <div class="form-group">
               <label for="password">Do you know the password?</label>
@@ -22,6 +38,7 @@
             </div>
             <button type="submit">Discover your fate.</button>
           </form>
+
           <div id="secretCharacters">
             <span id="revealText"><h4>You have done well to make it this far. Now it is time to choose a new hero.<h1>BEHOLD!</h1></h4></span>
             <div class="row" id="secretCharRows">
@@ -44,11 +61,11 @@
         </div>
 
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 animated fadeIn slower">
           <img id="cover" src="img/cover.jpeg" alt="menuBookCover">
           <div class="titleText">
             <span class="shiny"><span class="inner-shiny">Revolt of the Dwarves</span></span>
-            <button  id="startGame" onclick="intro()">Begin Your Adventure!</button>
+            <button  id="startGame" class="animated infinite pulse slow" onclick="intro()">Begin Your Adventure!</button>
           </div>
         </div>
       </div>
@@ -105,69 +122,132 @@
         </div>
         </div>
         <div class="row">
-          <button id="fight" onclick="END(this.id)">Fight the dwarves</button>
-          <button id="hide" onclick="hideEscape(this.id)">Continue to hide in the wagon</button>
-          <button id="escape" onclick="hideEscape(this.id)">Try to escape</button>
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">“Look, Dad! What's that dark cloud over there? It's not the storm, is it?” Looking over the backs of the
+              four horses that pull your cart, your father squints, then says, “Riders. Lots of them and coming fast.”
+              “Are they bandits, Paul?” asks your mother fearfully, clutching her shawl to her throat. “No, Martha.
+              They can't be bandits. The Dwarven Guard cleaned up the last of them then years ago. I don't know
+              who they are, but the way they're riding we'll soon find out. “Galen, grab that puppy of yours and get
+              under cover in that pile of bedclothes.” “But I want to stay here. If there's trouble, I can help too.” “Do
+              as your father says,” snaps your mother. “And don't come out till we say it's safe.” You know better
+              than to argue with your mother, so you get off the narrow wooden seat and wriggle through the
+              crowded cart. “Well, no one said I couldn't watch,” you whisper to Woofy, who licks your face in reply.
+              Snuggling down into the pile of blankets, you quiet the puppy, who thinks you're trying to play. Then
+              you arrange the blankets so that you can see. Soon, a faint rumble becomes the drumming thunder of
+              horses' hoofs. “Hold your team!” demands a harsh voice. “Oh, Paul! It's the Guard!” cries your mother.
+              “Thank heavens, we're safe.” Pulling the team to a complete stop, your father calls, “Ho! Guard! What
+              is your business with us? We are anxious to camp before the storm breaks. Speak, and let us be on our
+              way.” “Do you dare to speak so to the King's Guard?” snarls a menacing voice. “Teach the humans to
+              be polite!” urges another of the uniformed dwarves. Your mother clings to your father's arm. Train
+              begins to fall. All around you are the sounds of horses. Saddle leather creaks beneath the weight of the
+              armored Dwarven Guard, and you feel the presence of unseen riders closing in. “Now, now, lads. Is this
+              any way to speak to those we have vowed to protect?” asks a honeyed voice. “Come, let us not be
+              hasty. Let's find out how the situation lies. After all, lads, we wouldn't want to make a mistake now,
+              would we?” There is a long moment of silence. Then a few voices mutter, “Sneed's right.” “Well, then.
+              There we all are. Nice and pleasant,” says Sneed. “Surely all a mistake. But these are lads with quick
+              tempers, so please humor us by answering a few questions.” “I'm sure we've done no wrong,” says your
+              mother. “What do you want to know?” “Just a few questions, “says Sneed. “Like where you've been
+              and where you're going.” “Why, Captain, we're going to the prince's coronation, of course. And as to
+              where we've been, we've been mapping. My husband is the royal mapmaker.” “Royal mapmaker, eh?
+              Splendid occupation. So useful. And are you traveling alone?” Your father answers quickly, “Yes,
+              Captain, quite alone. Just me and the missus.” “All by yourselves. Splendid, just splendid,” Sneed
+              beams. “You see, lads, what comes of talking first? Now we know who these fine people are. Avoid
+              mistakes, I always say. Now we know they are alone. Seize them!” Before your father can protest,
+              heavy hands pull him and your mother from the cart. Your mother screams and your father curses, but
+              rough laughter drowns out their cries. “You see, lads. It is as I told you. Who would suspect the king's
+              own Dwarven Guard of treachery? No one, until it's far too late. Soon, all that is owed to us for long
+              years of protecting humans will be ours. Now, tie these two up. We'll take them back to the caves. A
+              mapmaker will be useful to our new kingdom. Soon we will launch our attack, With the price in our
+              hands, the kingdom is ours! Drive the wagon int othe rocks and search it for gold and maps. Then burn
+              it!”</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/warrior.jpg" alt="firstimage">
+          </div>
+          </div>
+          <div class="row">
+            <button id="fight" onclick="END(this.id)">Fight the dwarves</button>
+            <button id="hide" onclick="intro(this.id)">Continue to hide in the wagon</button>
+            <button id="escape" onclick="intro(this.id)">Try to escape</button>
+          </div>
         </div>
-      </div>
-
+<!-- INTRO SECOND CHOICE - Hiding in the wagon after the dwarves attacked -->
+        <div id="intro02">
+          <div class="row">
+            <div class="col-md-6">
+              <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+              <div class="storyLeft">
+                <p class="panel panel-default">you are hiding in the wagon</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+              <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+            </div>
+            </div>
+            <div class="row">
+              <button id="fight2" onclick="END(this.id)">You're hiding and you decide to fight now</button>
+              <button id="escape2" onclick="intro(this.id)">You try to run away</button>
+            </div>
+          </div>
+<!-- INTRO THIRD CHOICE - You escaped MAJOR ROUTE SELECT -->
+          <div id="intro03">
+            <div class="row">
+              <div class="col-md-6">
+                <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+                <div class="storyLeft">
+                  <p class="panel panel-default">You have run away and the dwarves are gone. What now? major choice select</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+                <img class="sideImgFormat" src="img/think.jpg" alt="hidinginwoods">
+              </div>
+              </div>
+              <div class="row">
+                <button id="dwarf" onclick="dwarfRoute(this.id)"> Go after the dwarves yourself</button>
+                <button id="grownUpsTrack" onclick="majorChoice(this.id)">Run itno the countryside looking for adults to help</button>
+                <button id="princeTrack" onclick="majorChoice(this.id)">Go to the city yourself to warn the prince</button>
+              </div>
+            </div>
+<!-- DWARF ROUTE FIRST CHOICE -  -->
+            <div id="dwarf01">
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+                  <div class="storyLeft">
+                    <p class="panel panel-default">You went after the dwarves and were captured. You meet an old dwarf who wants your help.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+                  <img class="sideImgFormat" src="img/think.jpg" alt="hidinginwoods">
+                </div>
+                </div>
+                <div class="row">
+                  <button id="trust" onclick="dwarfRoute(this.id)">You decide to trust the old dwarf</button>
+                  <button id="notrust" onclick="END(this.id)">You decide you must not trust any dwarves</button>
+                </div>
+              </div>
 
 
         <!-- containerend  -->
     </div>
 
 
-
-<!-- CHOICES -->
-<!-- <div id="background"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6"> -->
-
-
-
-      <!-- <div id="firstChoice">
-        <button id="fight" onclick="END(this.id)">Fight the dwarves</button>
-        <button id="hide" onclick="hideEscape(this.id)">Continue to hide in the wagon</button>
-        <button id="escape" onclick="hideEscape(this.id)">Try to escape</button>
-      </div>
-    </div> -->
-
-    <!-- <div class="col-md-6">
-      <img id="warrior" src="img/warrior.jpg" alt="pic of the dwarf" width="440px" height="550px">
-    </div>
-  </div>
-</div> -->
-<!-- </div> -->
-
-
-      <div id="secondChoice">
-        <div id="hide2">
-          <button id="fight2" onclick="END(this.id)">You're hiding and you decide to fight now</button>
-          <img id="hidepic" src="img/hidepic.png" alt="pic of the carridge" width="480px" height="340px">
-          <button id="escape2" onclick="hideEscape(this.id)">You try to run away</button>
-        </div>
-      </div>
-
-
-
-      <div id="thirdChoice">
-        <p>You ran away and hide until the dwarves were gone. You're safe for now. What next?</p>
-        <img id="think" src="img/think.jpg" alt="pic of the boy thinking" width="400px" height="540px">
-        <button id="dwarf" onclick="majorChoice(this.id)"> Go after the dwarves yourself</button>
-        <button id="grownUpsTrack" onclick="majorChoice(this.id)">Run itno the countryside looking for adults to help</button>
-        <button id="princeTrack" onclick="majorChoice(this.id)">Go to the city yourself to warn the prince</button>
-      </div>
-
       <div id="fourthChoice">
         <p>You get captured by dowarves and taken to their hideout. You meed an old blind dowarf.</p>
-        <button id="trust" onclick="trustDwarf(this.id)">You decide to trust the old dwarf</button>
+        <button id="trust" onclick="dwarfRoute(this.id)">You decide to trust the old dwarf</button>
         <button id="notrust" onclick="END(this.id)">You decide you must not trust any dwarves</button>
       </div>
 
       <div id="fifthChoice">
         <p>The old dwarf explains the dangerous mission. You must choose to go with the old dwarf on a dangerous mission or refuse</p>
-        <button id="mission" onclick="trustDwarf(this.id)">You decide to go on the mission.</button>
+        <button id="mission" onclick="dwarfRoute(this.id)">You decide to go on the mission.</button>
         <button id="nomission" onclick="END(this.id)">You decide it's too dangerous and you just want to rescue your parents.</button>
       </div>
     </div>
@@ -177,8 +257,8 @@
 
       <div id="sixthChoice">
         <p>You accept the mission and now you must free the old dwarf's son, Bork from prison</p>
-        <button id="trickGuard" onclick="trustDwarf(this.id)">You decide to trick the guard</button>
-        <button id="attackGuard" onclick="trustDwarf(this.id)">You decide to attack the guard</button>
+        <button id="trickGuard" onclick="dwarfRoute(this.id)">You decide to trick the guard</button>
+        <button id="attackGuard" onclick="dwarfRoute(this.id)">You decide to attack the guard</button>
       </div>
 
       <div id="trickGuard2">
@@ -240,7 +320,7 @@
       <div id="princeOne19">
         <p>You have decided to go to warn the prince you meet a fairy</p>
         <button id="trustWhimsy" onclick="pixieChoices19(this.id)"> You decide to trust the fairy and be shrunk</button>
-        <button id="returnDwarf" onclick="trustDwarf(this.id)">You decide to change your mind and follow the dwarves</button>
+        <button id="returnDwarf" onclick="dwarfRoute(this.id)">You decide to change your mind and follow the dwarves</button>
       </div>
 
       <div id="shrinkingBoy92">
@@ -279,87 +359,82 @@
       </div> -->
 
 
-<!-- LIZARD MEN CHOICE
+<!-- LIZARD MEN CHOICE -->
 <div id="grownUpsOne86">
-  <p>Better go find some adults, who will act selflessly and assist you with the power of altruism. Instead, you encounter a boy your age, who somehow possesses a raft and is equally as confident in his ability to solve deep-seated, decades long political unrest and social distress, bubbling up to the surface in the form of war. A solution is clearly in sight, if you can trust him.</p>
-  <button id="trustSandy" onclick="grownUps86(this.id)">Trust this strange boy and take him at his word.</button>
+  <p>Better go find some adults, who will act selflessly and assist you with the power of altruism. Instead, you encounter a boy your age, who somehow possesses a raft and is equally as confident in his ability to solve deep-seated, decades-long political unrest and social distress, bubbling up to the surface in the form of war. A solution is clearly in sight, if you can trust him.</p><br>
+  <button id="trustSandy" onclick="grownUps86(this.id)">Trust this strange boy and take him at his word.</button><br>
   <button id="rejectSandy" onclick="grownUps86(this.id)">Even in times like these, trusting strangers is dangerous. Better not risk it. He may just hold you back.</button>
 </div>
 
 <div id="riverPrince134">
-  <p>What's the worst that could happen? You and Sandy set off to handle this thing. But you almost immediately encounter what is very clearly a black dragon, and in turn your likely doom, far sooner than you thought something like this might happen. Like ever.</p>
-  <button id="turnAround" onclick="riverPrince134(this.id)">Nope! Nope. No. Dealing with dwarves head-on is better than this. No, sir. Nope. Not today.</button>
-  <button id="fightDragon" onclick="riverPrince134(this.id)">Even a large enemy can be felled if taken by surprise. Sharpen the raft's oar, flex your grown-up muscles, and charge its blindside!</button>
-  <button id="avoidDragon" onclick="riverPrince134(this.id)">There is a gap in the rocks under the dragon. You can probably fit, and if you're a little lucky the dragon won't wake up.</button>
+  <p>What's the worst that could happen? You and Sandy set off to handle this thing. But you almost immediately encounter what is very clearly a black dragon, and in turn your likely doom, far sooner than you thought something like this might happen. Like ever.</p><br>
+  <button id="turnAround" onclick="riverPrince134(this.id)">Nope! Nope. No. Dealing with dwarves head-on is better than this. No, sir. Nope. Not today.</button><br>
+  <button id="fightDragon" onclick="riverPrince134(this.id)">Even a large enemy can be felled if taken by surprise. Sharpen the raft's oar, flex your grown-up muscles, and charge its blindside!</button><br>
+  <button id="avoidDragon" onclick="riverPrince134(this.id)">There is a gap in the rocks under the dragon. You can probably fit, and if you're a little lucky the dragon won't wake up.</button><br>
   <button id="carryRaft" onclick="riverPrince134(this.id)">Burdened with an unusual sense of consequence, you decide to carry your raft down the bank of the river. Take the long way around to avoid that big fella.</button>
 </div>
 
 <div id="pastDragon141">
-  <p>After an afternoon of you two hauling a raft around on land and contemplating how that's exactly opposite of how rafts are supposed to work, you and Sandy are finally out of the enormous dragon's sight. You find a bend in the river to put the raft back into water, secure it with some rope, and set up camp. That night, as you sleep, you feel a tickle in your ear. Waking up, you find yourself covered in snakes longer than your pa is tall. Dang.
-  <button id="rollIntoRiver" onclick="rightRiverBank141(this.id)">There's nothing snakes hate more than water. Roll into the river and get them off of you! Did pa ever get around to teaching you to swim?</button>
-  <button id="rollIntoEmbers" onclick="rightRiverBank141(this.id)">Or is it fire that they hate? Your campfire is still smoldering bright in the night. A few leaves tumble down and ignite as they touch the red-hot charcoals. Is diving onto a campfire better than jumping into a rushing river?</button>
+  <p>After an afternoon of you two hauling a raft around on land and contemplating how that's exactly opposite of how rafts are supposed to work, you and Sandy are finally out of the enormous dragon's sight. You find a bend in the river to put the raft back into water, secure it with some rope, and set up camp. That night, as you sleep, you feel a tickle in your ear. Waking up, you find yourself covered in snakes longer than your pa is tall. Dang.<br>
+  <button id="rollIntoRiver" onclick="rightRiverBank141(this.id)">There's nothing snakes hate more than water. Roll into the river and get them off of you! Did pa ever get around to teaching you to swim?</button><br>
   <button id="confused" onclick="rightRiverBank141(this.id)">This is really too much. You don't know what to do.</button>
 </div>
 
 <div id="riverSnakes93">
-  <p>That was terrible. Just as you begin to wonder if your misery is a device of your own making, a new, small noise catches your ear. Sandy comes running up with a burning branch and one singed eyebrow. He chased off the rest of the snakes with a burning branch. For a moment, you wish you had thought of that. You ask him if he can hear a peculiar chittering, but he doesn't hear it. Maybe it's your imagination after a snake tongue tickled your eardrum a few minutes ago.</p><p>Nope! It's swamp rats, absolutely everywhere.</p>
-  <button id="jumpInRiver" onclick="grownUps86(this.id)">Jumping in the river isn't always an option, but it's mighty handy (if possibly repetitive) right now. But you can't depend on others forever, and someday you'll have to learn to fight your own battles, too.</button>
-  <button id="scareRats" onclick="grownUps86(this.id)">Flex your practically-adult muscles and scare them off.</button>
+  <p>You dive into the river, and almost drown finding your way back to shore. The snake released you, but you bumped your head on a rock, and feel a little funny. That was terrible. Just as you begin to wonder if your misery is a device of your own making, a new, small noise catches your ear. Sandy comes running up with a burning branch and one singed eyebrow. He chased off the rest of the snakes with a burning branch. For a moment, you wish you had thought of that. You ask him if he can hear a peculiar chittering, but he doesn't hear it. Maybe it's your imagination after a snake tongue tickled your eardrum a few minutes ago.<br>Nope! It's swamp rats, absolutely everywhere.</p><br>
+  <button id="jumpInRiver" onclick="swampRats114(this.id)">Jumping in the river isn't always an option, but it's mighty handy (if possibly repetitive) right now. But you can't depend on others forever, and someday you'll have to learn to fight your own battles, too.</button><br>
+  <button id="scareRats" onclick="swampRats114(this.id)">Flex your practically-adult muscles and scare them off.</button>
 </div>
 
-<div id="fireSnakes91">
-  <p>That was terrible. Just as you begin to wonder if your misery is a device of your own making, a new, small noise catches your ear. Sandy comes running up with a burning branch and one singed eyebrow. He chased off the rest of the snakes with a burning branch. For a moment, you wish you thought of that. You ask him if he can hear a peculiar chittering, but he doesn't hear it. Maybe it's your imagination after a snake tongue tickled your eardrum a few minutes ago.</p><p>Nope! It's swamp rats, absolutely everywhere.</p>
-  <button id="jumpInRiver" onclick="rightRiverBank141(this.id)">Jumping in the river isn't always an option, but it's mighty handy (if possibly repetitive) right now. But you can't depend on others forever, there won't always be a river to jump into, and you'll have to learn to fight your own battles, one day.</button>
-  <button id="scareRats" onclick="rightRiverBank141(this.id)">Flex your practically-adult muscles and scare them off.</button>
-</div>
+
 
 <div id="swimForIt66">
-  <p>The water carries you down again, the swamp rats clawing and gnawing at you in a panic. They're tossed away in the current, as you bounce off large stones, stronger than the current. You knew if you went to the well too many times, it would come back to bite you. Going to the well too many times, and the swamp rats, both.</p><p>Minutes later, you wash up on shore, sore and winded, but alive. A few minutes more pass before a one-eyebrowed Sandy drifts up in his raft. You climb on just in time to see a mass of white fur in the water, as the swamp rats have gathered together to better float toward you. Taking a loose branch, you help Sandy push off as fast as you can, and soon the white mass of fur in the water grows smaller and smaller, and is soon a distant memory.</p>
-  <p>But ahead, you hear the roar of a waterfall, and you rue this relentless, cursed life.</p>
+  <p>The water carries you down again, the swamp rats clawing and gnawing at you in a panic. They're tossed away in the current, as you bounce off large stones, stronger than the current. You knew if you went to the well too many times, it would come back to bite you. Going to the well too many times, and the swamp rats, both.<br>Minutes later, you wash up on shore, sore and winded, but alive. A few minutes more pass before a one-eyebrowed Sandy drifts up in his raft. You climb on just in time to see a mass of white fur in the water, as the swamp rats have gathered together to better float toward you. Taking a loose branch, you help Sandy push off as fast as you can, and soon the white mass of fur in the water grows smaller and smaller, and is soon a distant memory.<br>But ahead, you hear the roar of a waterfall, and you rue this relentless, cursed life.</p>
   <button id="jumpLeft" onclick="waterFall70(this.id)">Take on the waterfall, driving the draft off the left edge into the mist, like an invincible creature with no concept of fear or mortality.</button>
-  <button id="jumpRight" onclick="waterFall70(this.id)">Or go to the right, which may or may not be totally different than the left side of the watefall. It's not the destination, it's the journey.</button>
+  <button id="giantSteps84" onclick="waterFall70(this.id)">Or go to the right, which may or may not be totally different than the left side of the watefall. It's not the destination, it's the journey.</button>
   <button id="goToIsland" onclick="waterFall70(this.id)">There is a suspiciously peaceful-looking island in the center of the river. You feel yourself growing more and more into a cynical adult every moment as it grows larger, realizing nothing is this easy, and it's more likely the gods might be testing you than a satisfying solution might present itself so readily.</button>
 </div>
 <div id="islandProspects18">
-  <p>Despite your best judgment, fear of the waterfall drives you to the island. Crashing your raft into the point, you and Sandy clamber up onto the slick-stone shore. No sooner do you gain your footing than the entire island lurches to the side, knocking you over. Ahead of you, an enormous head rises up out of the water and turns to you, its enormous eyes peering down at you. The island begins to look more like a shell by the moment, as its enormous beak clacks and it lets out a shriek that sends you rolling backwards.</p>
-  <p>You scream for Sandy to run for it, and the two of you dive back on your raft, landing in the rapids just as the monster disappears from view. Moments pass before it rises back up, facing you this time, you raft drifting closer and closer to the waterfall.</p>
-  <button id="waterfall" onclick="islandThing18(this.id)">Test your fate and take your raft off the waterfall.</button>
-  <button id="giantSteps84" onclick="islandThing18(this.id)">As you round the subtle bend toward the waterfall, you see how the river splits in two, toward giant steps, rushing down in rapids.</button>
+  <p>Despite your best judgment, fear of the waterfall drives you to the island. Crashing your raft into the point, you and Sandy clamber up onto the slick-stone shore. No sooner do you gain your footing than the entire island lurches to the side, knocking you over. Ahead of you, an enormous head rises up out of the water and turns to you, its enormous eyes peering down at you. The island begins to look more like a shell by the moment, as its enormous beak clacks and it lets out a shriek that sends you rolling backwards.<br>You scream for Sandy to run for it, and the two of you dive back on your raft, landing in the rapids just as the monster disappears from view. Moments pass before it rises back up, facing you this time, you raft drifting closer and closer to the waterfall.</p><br>
+  <button id="waterfall" onclick="islandThing18(this.id)">Test your fate and take your raft off the waterfall.</button><br>
+  <button id="giantSteps84" onclick="islandThing18(this.id)">As you round the subtle bend toward the waterfall, you see how the river splits in two, toward giant steps, rushing down in rapids.</button><br>
   <button id="monsterChat" onclick="islandThing18(this.id)">You've had enough. You make an intimidation check against the castle-sized snapping turtle.</button>
 </div>
 
 <div id="waterFallJumpLeft147">
-  <p>The immensity of your bad idea is cushioned by the waterfall not really being that bad. You fall off the ledge and plunge into a warm-water lagoon, your raft and Sandy landing several feet away and bobbing to the surface.</p>
-  <p>As Sandy bobs up to the surface, he lets out a shriek that would be the envy of any passing bird of prey. Looking down, you see large, green humanoid hands reaching up out of the water. Panicking and doggy paddling away, you look back and see six lizardmen with royal armor of sorts, looking you in the eye. They invite you into their lair, where they would like to warm you, feed you, and hear your story.</p>
-  <p>Just as you agree, you see Sandy climbing out of the lagoon and running off into the trees at a full sprint. You call for him once, then decide he's probably had enough for one adventure, and turn away. Between facing the monster in the river, and going over the waterfall, you feel yourself flush with a newfound confidence. You hold your head high as you follow the lizardguard around the waterfall and into their laier in the mountain side.</p>
-  <p>Inside, you are fed a steaming tincture that burns your mouth, and seems to eat through your very being. But soon you are healed of your injuries and pains from the previous day. You think back on everything you've seen, and this is relatively desirable. They hear your tale, and offer to strike down your enemies in exchange for a hearing with the prince, hoping to establish trade and raise the economic prospects for their people.</p>
-  <button id="trustLizardmen" onclick="trustLizard(this.id)">You trust the lizardmen and their offer to help you defeat your foes. Of course they can speak to your prince, who you yourself would otherwise not be able to speak to. It will probably work out fine.</button>
+  <p>The immensity of your bad idea is cushioned by the waterfall not really being that bad. You fall off the ledge and plunge into a warm-water lagoon, your raft and Sandy landing several feet away and rising to the surface.<br>As Sandy bobs up to the surface, he lets out a shriek that would be the envy of any passing bird of prey. Looking down, you see large, green humanoid hands reaching up out of the water. Panicking and doggy paddling away, you look back and see six lizardmen with royal armor of sorts, looking you in the eye. They invite you into their lair, where they would like to warm you, feed you, and hear your story.<br>Just as you agree, you see Sandy climbing out of the lagoon and running off into the trees at a full sprint. You call for him once, then decide he's probably had enough for one adventure, and turn away. Between avoiding a dragon, snakes, rats, facing the monster in the river, and going over the waterfall, you feel yourself flush with a newfound confidence. You hold your head high as you follow the lizardguard around the waterfall and into their lair in the mountain side.<br>Inside, you are fed a steaming tincture that burns your mouth, and seems to eat through your very being. But soon you are healed of your injuries and pains from the previous day. You think back on everything you've seen, and this is relatively desirable. They hear your tale, and offer to strike down your enemies in exchange for a hearing with the prince, hoping to establish trade and raise the economic prospects for their people.</p><br>
+  <button id="trustLizardmen" onclick="trustLizard(this.id)">You trust the lizardmen and their offer to help you defeat your foes. Of course they can speak to your prince, who you yourself would otherwise not be able to speak to. It will probably work out fine.</button><br>
   <button id="neverTrustLizardmen" onclick="trustLizard(this.id)">Who are they kidding? Everyone knows Lizardmen are prohibitively dishonest. They're probably just trying to lull you into a false sense of security, so they can eat you. Which they couldn't just do right now if they wanted. It's better to not think about that sort of thing.</button>
 </div>
 
 <div id="giantSteps84">
-  <p>This was an absolutely terrible idea. Every fall of ten or more feet rattles your very core, and shakes your raft apart. By the third step, the bindings around the logs are coming undone. By the fifth, you are scrambling to hold onto a single log. Sandy screams and disappears into the white waters, and you are plunged into the depths, swept completely out of control as you lose grip on your log and tumble through the water defenselessly.</p>
-  <p>As you hit the bottom, you float in the lagoon and peer up at the waterfall that, in retrospect, wasn't that bad. Something stings above your eye, but you hardly feel it, uncomprehending.</p>
-  <p>Then, from the depths of the water around you, immensely powerful, green humanoid hands reach up and grab you, lifting you up and carrying you into a cave behind the waterfall.</p>
-  <p>Inside, you are fed a steaming tincture that burns your mouth, and seems to eat through your very being. But soon you are awake and fully aware, surrounded by lizard men. You think back on your day, and everything you've seen, and this is relatively desirable. They hear your tale, and offer to strike down your enemies in exchange for a hearing with the prince, hoping to establish trade and raise the economic prospects for their people.</p>
-  <button id="trustLizardmen" onclick="trustLizard(this.id)">You trust the lizardmen and their offer to help you defeat your foes. Of course they can speak to your prince, who you yourself would otherwise not be able to speak to. It will probably work out fine.</button>
+  <p>This was an absolutely terrible idea. Every fall of ten or more feet rattles your very core, and shakes your raft apart. By the third step, the bindings around the logs are coming undone. By the fifth, you are scrambling to hold onto a single log. Sandy screams and disappears into the white waters, and you are plunged into the depths, swept completely out of control as you lose grip on your log and tumble through the water helplessly.<br>As you hit the bottom, you float in the lagoon and peer up at the waterfall that, in retrospect, wasn't that bad looking. Something stings above your eye, but you hardly feel it, uncomprehending.<br>Then, from the depths of the water around you, powerful, green humanoid hands reach up and grab you, lifting you up and carrying you into a cave behind the waterfall.<br>Inside, you are fed a steaming tincture that burns your mouth, and seems to eat through your very being. But soon you are awake and fully aware, surrounded by lizard men. You think back on your day, and everything you've seen, and this is relatively desirable. They hear your tale, and offer to strike down your enemies in exchange for a hearing with the prince, hoping to establish trade and raise the economic prospects for their people.<p><br>
+  <button id="trustLizardmen" onclick="trustLizard(this.id)">You trust the lizardmen and their offer to help you defeat your foes. Of course they can speak to your prince, who you yourself would otherwise not be able to speak to. It will probably work out fine.</button><br>
   <button id="neverTrustLizardmen" onclick="trustLizard(this.id)">Who are they kidding? Everyone knows Lizardmen are prohibitively dishonest. They're probably just trying to lull you into a false sense of security, so they can eat you. Which they couldn't just do right now if they wanted. It's better to not think about that sort of thing.</button>
 </div>
 
 <div id="attackDragon49">
-  <p>You sharpen the raft's oar to a brutal point and sneak up on the slumbering beast. It does not occur to you what sort of creature might sleep out in the open, totally alone and unguarded. Letting out a primal, ten-year-old scream, you charge with your makeshift spear. It shatters on contact, splintering into pieces against the armor scales of the beast. You have only a moment to think before it twitches in its sleep, the impact sending you across the width of the river, landing in the silt and mud of the riverbank. As you slowly lose consciousness, you consider that, perhaps, that was a terrible idea and you've thrown away your one chance to save your parents, and your country, from the impending dwarf attack.</p> -->
+  <p>You sharpen the raft's oar to a brutal point and sneak up on the slumbering beast. It does not occur to you what sort of creature might sleep out in the open, totally alone and unguarded. Letting out a primal, ten-year-old scream, you charge with your makeshift spear. It shatters on contact, splintering into pieces against the armor scales of the beast. You have only a moment to think before it twitches in its sleep, the impact sending you across the width of the river, landing in the silt and mud of the riverbank. As you slowly lose consciousness, you consider that, perhaps, that was a terrible idea and you've thrown away your one chance to save your parents, and your country, from the impending dwarf attack.<br>THE END.</p></div>
 
+<div id="sneakDragon24"><p>You thought you could sneak past the dragon. After all, you're so small, and it's so big, and seems so asleep. But as you make your way to the gap in the rock, the dragon snorts in its sleep and shifts what would be imperceptible, if you were the size of a dragon. Unfortunately, you aren't, and the last thing you see is the gigant creature's armored scales closing in around you.<br>THE END.</p></div>
 
-    <!-- ENDINGS -->
+<div id="scareRatsOff73"><p>If these had been normal rats, you wouldn't have had any problems. You've helped your pa scare rats off a dozen times, back home. Those critters creep in from anywhere to find some warmth of food in the chill of the winter months. But these rats aren't anything like them. They're the size of a small dog, bright white with huge, shining teeth. They don't scare, they don't care. They gather up in tight clusters and don't even care about fire as you fight them with the burning branch that was so effective against the snacks. As the outer layer of their phalax peel away, new swamp rats appear and dive at you, gnawing and scratching. Hundreds swarm around your feet, climbing up your legs. There must be a thousand between you and the raft, now. A sea of white fur, a cacophany of shrieking, chittering rats, and you know it's...<br>THE END.</p></div>
+
+<div id="monstertalk48"><p>You scream with a bravery you could never have imagined, the day before, and the monster pauses for a moment. It looks at you, quietly clicking its beak, studying you, deciding if it's worth fighting. Perhaps you are small, but also mighty. You scream again, and this time the monster rears back and lets out a cry that nearly deafens you. You cover your ears as the blast from the monster nearly lifts you off your feet, almost making you slip from the raft. But then, in a single motion, the snapping turtle lunges, and the two of you hardly have a moment to contemplate what awaits before disappearing into the black void of its maw, raft and all.<br>THE END.</p></div>
+<div id="doNothing10"><p>A sweet aroma emits from the snakes. As you feel them crawling and tightening around you, a sense of euphoria replaces any fear you should have. Soon, a sweet slumber falls, and then nothing.<br>THE END.</p></div>
+
+<div id="trustLizards98"><p>You accept the lizardmen's help, their king leading a charge on the dwarves. The dwarven rebels were clearly unprepared for such an overwhelming reptilian force, you almost feel bad as the dwarves are either annihilated or sent running into exile in the outer rim of the kingdom, where they will compete with wild animals for food for the rest of their lives.<br>You take this opportunity to sneak away to find your parents still kept tied up in the cellar of the local tavern. You free them and urge them to escape quickly before the lizard king asks you to introduce him to the prince.</p></div>
+  <div id="distrustLizards25"><p>The lizard king has no tolerance for racists. His people have long been denounced as savage beasts, and his promise to his people to uplift them and raise them to equality with the human kingdoms leaves no room for a bigot to judge him by the tint of his scales. You are cast out, without hope of stopping the dwarven rebellion.</p></div>
+    <!-- ENDINGS
 
     <div id="firstEnd">
       <p>You try to fight the dwarves but you are weak and lose. THE END</p>
-      <button onclick="start()"> Back to Start</button>
+      <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
     </div>
 
       <div id="secondEnd">
-        <p>You refused to help and tied forever. END.</p>
-        <button onclick="start()"> Back to Start</button>
+        <p>You refused to help and tied forever. The end.</p>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="thirdEnd">
@@ -371,58 +446,58 @@
           <p>“No time for reunions,” grumbles the dwarf. “Time for that later...if you live.” You follow him closely as he shuffles through the corridors. Soon you reach an unguarded exit and escape into the night. You and your parents hide in the hills.</p>
           <p>In the morning you watch the mounted dwarven army ride out. As evening's shadows lengthen on the mountains, the army returns, victorious. Over the years, you and your parents live under the grim rule of the evil monarch Sneed the Supreme. You often wonder what would have happened if you had helped the dwarf.</p>
           <p>THE END.</p>
-          <button onclick="start()"> Back to Start</button>
+          <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="fourthEnd">
         <p>You go after Sneed and because you're with badass dwarves you win yay!</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="fifthEnd">
         <p>You decide to stay in the cell with your parents and Sneed wins. THE END YOU LOSE</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="sixthEnd">
         <p> The city is taken but you manage to get the keys to the human prince's cell. You and the
  dwarves plan to get him out while raising an army of Bork's followers. THE END YOU WIN</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="seventhEnd">
         <p> Oh no! Pushed far away by the water! Can't go back in time! THE END YOU LOSE</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="eighthEnd">
         <p> You explain the situation. You and the dwarves talk it out. THE END YOU WIN</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="ninethEnd">
         <p> The dwarves ignore you and keep throwing rocks forever. THE END YOU LOSE</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="fairyFirstEnd">
         <p> You attack the dwarves. You're too small. They squished you. THE END YOU LOSE</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="fairySecondEnd">
         <p> Druid turns you into a tree. THE END YOU LOSE</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="fairyThirdEnd">
         <p> You run away and nobody belives you. THE END YOU LOSE</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="fairyFourthEnd">
         <p> The witch eats you. THE END YOU LOSE</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="fairyFifthEnd">
@@ -435,7 +510,7 @@
         <button onclick="start()"> Back to Start</button>
       </div>
 
-      <!-- <p id="demo">Would you like to try again?</p> -->
+    <p id="demo">Would you like to try again?</p> -->
 
       <!-- </div>
       <p id="demo">
@@ -562,6 +637,27 @@
       <p>There is no movement from the camp until you say, "Perhaps it's time everyone heads home?" and are met with an enthusiastic rush from thousands of dwarves all taking what they can carry, and running away on foot.</p>
       <p>You walk back into Bilderberry, petting Eldemere the Mule as you pass her by, walking into the Inn. "Young man, I would like some vegetable stew. Quite famished, you see."</p>
       <p>THE END.</p>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">What is your name?</h4>
+        </div>
+        <div class="modal-body">
+          <form id="name-input">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter your name" id="nameText" />
+            </div>
+            <button id="submit-btm" type="submit">OK</button>
+          </form>
+        </div>
+      </div>
+    </div>
     </div>
   </body>
 </html>

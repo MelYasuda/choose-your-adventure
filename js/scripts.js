@@ -1,60 +1,52 @@
 
+//Turn Pages//
+$("#flipbook").turn({
+    width: 400,
+    height: 300,
+    autoCenter: true
+});
+
 function start() {
-    $("#firstChoice").show();
+    $("#intro01").show();
     $("#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd").hide();
 }
-
-function intro() {
-  $("#menu").hide();
-  $("#firstChoice").show();
-}
-
-function hideEscape(clicked_id) {
-  $("#secondChoice").show();
-   if (clicked_id === "hide") {
-    $("#hide2").show();
+// INTRO
+function intro(clicked_id) {
+  $("#intro01").show();
+  if (clicked_id === "hide") {
+    $("#intro02").show();
+    $("#intro01").hide();
   } else if (clicked_id === "escape" || clicked_id === "escape2") {
-    $("#thirdChoice").show();
-    $("#secondChoice").hide();
+    $("#intro03").show();
+    $("#intro01").hide();
+    $("#intro02").hide();
   }
-    $("#firstChoice").hide();
+  $("#menu").hide();
 }
 
-function majorChoice(clicked_id) {
-  if (clicked_id === "dwarf") {
-    $("#fourthChoice").show();
-  } else if (clicked_id === "grownUpsTrack") {
-    $("#grownUpsOne86").show();
-    // $("#dwarvesCaughtOne34").hide();
-    // $("#princeOne19").hide()
-  } else if (clicked_id === "princeTrack") {
-    $("#princeOne19").show();
-    // $("#dwarvesCaughtOne34").hide();
-    // $("#grownUpsOne86").hide();
-  }
-  $("#thirdChoice").hide();
-}
+function dwarfRoute(clicked_id) {
 
-function trustDwarf(clicked_id) {
   if (clicked_id === "returnDwarf") {
-    $("#fourthChoice").show();
+    $("#dwarf01").show();
     $("#princeOne19").hide();
   } else if (clicked_id === "trust") {
-    $("#fourthChoice").hide();
-    $("#fifthChoice").show();
+    $("#dwarf01").hide();
+    $("#dwarf02").show();
   } else if (clicked_id === "mission") {
     $("#sixthChoice").show();
-    $("#fifthChoice").hide();
+    $("#dwarf02").hide();
   } else if (clicked_id === "trickGuard") {
     $("#trickGuard2").show();
     $("#sixthChoice").hide();
-    $("#fifthChoice").hide();
+    $("#dwarf02").hide();
   } else if (clicked_id === "attackGuard") {
     $("#attackGuard2").show();
     $("#sixthChoice").hide();
-    $("#fifthChoice").hide();
+    $("#dwarf02").hide();
   }
+  $("#intro03").hide();
 }
+
 
 function dwarfRoute(clicked_id) {
   if (clicked_id === "continue1" || clicked_id === "continue2") {
@@ -85,13 +77,13 @@ function dwarfRoute(clicked_id) {
 function END(clicked_id) {
   if(clicked_id === "fight" || clicked_id === "fight2") {
     $("#firstEnd").show();
-    $("#firstChoice, #secondChoice").hide();
+    $("#intro01, #secondChoice").hide();
   } else if (clicked_id === "notrust") {
     $("#secondEnd").show();
-    $("#fourthChoice").hide();
+    $("#dwarf01").hide();
   } else if (clicked_id === "nomission") {
     $("#thirdEnd").show();
-    $("#fifthChoice").hide();
+    $("#dwarf02").hide();
   } else if (clicked_id === "stopSneed") {
     $("#fourthEnd").show();
     $("#seventhChoice").hide();
@@ -151,109 +143,111 @@ function END(clicked_id) {
   }
 
 
-//GROWN-UPS -- Lizard Men Storyline
-// function grownUps86(clicked_id){
-//   if(clicked_id === "trustSandy") {
-//     $("#riverPrince134").show();
-//     $("#dwarvsCaughtOne34").hide();
-//   } else if (clicked_id === "rejectSandy") {
-//     $("#dwarvesCaughtOne34").show();
-//     $("#riverPrince134").hide();
-//   }
-// }
-//
-// function riverPrince134(clicked_id){
-//   if(clicked_id === "turnAround"){
-//     $("#dwarvesCaughtReturn72").show();
-//     $("#attackDragon49").hide();
-//     $("#sneakDragon24").hide();
-//     $("#pastDragon141").hide();
-//   } else if (clicked_id === "fightDragon"){
-//     $("#attackDragon49").show();
-//     $("#sneakDragon24").hide();
-//     $("#pastDragon141").hide();
-//     $("#dwarvesCaughtReturn72").hide();
-//   } else if (clicked_id === "avoidDragon"){
-//     $("#sneakDragon24").show();
-//     $("#pastDragon141").hide();
-//     $("#dwarvesCaughtReturn72").hide();
-//     $("#attackDragon49").hide();
-//   } else if (clicked_id === carryRaft){
-//     $("#pastDragon141").show();
-//     $("#dwarvesCaughtReturn72").hide();
-//     $("#attackDragon49").hide();
-//     $("#sneakDragon24").hide();
-//   }
-// }
-//
-// function rightRiverBank141(clicked_id){
-//   if (clicked_id === "rollIntoRiver"){
-//     $("#riverSnakes93").show();
-//     $("#fireSnakes91").hide();
-//     $("#doNothing10").hide();
-//   } else if (clicked_id === "rollIntoEmbers"){
-//     $("#fireSnakes91").show();
-//     $("#riversnakes93").hide();
-//     $("#doNothing10").hide();
-//   } else if (clicked_id === "confused"){
-//     $("#doNothing10").show();
-//     $("#riverSnakes93").hide();
-//     $("#fireSnakes91").hide();
-//   }
-// }
-//
-// function swampRats114(clicked_id){
-//   if (clicked_id === "jumpInRiver"){
-//     $("#swimForIt66").show();
-//     $("#scareRatsOff73").hide();
-//   } else if (clicked_id === "scareRats") {
-//     $("#scareRatsOff73").show();
-//     ("#swimForIt66").hide();
-//   }
-// }
-//
-// function waterFall70(clicked_id){
-//   if (clicked_id === "jumpLeft"){
-//     $("#waterFallJumpLeft147").show();
-//     $("#waterFallJumpRight84").hide();
-//     $("#islandProspects18").hide();
-//   } else if (clicked_id === "jumpRight") {
-//     $("#waterFallJumpRight84").show();
-//     $("#islandProspects18").hide();
-//     $("#waterFallJumpLeft147").hide();
-//   } else if (clicked_id === "goToIsland") {
-//     $("#islandProspects18").show();
-//     $("#waterFallJumpLeft147").hide();
-//     $("#waterFallJumpRight84").hide();
-//   }
-// }
-//
-// function islandThing18(clicked_id){
-//   if (clicked_id === "waterfall"){
-//     $("#waterFallJumpLeft147").show();
-//     $("#giantSteps84").hide();
-//     $("#monstertalk48").hide();
-//   } else if (clicked_id === "giantSteps"){
-//     $("#giantSteps84").show();
-//     $("#monstertalk48").hide();
-//     $("#waterFallJumpLeft147").hide();
-//   } else if (clicked_id === "monsterChat"){
-//     $("#monstertalk48").show();
-//     $("#waterFallJumpLeft147").hide();
-//     $("#giantSteps84").hide();
-//   }
-// }
-//
-// //end - lizard men
-// function trustLizard(clicked_id){
-//   if (clicked_id === "trustLizardmen"){
-//     $("#trustLizards98").show();
-//     $("#distrustLizards").hide();
-//   } else if (clicked_id === "neverTrustLizardmen"){
-//     $("#distrustLizards25").show();
-//     $("#trustLizards98").hide();
-//   }
-// }
+// GROWN-UPS -- Lizard Men Storyline
+function grownUps86(clicked_id){
+  if(clicked_id === "trustSandy") {
+    $("#riverPrince134").show();
+    $("#dwarvesCaughtOne34").hide();
+  } else if (clicked_id === "rejectSandy") {
+    $("#riverPrince134").hide();
+    $("#dwarvesCaughtOne34").show();
+  }
+  $("#grownUpsOne86").hide();
+}
+
+function riverPrince134(clicked_id){
+  if(clicked_id === "turnAround"){
+    $("#dwarvesCaughtReturn72").show();
+    $("#attackDragon49", "#sneakDragon24", "#pastDragon141").hide();
+    // $("#sneakDragon24").hide();
+    // $("#pastDragon141").hide();
+  } else if (clicked_id === "fightDragon"){
+    $("#attackDragon49").show();
+    $("#sneakDragon24", "#pastDragon141", "#dwarvesCaughtReturn72").hide();
+    // $("#pastDragon141").hide();
+    // $("#dwarvesCaughtReturn72").hide();
+  } else if (clicked_id === "avoidDragon"){
+    $("#sneakDragon24").show();
+    $("#pastDragon141", "#dwarvesCaughtReturn72", "attackDragon49").hide();
+    // $("#dwarvesCaughtReturn72").hide();
+    // $("#attackDragon49").hide();
+  } else if (clicked_id === "carryRaft"){
+    $("#pastDragon141").show();
+    $("#dwarvesCaughtReturn72", "#attackDragon49", "#sneakDragon24").hide();
+    // $("#attackDragon49").hide();
+    // $("#sneakDragon24").hide();
+  }
+  $("#riverPrince134").hide();
+}
+
+function rightRiverBank141(clicked_id){
+  if (clicked_id === "rollIntoRiver"){
+    $("#riverSnakes93").show();
+    $("#doNothing10").hide();
+  } else if (clicked_id === "confused"){
+    $("#riverSnakes93").hide();
+    $("#doNothing10").show();
+  }
+  $("#pastDragon141").hide();
+}
+
+function swampRats114(clicked_id){
+  if (clicked_id === "jumpInRiver"){
+    $("#swimForIt66").show();
+    $("#scareRatsOff73").hide();
+  } else if (clicked_id === "scareRats") {
+    $("#scareRatsOff73").show();
+    $("#swimForIt66").hide();
+  }
+  $("#riverSnakes93").hide();
+}
+
+function waterFall70(clicked_id){
+  if (clicked_id === "jumpLeft"){
+    $("#waterFallJumpLeft147").show();
+    $("#giantSteps84", "#islandProspects18").hide();
+    // $("#islandProspects18").hide();
+  } else if (clicked_id === "jumpRight") {
+    $("#giantSteps84").show();
+    $("#islandProspects18", "#waterFallJumpLeft147").hide();
+    // $("#waterFallJumpLeft147").hide();
+  } else if (clicked_id === "goToIsland") {
+    $("#islandProspects18").show();
+    $("#waterFallJumpLeft147", "#giantSteps84").hide();
+    // $("#giantSteps84").hide();
+  }
+  $("#swimForIt66").hide();
+}
+
+function islandThing18(clicked_id){
+  if (clicked_id === "waterfall"){
+    $("#waterFallJumpLeft147").show();
+    $("#giantSteps84", "#monstertalk48").hide();
+    // $("#monstertalk48").hide();
+  } else if (clicked_id === "giantSteps"){
+    $("#giantSteps84").show();
+    $("#monstertalk48", "#waterFallJumpLeft147").hide();
+    // $("#waterFallJumpLeft147").hide();
+  } else if (clicked_id === "monsterChat"){
+    $("#monstertalk48").show();
+    $("#waterFallJumpLeft147", "#giantSteps84").hide();
+    // $("#giantSteps84").hide();
+  }
+  $("#islandProspects18").hide();
+}
+
+//end - lizard men
+function trustLizard(clicked_id){
+  if (clicked_id === "trustLizardmen"){
+    $("#trustLizards98").show();
+    $("#distrustLizards").hide();
+  } else if (clicked_id === "neverTrustLizardmen"){
+    $("#distrustLizards25").show();
+    $("#trustLizards98").hide();
+  }
+  $("#giantSteps84").hide();
+  $("#waterFallJumpLeft147").hide();
+}
 
 
 // user interface
@@ -267,6 +261,21 @@ $(document).ready(function(){
     if (Password === "Wizard" || Password === "wizard"){
       $("#secretCharacters").show();
     }
+  });
+
+  // assign user name to the story and hide the modal button
+  $("#name-input").submit(function(event){
+    event.preventDefault();
+    var userName = $("#nameText").val();
+    $(".user-name").append(userName);
+    $("#modal-btn").hide();
+    $(".welcome").fadeIn(3000);
+    $("#startGame").fadeIn(3000);
+  });
+
+  // close modal when submit user name
+  $('#submit-btm').click(function() {
+   $('#myModal').modal('hide');
   });
 
 });
