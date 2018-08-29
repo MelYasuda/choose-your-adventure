@@ -10,6 +10,7 @@ $("#flipbook").turn({
 
 
 
+
 function start() {
     $("#firstChoice").show();
     $("#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd").hide();
