@@ -332,5 +332,16 @@ function rideOnYourOwn(clicked_id) {
 
 
 // user interface
-$(document).ready(function(event){
+
+
+
+$(document).ready(function(){
+  $("#passwordInput").submit(function(event){
+    event.preventDefault();
+    var Password = $("#passwordText").val();
+    if (Password === "Wizard" || Password === "wizard"){
+      $("#secretCharacters").show();
+    }
+  });
+
 });

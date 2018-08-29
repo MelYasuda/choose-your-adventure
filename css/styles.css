@@ -11,6 +11,13 @@
   display: none;
 }
 
+#secretCharacters{
+  display: none;
+}
+#revealText{
+  text-align: center;
+}
+
 
 /* .container2 {
   display: none;
