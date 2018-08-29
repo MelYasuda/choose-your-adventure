@@ -122,6 +122,12 @@ function END(clicked_id) {
   } else if (clicked_id === "goWitch") {
     $("#fairyFourthEnd").show();
     $("#pixieGetSmall26").hide();
+  } else if (clicked_id === "sleepInDen") {
+    $("#fairyFifthEnd").show();
+    $("#spiderDen").hide();
+  } else if (clicked_id === "sleepOutside") {
+    $("#fairySixthEnd").show();
+    $("#spiderDen").hide();
   }
 }
 
@@ -130,100 +136,19 @@ function END(clicked_id) {
   function pixieChoices19(clicked_id){
     if(clicked_id === "trustWhimsy"){
       $("#shrinkingBoy92").show();
+      $("#princeOne19").hide();
       // $("#dwarvesCaughtOne34").hide();
     } else if (clicked_id === "LetWhimsy") {
       $("#letThePixieDoIt116").show();
+      $("#shrinkingBoy92").hide();
     } else if (clicked_id === "stayWithPixy") {
       $("#pixieGetSmall26").show();
       $("#letThePixieDoIt116").hide();
+    } else if (clicked_id === "stayWithPixy2") {
+      $("#spiderDen").show();
+      $("#pixieGetSmall26").hide();
     }
   }
-
-
-
-function pixieDryad116(clicked_id){
-  if (clicked_id === "getShrunk") {
-    $("#pixieGetSmall26").show();
-    $("#thingsDryadsKnow53").hide();
-    $("#runAway122").hide();
-  } else if (clicked_id === "dryadSecrets"){
-    $("#thingsDryadsKnow53").show();
-    $("#pixieGetSmall26").hide();
-    $("#runAway122").hide();
-  } else if (clicked_id === "runAwayFromHere") {
-    $("#runAway122").show();
-    $("#pixieGetSmall26").hide();
-    $("#thingsDryadsKnow53").hide();
-  }
-}
-
-function ohAWitch26(clicked_id) {
-  if (clicked_id === "goIntoClearing"){
-    $("#hungryWitch33").show();
-    $("#avoidTheClearing129").hide();
-  } else if (clicked_id === "avoidClearing"){
-    $("#avoidTheClearing129").show();
-    $("#hungryWitch33").hide();
-  }
-}
-
-function trustAPixie129(clicked_id) {
-  if (clicked_id === "takeANap") {
-    $("#trustAndSleep32").show();
-    $("#avoidThatSpider11").hide();
-  } else if (clicked_id === "avoidTheSpider") {
-    $("#avoidThatSpider11").show();
-    $("#trustAndSleep32").hide();
-  }
-}
-
-function fightingTreeman94(clicked_id) {
-  if (clicked_id === "WhimsyIdea"){
-    $("#whimsyIdea124").show();
-    $("#scratchSymbols71").hide();
-    $("#cutTreeHand65").hide();
-  } else if (clicked_id === "attackSymbols"){
-    $("#scratchSymbols71").show();
-    $("#whimsyIdea124").hide();
-    $("#cutTreeHand65").hide();
-  } else if (clicked_id === "cutTree") {
-    $("#cutTreeHand65").show();
-    $("#whimsyIdea124").hide();
-    $("#scratchSymbols71").hide();
-  }
-}
-function thePixieKing109(clicked_id) {
-  if (clicked_id === "rideYourDog") {
-    $("#rideIntoCity144").show();
-    $("#flyIntoCity75").hide();
-    $("#letPixiesHandleIt58").hide();
-  } else if (clicked_id === "flyWithPixies") {
-    $("#flyIntoCity75").show();
-    $("#rideIntoCity144").hide();
-    $("#letPixiesHandleIt58").hide();
-  } else if (clicked_id === "goWithoutYou") {
-    $("#letPixiesHandleIt58").show();
-    $("#rideIntoCity144").hide();
-    $("#flyIntoCity75").hide();
-  }
-}
-
-//end - Pixies
-function rideOnYourOwn(clicked_id) {
-  if (clicked_id === "waitForTheDoor") {
-    $("#noTimeForThat").show();
-    $("#failedSpeechCheck").hide();
-    $("#findThePrince").hide();
-  } else if (clicked_id === "talkYourWayIn"){
-    $("#failedSpeechCheck").show();
-    $("#noTimeForThat").hide();
-    $("#findThePrince").hide();
-  } else if (clicked_id === "findAnotherWay"){
-    $("#findThePrince").show();
-    $("#noTimeForThat").hide();
-    $("#failedSpeechCheck").hide();
-  }
-}
 
 
 //GROWN-UPS -- Lizard Men Storyline
@@ -332,5 +257,16 @@ function rideOnYourOwn(clicked_id) {
 
 
 // user interface
-$(document).ready(function(event){
+
+
+
+$(document).ready(function(){
+  $("#passwordInput").submit(function(event){
+    event.preventDefault();
+    var Password = $("#passwordText").val();
+    if (Password === "Wizard" || Password === "wizard"){
+      $("#secretCharacters").show();
+    }
+  });
+
 });
