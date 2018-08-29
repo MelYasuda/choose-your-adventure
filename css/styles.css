@@ -172,7 +172,7 @@ button:hover{
 }
 
 button{
-  padding: 3%;
+  padding: 2%;
   font-family:'Germania One', cursive;
   font-size: 22px;
   margin-top: 15%;
@@ -180,6 +180,21 @@ button{
   background-color:#EA7412;
   border-color: #EAE912;
   margin-left: 6%;
+  outline: none;
+
+}
+/*try to style Main Button */
+#startGame{
+font-family: 'MedievalSharp', cursive;;
+font-weight: bold;
+background-color:#E1C12D;
+/*border-color: #EAE912;*/
+border-color: #E35515;
+border-width: 3px;
+border-radius: 50%;
+font-size: 22px;
+margin-left: 7%;
+
 
 }
 
