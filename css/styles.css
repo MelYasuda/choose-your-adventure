@@ -18,6 +18,16 @@
   text-align: center;
 }
 
+#gogolPicture{
+  height: 150px;
+  float: left;
+  padding-right: 10px;
+}
+#haroldPicture{
+  height: 150px;
+  float: left;
+  padding-right: 10px;
+}
 
 /* .container2 {
   display: none;
