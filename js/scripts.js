@@ -1,4 +1,3 @@
-
 function start() {
     $("#firstChoice").show();
     $("#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd").hide();
@@ -268,5 +267,17 @@ $(document).ready(function(){
       $("#secretCharacters").show();
     }
   });
+
+  // assign user name to
+  $("#name-input").submit(function(event){
+    event.preventDefault();
+    var userName = $("#nameText").val();
+    $(".user-name").append(userName);
+  });
+
+  // close modal when submit user name
+  $('#submit-btm').click(function() {
+   $('#myModal').modal('hide');
+});
 
 });

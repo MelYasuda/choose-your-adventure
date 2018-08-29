@@ -5,6 +5,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Cherry+Swash|Germania+One|Playfair+Display" rel="stylesheet">
     <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>Choose Your Adventure</title>
   </head>
@@ -15,6 +16,12 @@
         <div class="col-md-6">
           <h3>Once upon a time,</h3>
           <p>the dwarves, who had long served as the King's Own Guard, decided to take the kingdom from their human masters. YOU are thrust into action as...<br>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+            Enter your name
+          </button>
+
           <form id="passwordInput">
             <div class="form-group">
               <label for="password">Do you know the password?</label>
@@ -57,7 +64,7 @@
           four horses that pull your cart, your father squints, then says, “Riders. Lots of them and coming fast.”
           “Are they bandits, Paul?” asks your mother fearfully, clutching her shawl to her throat. “No, Martha.
           They can't be bandits. The Dwarven Guard cleaned up the last of them then years ago. I don't know
-          who they are, but the way they're riding we'll soon find out. “Galen, grab that puppy of yours and get
+          who they are, but the way they're riding we'll soon find out. “<span class="user-name"></span>, grab that puppy of yours and get
           under cover in that pile of bedclothes.” “But I want to stay here. If there's trouble, I can help too.” “Do
           as your father says,” snaps your mother. “And don't come out till we say it's safe.” You know better
           than to argue with your mother, so you get off the narrow wooden seat and wriggle through the
@@ -425,9 +432,7 @@
       Would you like to try again?
       </p>
       button hold to restart.
->>>>>>> newbranch
->>>>>>> master
-    </div>
+    <!-- </div>
 
     <div class="endTwo">
       <div id="secondEnd">
@@ -523,7 +528,32 @@
         </div>
       </div>
       <p id="demo">Would you like to play again?</p>
+    </div> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">What is your name?</h4>
+          </div>
+          <div class="modal-body">
+            <form id="name-input">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter your name" id="nameText" />
+              </div>
+              <button id="submit-btm" type="submit" class="btn btn-info">OK</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+              gt
+          </div>
+        </div>
+      </div>
     </div>
+
+
 
   </body>
 </html>
