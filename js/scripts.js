@@ -1,3 +1,15 @@
+//Turn Pages//
+$("#flipbook").turn({
+    width: 400,
+    height: 300,
+    autoCenter: true
+});
+
+
+
+
+
+
 
 function start() {
     $("#firstChoice").show();

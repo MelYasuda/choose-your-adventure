@@ -2,17 +2,24 @@
 <html>
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/animista.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Cherry+Swash|Germania+One|Playfair+Display|MedievalSharp" rel="stylesheet">
     <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/turn.js"></script>
+    <script src="js/turn.min.js"></script>
+    <script src="js/modernizr.2.5.3.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>Choose Your Adventure</title>
   </head>
   <body>
 <!-- MENU -->
+
+
     <div class="container">
       <div id="menu" class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 animated fadeIn slow">
           <h3>Once upon a time,</h3>
           <p>the dwarves, who had long served as the King's Own Guard, decided to take the kingdom from their human masters. YOU are thrust into action as...<br>
           <form id="passwordInput">
@@ -44,21 +51,18 @@
         </div>
 
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 animated fadeIn slower">
           <img id="cover" src="img/cover.jpeg" alt="menuBookCover">
           <div class="titleText">
             <span class="shiny"><span class="inner-shiny">Revolt of the Dwarves</span></span>
-            <button  id="startGame" onclick="intro()">Begin Your Adventure!</button>
+            <button  id="startGame" class="animated infinite pulse slow" onclick="intro()">Begin Your Adventure!</button>
           </div>
         </div>
       </div>
 <!-- INTRO -->
-    <div id="firstChoice">
-      <div class="row">
-        <div class="col-md-6">
-          <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
-          <div class="storyLeft">
-          <p class="panel panel-default">“Look, Dad! What's that dark cloud over there? It's not the storm, is it?” Looking over the backs of the
+      <div id="firstChoice" class="row">
+        <div id="introStory" class="col-md-6">
+          <p>“Look, Dad! What's that dark cloud over there? It's not the storm, is it?” Looking over the backs of the
           four horses that pull your cart, your father squints, then says, “Riders. Lots of them and coming fast.”
           “Are they bandits, Paul?” asks your mother fearfully, clutching her shawl to her throat. “No, Martha.
           They can't be bandits. The Dwarven Guard cleaned up the last of them then years ago. I don't know
@@ -98,14 +102,9 @@
         </div>
         </div>
         <div class="col-md-6">
-          <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
-          <img class="sideImgFormat" src="img/warrior.jpg" alt="firstimage">
-        </div>
-        </div>
-        <div class="row">
-          <button id="fight" onclick="END(this.id)">Fight the dwarves</button>
+          <button id="fight" class="animated infinite wobble fast" onclick="END(this.id)">Fight the dwarves</button>
           <button id="hide" onclick="hideEscape(this.id)">Continue to hide in the wagon</button>
-          <button id="escape" onclick="hideEscape(this.id)">Try to escape</button>
+          <button id="escape" class="animated infinite bounceOut slow" onclick="hideEscape(this.id)">Try to escape</button>
         </div>
       </div>
 
@@ -141,9 +140,9 @@
 
       <div id="secondChoice">
         <div id="hide2">
-          <button id="fight2" onclick="END(this.id)">You're hiding and you decide to fight now</button>
+          <button id="fight2" class="animated infinite wobble slow" onclick="END(this.id)">You're hiding and you decide to fight now</button>
           <img id="hidepic" src="img/hidepic.png" alt="pic of the carridge" width="480px" height="340px">
-          <button id="escape2" onclick="hideEscape(this.id)">You try to run away</button>
+          <button id="escape2" class="animated infinite lightSpeedOut" onclick="hideEscape(this.id)">You try to run away</button>
         </div>
       </div>
 
@@ -352,12 +351,12 @@
 
     <div id="firstEnd">
       <p>You try to fight the dwarves but you are weak and lose. THE END</p>
-      <button onclick="start()"> Back to Start</button>
+      <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
     </div>
 
       <div id="secondEnd">
-        <p>You refused to help and tied forever. END.</p>
-        <button onclick="start()"> Back to Start</button>
+        <p>You refused to help and tied forever. The end.</p>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="thirdEnd">
@@ -369,58 +368,58 @@
           <p>“No time for reunions,” grumbles the dwarf. “Time for that later...if you live.” You follow him closely as he shuffles through the corridors. Soon you reach an unguarded exit and escape into the night. You and your parents hide in the hills.</p>
           <p>In the morning you watch the mounted dwarven army ride out. As evening's shadows lengthen on the mountains, the army returns, victorious. Over the years, you and your parents live under the grim rule of the evil monarch Sneed the Supreme. You often wonder what would have happened if you had helped the dwarf.</p>
           <p>THE END.</p>
-          <button onclick="start()"> Back to Start</button>
+          <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="fourthEnd">
         <p>You go after Sneed and because you're with badass dwarves you win yay!</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="fifthEnd">
         <p>You decide to stay in the cell with your parents and Sneed wins. THE END YOU LOSE</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="sixthEnd">
         <p> The city is taken but you manage to get the keys to the human prince's cell. You and the
  dwarves plan to get him out while raising an army of Bork's followers. THE END YOU WIN</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="seventhEnd">
         <p> Oh no! Pushed far away by the water! Can't go back in time! THE END YOU LOSE</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="eighthEnd">
         <p> You explain the situation. You and the dwarves talk it out. THE END YOU WIN</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="ninethEnd">
         <p> The dwarves ignore you and keep throwing rocks forever. THE END YOU LOSE</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="fairyFirstEnd">
         <p> You attack the dwarves. You're too small. They squished you. THE END YOU LOSE</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="fairySecondEnd">
         <p> Druid turns you into a tree. THE END YOU LOSE</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="fairyThirdEnd">
         <p> You run away and nobody belives you. THE END YOU LOSE</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="fairyFourthEnd">
         <p> The witch eats you. THE END YOU LOSE</p>
-        <button onclick="start()"> Back to Start</button>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
 
       <div id="fairyFifthEnd">

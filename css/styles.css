@@ -1,5 +1,8 @@
-#background, #firstChoice, #secondChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #trickGuard2, #attackGuard2, #seventhChoice, #findParents2, #eigthChoice, #ninethChoice, #tenthChoice, #goRight, #eleventhChoice, #princeOne19, #shrinkingBoy92, #letThePixieDoIt116, #pixieGetSmall26,
-#spiderDen{
+body{
+    overflow:hidden;
+}
+
+#background, #firstChoice, #secondChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #trickGuard2, #attackGuard2, #seventhChoice, #findParents2, #eigthChoice, #ninethChoice, #tenthChoice, #goRight, #eleventhChoice, #princeOne19, #shrinkingBoy92, #letThePixieDoIt116, #pixieGetSmall26 {
   display: none;
 }
 
