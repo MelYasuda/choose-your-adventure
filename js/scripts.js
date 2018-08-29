@@ -1,23 +1,20 @@
 
 function start() {
-    $("#firstChoice").show();
+    $("#intro01").show();
     $("#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd").hide();
 }
 
-function intro() {
-  $("#menu").hide();
-  $("#firstChoice").show();
-}
-
-function hideEscape(clicked_id) {
-  $("#secondChoice").show();
-   if (clicked_id === "hide") {
-    $("#hide2").show();
+function intro(clicked_id) {
+  $("#intro01").show();
+  if (clicked_id === "hide") {
+    $("#intro02").show();
+    $("#intro01").hide();
   } else if (clicked_id === "escape" || clicked_id === "escape2") {
-    $("#thirdChoice").show();
-    $("#secondChoice").hide();
+    $("#intro03").show();
+    $("#intro01").hide();
+    $("#intro02").hide();
   }
-    $("#firstChoice").hide();
+  $("#menu").hide();
 }
 
 function majorChoice(clicked_id) {
@@ -85,7 +82,7 @@ function dwarfRoute(clicked_id) {
 function END(clicked_id) {
   if(clicked_id === "fight" || clicked_id === "fight2") {
     $("#firstEnd").show();
-    $("#firstChoice, #secondChoice").hide();
+    $("#intro01, #secondChoice").hide();
   } else if (clicked_id === "notrust") {
     $("#secondEnd").show();
     $("#fourthChoice").hide();

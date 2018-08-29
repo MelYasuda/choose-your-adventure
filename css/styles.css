@@ -1,3 +1,9 @@
+#intro01, #intro02, #intro03 {
+  display: none;
+}
+
+
+
 #background, #firstChoice, #secondChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #trickGuard2, #attackGuard2, #seventhChoice, #findParents2, #eigthChoice, #ninethChoice, #tenthChoice, #goRight, #eleventhChoice, #princeOne19, #shrinkingBoy92, #letThePixieDoIt116, #pixieGetSmall26,
 #spiderDen{
   display: none;
@@ -352,7 +358,7 @@ img.sideImgFormat {
   max-width: 80%;
   max-height: 80%;
   transform: rotate(-2deg);
-    opacity:0.8;
+    opacity:0.5;
 }
 
 /*.password{
