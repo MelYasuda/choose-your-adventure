@@ -2,7 +2,9 @@
   display: none;
 }
 
-
+#dwarf01, #dwarf02, #dwarf03 {
+  display: none;
+}
 
 #background, #firstChoice, #secondChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #trickGuard2, #attackGuard2, #seventhChoice, #findParents2, #eigthChoice, #ninethChoice, #tenthChoice, #goRight, #eleventhChoice, #princeOne19, #shrinkingBoy92, #letThePixieDoIt116, #pixieGetSmall26,
 #spiderDen{

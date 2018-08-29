@@ -3,7 +3,7 @@ function start() {
     $("#intro01").show();
     $("#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd").hide();
 }
-
+// INTRO
 function intro(clicked_id) {
   $("#intro01").show();
   if (clicked_id === "hide") {
@@ -17,41 +17,29 @@ function intro(clicked_id) {
   $("#menu").hide();
 }
 
-function majorChoice(clicked_id) {
-  if (clicked_id === "dwarf") {
-    $("#fourthChoice").show();
-  } else if (clicked_id === "grownUpsTrack") {
-    $("#grownUpsOne86").show();
-    // $("#dwarvesCaughtOne34").hide();
-    // $("#princeOne19").hide()
-  } else if (clicked_id === "princeTrack") {
-    $("#princeOne19").show();
-    // $("#dwarvesCaughtOne34").hide();
-    // $("#grownUpsOne86").hide();
-  }
-  $("#thirdChoice").hide();
-}
+function dwarfRoute(clicked_id) {
 
-function trustDwarf(clicked_id) {
   if (clicked_id === "returnDwarf") {
-    $("#fourthChoice").show();
+    $("#dwarf01").show();
     $("#princeOne19").hide();
   } else if (clicked_id === "trust") {
-    $("#fourthChoice").hide();
-    $("#fifthChoice").show();
+    $("#dwarf01").hide();
+    $("#dwarf02").show();
   } else if (clicked_id === "mission") {
     $("#sixthChoice").show();
-    $("#fifthChoice").hide();
+    $("#dwarf02").hide();
   } else if (clicked_id === "trickGuard") {
     $("#trickGuard2").show();
     $("#sixthChoice").hide();
-    $("#fifthChoice").hide();
+    $("#dwarf02").hide();
   } else if (clicked_id === "attackGuard") {
     $("#attackGuard2").show();
     $("#sixthChoice").hide();
-    $("#fifthChoice").hide();
+    $("#dwarf02").hide();
   }
+  $("#intro03").hide();
 }
+
 
 function dwarfRoute(clicked_id) {
   if (clicked_id === "continue1" || clicked_id === "continue2") {
@@ -85,10 +73,10 @@ function END(clicked_id) {
     $("#intro01, #secondChoice").hide();
   } else if (clicked_id === "notrust") {
     $("#secondEnd").show();
-    $("#fourthChoice").hide();
+    $("#dwarf01").hide();
   } else if (clicked_id === "nomission") {
     $("#thirdEnd").show();
-    $("#fifthChoice").hide();
+    $("#dwarf02").hide();
   } else if (clicked_id === "stopSneed") {
     $("#fourthEnd").show();
     $("#seventhChoice").hide();

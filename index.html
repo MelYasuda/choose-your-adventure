@@ -142,45 +142,45 @@
               </div>
               </div>
               <div class="row">
-                <button id="dwarf" onclick="majorChoice(this.id)"> Go after the dwarves yourself</button>
+                <button id="dwarf" onclick="dwarfRoute(this.id)"> Go after the dwarves yourself</button>
                 <button id="grownUpsTrack" onclick="majorChoice(this.id)">Run itno the countryside looking for adults to help</button>
                 <button id="princeTrack" onclick="majorChoice(this.id)">Go to the city yourself to warn the prince</button>
               </div>
             </div>
-
+<!-- DWARF ROUTE FIRST CHOICE -  -->
+            <div id="dwarf01">
+              <div class="row">
+                <div class="col-md-6">
+                  <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+                  <div class="storyLeft">
+                    <p class="panel panel-default">You went after the dwarves and were captured. You meet an old dwarf who wants your help.</p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+                  <img class="sideImgFormat" src="img/think.jpg" alt="hidinginwoods">
+                </div>
+                </div>
+                <div class="row">
+                  <button id="trust" onclick="dwarfRoute(this.id)">You decide to trust the old dwarf</button>
+                  <button id="notrust" onclick="END(this.id)">You decide you must not trust any dwarves</button>
+                </div>
+              </div>
 
 
         <!-- containerend  -->
     </div>
 
 
-      <div id="secondChoice">
-        <div id="hide2">
-          <button id="fight2" onclick="END(this.id)">You're hiding and you decide to fight now</button>
-          <img id="hidepic" src="img/hidepic.png" alt="pic of the carridge" width="480px" height="340px">
-          <button id="escape2" onclick="hideEscape(this.id)">You try to run away</button>
-        </div>
-      </div>
-
-
-
-      <div id="thirdChoice">
-        <p>You ran away and hide until the dwarves were gone. You're safe for now. What next?</p>
-        <img id="think" src="img/think.jpg" alt="pic of the boy thinking" width="400px" height="540px">
-        <button id="dwarf" onclick="majorChoice(this.id)"> Go after the dwarves yourself</button>
-        <button id="grownUpsTrack" onclick="majorChoice(this.id)">Run itno the countryside looking for adults to help</button>
-        <button id="princeTrack" onclick="majorChoice(this.id)">Go to the city yourself to warn the prince</button>
-      </div>
-
       <div id="fourthChoice">
         <p>You get captured by dowarves and taken to their hideout. You meed an old blind dowarf.</p>
-        <button id="trust" onclick="trustDwarf(this.id)">You decide to trust the old dwarf</button>
+        <button id="trust" onclick="dwarfRoute(this.id)">You decide to trust the old dwarf</button>
         <button id="notrust" onclick="END(this.id)">You decide you must not trust any dwarves</button>
       </div>
 
       <div id="fifthChoice">
         <p>The old dwarf explains the dangerous mission. You must choose to go with the old dwarf on a dangerous mission or refuse</p>
-        <button id="mission" onclick="trustDwarf(this.id)">You decide to go on the mission.</button>
+        <button id="mission" onclick="dwarfRoute(this.id)">You decide to go on the mission.</button>
         <button id="nomission" onclick="END(this.id)">You decide it's too dangerous and you just want to rescue your parents.</button>
       </div>
     </div>
@@ -190,8 +190,8 @@
 
       <div id="sixthChoice">
         <p>You accept the mission and now you must free the old dwarf's son, Bork from prison</p>
-        <button id="trickGuard" onclick="trustDwarf(this.id)">You decide to trick the guard</button>
-        <button id="attackGuard" onclick="trustDwarf(this.id)">You decide to attack the guard</button>
+        <button id="trickGuard" onclick="dwarfRoute(this.id)">You decide to trick the guard</button>
+        <button id="attackGuard" onclick="dwarfRoute(this.id)">You decide to attack the guard</button>
       </div>
 
       <div id="trickGuard2">
@@ -253,7 +253,7 @@
       <div id="princeOne19">
         <p>You have decided to go to warn the prince you meet a fairy</p>
         <button id="trustWhimsy" onclick="pixieChoices19(this.id)"> You decide to trust the fairy and be shrunk</button>
-        <button id="returnDwarf" onclick="trustDwarf(this.id)">You decide to change your mind and follow the dwarves</button>
+        <button id="returnDwarf" onclick="dwarfRoute(this.id)">You decide to change your mind and follow the dwarves</button>
       </div>
 
       <div id="shrinkingBoy92">
