@@ -53,17 +53,35 @@ top:0px;
 
 
 
- /* p {
-  margin-left: 16%;
+  p {
+  /*margin-left: 16%;*/
   margin-right: 11%;
   margin-top: 15%;
-  font-family: 'Playfair Display', serif;
-  font-size: 140%;
+  font-family: 'MedievalSharp', cursive;
+  font-size: 160%;
   font-weight: bold;
-  float:  left;
-  text-align:left;
-} */
+  /*float:  left;*/
+  /*text-align:left;*/
+}
+#menu h3{
+  font-family: 'MedievalSharp', cursive;
+  font-size: 60px;
+  -webkit-text-fill-color: #8D381E;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
 
+#passwordText {
+    width: 100%;
+    padding: 20px 20px;
+    margin: 8px 0;
+    /*box-sizing: border-box;*/
+    border: 2px solid green;
+    border-radius: 4px;
+    background-color: #F0AE5E;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 26px;
+}
 
   /* button {
     margin-left: 8%;
@@ -165,9 +183,10 @@ top:0px;
 /*start your adventure button style*/
 button:hover{
     background-color: #900C3F;
-    color: #0F114D;
+    color: #F0E885;
     -webkit-transition-duration: 0.4s;
     background-image: linear-gradient(#900C3F,#D57387);
+
 
 }
 
@@ -178,24 +197,30 @@ button{
   margin-top: 15%;
   border-radius: 16%;
   background-color:#EA7412;
-  border-color: #EAE912;
+  border-color: black;
   margin-left: 6%;
   outline: none;
+  box-shadow:5px 13px;
+  /*box-shadow color:#F0E885;*/
 
 }
 /*try to style Main Button */
 #startGame{
-font-family: 'MedievalSharp', cursive;;
+font-family: 'MedievalSharp', cursive;
 font-weight: bold;
 background-color:#E1C12D;
 /*border-color: #EAE912;*/
-border-color: #E35515;
-border-width: 3px;
-border-radius: 50%;
+border-color: black;
+border-width: 1px;
+border-radius: 45%;
 font-size: 22px;
 margin-left: 7%;
+padding: 7%;
 
+}
 
+#startGame:hover{
+  border-color: #7C3019;
 }
 
 @-webkit-keyframes flare
@@ -279,12 +304,16 @@ position:relative;
   height: 550px;
 }
 
-/*
-img{
+/*.password{
+  font-family: 'MedievalSharp', cursive;
+}*/
+
+
+/*img{
   border-radius: 11px;
   box-shadow: 0 0 20px 10px #E1C698;
 
-}
+}*/
 
 @media only screen and (max-width: 1024px) {
     #background {
