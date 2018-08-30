@@ -220,7 +220,10 @@ function END(clicked_id) {
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 252119be2792b9f952d89715b78ebc1e31c7fc0e
 // user interface
 $(document).ready(function(){
   $("#passwordInput").submit(function(event){
@@ -228,6 +231,7 @@ $(document).ready(function(){
     var Password = $("#passwordText").val();
     if (Password === "Wizard" || Password === "wizard"){
       $("#secretCharacters").show();
+      $("#passwordInput").hide();
     }
   });
 
@@ -238,13 +242,9 @@ $(document).ready(function(){
     var userName = $("#nameText").val();
     $(".user-name").append(userName);
     $("#modal-btn").hide();
-    $(".welcome").fadeIn(3000);
+    $(".welcome").fadeIn(2000);
     $("#startGame").fadeIn(3000);
-  });
-
-  // close modal when submit user name
-  $('#submit-btn').click(function() {
-   $('#myModal').modal('hide');
+    $('#myModal').modal('hide');
   });
 
 });

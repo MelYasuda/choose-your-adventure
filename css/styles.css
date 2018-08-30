@@ -10,6 +10,7 @@
 }
 
 #secretCharacters{
+  margin-top: 20%;
   display: none;
 }
 #revealText{
@@ -35,6 +36,7 @@
 .welcome {
   display: none;
   font-size: 30px;
+  color: yellow;
 }
 
 #desk{
@@ -81,6 +83,10 @@ background-image: url("../img/wood6.jpg");
   margin-top: 70px;
 }
 
+label {
+  font-family: 'MedievalSharp', cursive;
+}
+
 #passwordInput{
   color: #10ECE6;
   font-size: 20px;
@@ -101,6 +107,35 @@ background-image: url("../img/wood6.jpg");
     font-size: 26px;
 }
 
+#passwordInput {
+  margin-top: 30%;
+  position: absolute;
+}
+
+  /* button {
+    margin-left: 8%;
+    margin-right: 51%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  } */
+
+
+/* h1{
+  color:#D4AF37;
+  font-size: 70px;
+  font-family: 'Germania One', cursive;
+  margin-top: 15%;
+  margin-left: 13%;
+
+} */
+
+/* h3{
+  color:#ffbb33;
+  font-size: 45px;
+  font-family: 'Germania One', cursive;
+  margin-top: 1%;
+  margin-left: 18%;
+} */
 
 /* Start of Code for metallic effect title page*/
 .shiny {
@@ -199,11 +234,6 @@ button{
 
 }
 
-button#modal-btn {
-  margin-top: 50px;
-  margin-left: 80px;
-  font-size: 40px;
-}
 
 /*try to style Main Button */
 #startGame{
@@ -217,6 +247,7 @@ border-radius: 45%;
 font-size: 22px;
 margin-left: 7%;
 padding: 7%;
+display: none;
 }
 
 #startGame:hover{
@@ -301,6 +332,13 @@ img.sideImgFormat {
   max-height: 80%;
   transform: rotate(-2deg);
     opacity:0.5;
+}
+
+/*modal styling*/
+button#modal-btn {
+  margin-top: 50px;
+  margin-left: 80px;
+  font-size: 40px;
 }
 
 /*.password{
