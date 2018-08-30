@@ -11,7 +11,7 @@
     <script src="js/scripts.js"></script>
     <title>Choose Your Adventure</title>
   </head>
-  <body>
+  <body id="desk">
 <!-- MENU -->
 
 
@@ -19,7 +19,7 @@
       <div id="menu" class="row">
         <div class="col-md-6 animated fadeIn slow">
           <h3>Once upon a time,</h3>
-          <p>the dwarves, who had long served as the King's Own Guard, decided to take the kingdom from their human masters. YOU are thrust into action as...<br>
+          <p class="intro">the dwarves, who had long served as the King's Own Guard, decided to take the kingdom from their human masters. YOU are thrust into action as...<br>
 
           <!-- Button trigger modal -->
           <button id="modal-btn" type="button" data-toggle="modal" data-target="#myModal">
@@ -724,52 +724,77 @@
           <button id="monsterChat" onclick="END(this.id)">You've had enough. You make an intimidation check against the castle-sized snapping turtle.</button>
         </div>
       </div>
-
-        <!-- containerend  -->
-    </div>
-
-
-
-<!-- LIZARD MEN CHOICE -->
-
-
-<div id="waterFallJumpLeft147">
-  <p>The immensity of your bad idea is cushioned by the waterfall not really being that bad. You fall off the ledge and plunge into a warm-water lagoon, your raft and Sandy landing several feet away and rising to the surface.<br>As Sandy bobs up to the surface, he lets out a shriek that would be the envy of any passing bird of prey. Looking down, you see large, green humanoid hands reaching up out of the water. Panicking and doggy paddling away, you look back and see six lizardmen with royal armor of sorts, looking you in the eye. They invite you into their lair, where they would like to warm you, feed you, and hear your story.<br>Just as you agree, you see Sandy climbing out of the lagoon and running off into the trees at a full sprint. You call for him once, then decide he's probably had enough for one adventure, and turn away. Between avoiding a dragon, snakes, rats, facing the monster in the river, and going over the waterfall, you feel yourself flush with a newfound confidence. You hold your head high as you follow the lizardguard around the waterfall and into their lair in the mountain side.<br>Inside, you are fed a steaming tincture that burns your mouth, and seems to eat through your very being. But soon you are healed of your injuries and pains from the previous day. You think back on everything you've seen, and this is relatively desirable. They hear your tale, and offer to strike down your enemies in exchange for a hearing with the prince, hoping to establish trade and raise the economic prospects for their people.</p><br>
-  <button id="trustLizardmen" onclick="trustLizard(this.id)">You trust the lizardmen and their offer to help you defeat your foes. Of course they can speak to your prince, who you yourself would otherwise not be able to speak to. It will probably work out fine.</button><br>
-  <button id="neverTrustLizardmen" onclick="trustLizard(this.id)">Who are they kidding? Everyone knows Lizardmen are prohibitively dishonest. They're probably just trying to lull you into a false sense of security, so they can eat you. Which they couldn't just do right now if they wanted. It's better to not think about that sort of thing.</button>
-</div>
-
-<div id="giantSteps84">
-  <p>This was an absolutely terrible idea. Every fall of ten or more feet rattles your very core, and shakes your raft apart. By the third step, the bindings around the logs are coming undone. By the fifth, you are scrambling to hold onto a single log. Sandy screams and disappears into the white waters, and you are plunged into the depths, swept completely out of control as you lose grip on your log and tumble through the water helplessly.<br>As you hit the bottom, you float in the lagoon and peer up at the waterfall that, in retrospect, wasn't that bad looking. Something stings above your eye, but you hardly feel it, uncomprehending.<br>Then, from the depths of the water around you, powerful, green humanoid hands reach up and grab you, lifting you up and carrying you into a cave behind the waterfall.<br>Inside, you are fed a steaming tincture that burns your mouth, and seems to eat through your very being. But soon you are awake and fully aware, surrounded by lizard men. You think back on your day, and everything you've seen, and this is relatively desirable. They hear your tale, and offer to strike down your enemies in exchange for a hearing with the prince, hoping to establish trade and raise the economic prospects for their people.<p><br>
-  <button id="trustLizardmen" onclick="trustLizard(this.id)">You trust the lizardmen and their offer to help you defeat your foes. Of course they can speak to your prince, who you yourself would otherwise not be able to speak to. It will probably work out fine.</button><br>
-  <button id="neverTrustLizardmen" onclick="trustLizard(this.id)">Who are they kidding? Everyone knows Lizardmen are prohibitively dishonest. They're probably just trying to lull you into a false sense of security, so they can eat you. Which they couldn't just do right now if they wanted. It's better to not think about that sort of thing.</button>
-</div>
-
-<div id="attackDragon49">
-  <p>You sharpen the raft's oar to a brutal point and sneak up on the slumbering beast. It does not occur to you what sort of creature might sleep out in the open, totally alone and unguarded. Letting out a primal, ten-year-old scream, you charge with your makeshift spear. It shatters on contact, splintering into pieces against the armor scales of the beast. You have only a moment to think before it twitches in its sleep, the impact sending you across the width of the river, landing in the silt and mud of the riverbank. As you slowly lose consciousness, you consider that, perhaps, that was a terrible idea and you've thrown away your one chance to save your parents, and your country, from the impending dwarf attack.<br>THE END.</p></div>
-
-<div id="sneakDragon24"><p>You thought you could sneak past the dragon. After all, you're so small, and it's so big, and seems so asleep. But as you make your way to the gap in the rock, the dragon snorts in its sleep and shifts what would be imperceptible, if you were the size of a dragon. Unfortunately, you aren't, and the last thing you see is the gigant creature's armored scales closing in around you.<br>THE END.</p></div>
-
-<div id="scareRatsOff73"><p>If these had been normal rats, you wouldn't have had any problems. You've helped your pa scare rats off a dozen times, back home. Those critters creep in from anywhere to find some warmth of food in the chill of the winter months. But these rats aren't anything like them. They're the size of a small dog, bright white with huge, shining teeth. They don't scare, they don't care. They gather up in tight clusters and don't even care about fire as you fight them with the burning branch that was so effective against the snacks. As the outer layer of their phalax peel away, new swamp rats appear and dive at you, gnawing and scratching. Hundreds swarm around your feet, climbing up your legs. There must be a thousand between you and the raft, now. A sea of white fur, a cacophany of shrieking, chittering rats, and you know it's...<br>THE END.</p></div>
-
-<div id="monstertalk48"><p>You scream with a bravery you could never have imagined, the day before, and the monster pauses for a moment. It looks at you, quietly clicking its beak, studying you, deciding if it's worth fighting. Perhaps you are small, but also mighty. You scream again, and this time the monster rears back and lets out a cry that nearly deafens you. You cover your ears as the blast from the monster nearly lifts you off your feet, almost making you slip from the raft. But then, in a single motion, the snapping turtle lunges, and the two of you hardly have a moment to contemplate what awaits before disappearing into the black void of its maw, raft and all.<br>THE END.</p></div>
-<div id="doNothing10"><p>A sweet aroma emits from the snakes. As you feel them crawling and tightening around you, a sense of euphoria replaces any fear you should have. Soon, a sweet slumber falls, and then nothing.<br>THE END.</p></div>
-
-<div id="trustLizards98"><p>You accept the lizardmen's help, their king leading a charge on the dwarves. The dwarven rebels were clearly unprepared for such an overwhelming reptilian force, you almost feel bad as the dwarves are either annihilated or sent running into exile in the outer rim of the kingdom, where they will compete with wild animals for food for the rest of their lives.<br>You take this opportunity to sneak away to find your parents still kept tied up in the cellar of the local tavern. You free them and urge them to escape quickly before the lizard king asks you to introduce him to the prince.</p></div>
-  <div id="distrustLizards25"><p>The lizard king has no tolerance for racists. His people have long been denounced as savage beasts, and his promise to his people to uplift them and raise them to equality with the human kingdoms leaves no room for a bigot to judge him by the tint of his scales. You are cast out, without hope of stopping the dwarven rebellion.</p></div>
-    <!-- ENDINGS
-
-    <div id="firstEnd">
-      <p>You try to fight the dwarves but you are weak and lose. THE END</p>
-      <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
-    </div>
-
-      <div id="secondEnd">
-        <p>You refused to help and tied forever. The end.</p>
+<!-- LIZARD ROUTE ELEVNTH CHOICE -->
+      <div id="lizard11">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">you are barely alive and nearly drowned but you got captured by lizardmen! they want to help trust or no trust?</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button id="trustLizard" onclick="END(this.id)">You trust the lizardmen and their offer to help you defeat your foes. Of course they can speak to your prince, who you yourself would otherwise not be able to speak to. It will probably work out fine.</button>
+          <button id="noTrustLizard" onclick="END(this.id)">Who are they kidding? Everyone knows Lizardmen are prohibitively dishonest. They're probably just trying to lull you into a false sense of security, so they can eat you. Which they couldn't just do right now if they wanted. It's better to not think about that sort of thing.</button>
+        </div>
+      </div>
+<!-- INTRO ENDINGS -->
+    <div id="introEND01">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+          <div class="storyLeft">
+            <p class="panel panel-default">You try to fight the dwarves but you are weak and lose. THE END</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+          <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+        </div>
+      </div>
+      <div class="row">
         <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
+    </div>
+<!-- DWARF ROUTE ENDINGS -->
+<!-- YOU DON"T TRUST THE OLD DWARF -->
+      <div id="dwarfEND01">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">“No! Why should I trust you?” you exclaim.
+              “You're a dwarf! This is probably a trick to get me killed. Go away!” The
+              old dwarf tries hard to convince you that he is an enemy of the evil Sneed,
+              but you are too scared and tired to even listen. The old dwarf finally accepts
+              the fact he has lost. Sagging with defeat, he sinks to the floor and, wrapping
+              his arms around his knees, mumbles softly to himself. Early the next morning you
+              are awakened by the sound of thousands of dwarves marching off to battle. The old
+              dwarf stand forlornly at the mouth of the empty cavern, listening to them go. A thread
+              of doubt creeps into your mind, and you wonder if maybe, just maybe, you made the wrong
+              decision. THE END</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+        </div>
+      </div>
 
-      <div id="thirdEnd">
+      <div id="dwarfEND03">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
           <p>“I don't really think I can help you,” you tell the old dwarf.</p>
           <p>At your words, his shoulders sag, and he seems to age before your very eyes. “no, I suppose it was too much to hope for,” sighs the dwarf. “Well, come with me. I will show you where your parents are.”</p>
           <p>You follow the bent form to a cell in a nearby tunnel. The door is heavily barred, but the dwarf helps you, and soon the door creaks open.</p>
@@ -778,140 +803,64 @@
           <p>“No time for reunions,” grumbles the dwarf. “Time for that later...if you live.” You follow him closely as he shuffles through the corridors. Soon you reach an unguarded exit and escape into the night. You and your parents hide in the hills.</p>
           <p>In the morning you watch the mounted dwarven army ride out. As evening's shadows lengthen on the mountains, the army returns, victorious. Over the years, you and your parents live under the grim rule of the evil monarch Sneed the Supreme. You often wonder what would have happened if you had helped the dwarf.</p>
           <p>THE END.</p>
-          <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+        </div>
       </div>
+      <div class="col-md-6">
+        <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+        <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+      </div>
+    </div>
+    <div class="row">
+      <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+    </div>
+  </div>
 
-      <div id="fourthEnd">
+      <div id="dwarfEND04">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
         <p>You go after Sneed and because you're with badass dwarves you win yay!</p>
-        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
       </div>
-
-      <div id="fifthEnd">
-        <p>You decide to stay in the cell with your parents and Sneed wins. THE END YOU LOSE</p>
-        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
-      </div>
-
-      <div id="sixthEnd">
-        <p> The city is taken but you manage to get the keys to the human prince's cell. You and the
- dwarves plan to get him out while raising an army of Bork's followers. THE END YOU WIN</p>
-        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
-      </div>
-
-      <div id="seventhEnd">
-        <p> Oh no! Pushed far away by the water! Can't go back in time! THE END YOU LOSE</p>
-        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
-      </div>
-
-      <div id="eighthEnd">
-        <p> You explain the situation. You and the dwarves talk it out. THE END YOU WIN</p>
-        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
-      </div>
-
-      <div id="ninethEnd">
-        <p> The dwarves ignore you and keep throwing rocks forever. THE END YOU LOSE</p>
-        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
-      </div>
-
-      <div id="fairyFirstEnd">
-        <p> You attack the dwarves. You're too small. They squished you. THE END YOU LOSE</p>
-        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
-      </div>
-
-      <div id="fairySecondEnd">
-        <p> Druid turns you into a tree. THE END YOU LOSE</p>
-        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
-      </div>
-
-      <div id="fairyThirdEnd">
-        <p> You run away and nobody belives you. THE END YOU LOSE</p>
-        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
-      </div>
-
-      <div id="fairyFourthEnd">
-        <p> The witch eats you. THE END YOU LOSE</p>
-        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
-      </div>
-
-      <div id="fairyFifthEnd">
-        <p> The fairy thanks you for trusting her. She helps you solve the problem. THE END YOU WIN</p>
-        <button onclick="start()"> Back to Start</button>
-      </div>
-
-      <div id="fairySixthEnd">
-        <p> You catch a cold and crippled. THE END YOU LOSE</p>
-        <button onclick="start()"> Back to Start</button>
-      </div>
-
-    <p id="demo">Would you like to try again?</p> -->
-
-      <!-- </div>
-      <p id="demo">
-      Would you like to try again?
-      </p>
-      button hold to restart.
-    </div> -->
-
-    <div class="endTwo">
-      <div id="secondEnd">
-        <div id="P30">
-          <p>“No! Why should I trust you?” you exclaim. “You're a dwarf! This is probably a trick to get me killed. Go away!”</p>
-          <p>The old dwarf tries hard to convince you that he is an enemy of the evil Sneed, but you are too scared and tired to even listen. The old dwarf finally accepts the fact he has lost. Sagging with defeat, he sinks to the floor and, wrapping his arms around his knees, mumbles softly to himself.</p>
-          <p>Early the next morning you are awakened by the sound of thousands of dwarves marching off to battle. The old dwarf stand forlornly at the mouth of the empty cavern, listening to them go. A thread of doubt creeps into your mind, and you wonder if maybe, just maybe, you made the wrong decision.</p>
-          <p>THE END.</p>
-        </div>
-      </div>
-      <!-- <p id="demo">Would you like to try again?</p> -->
     </div>
-
-    <div class="endThree">
-      <div id="thirdEnd">
-        <div id="P85">
-          <p>Cautiously you edge into the left-hand tunnel. The sound of rushing water grows louder. You are trying to move with care when suddenly your hands slip on a patch of slick moss. You fee yourself beginning to slide. All at once, the pipe ends and you drop through cold, dark space. Splash! You plunge deep into switftly flowing icy water that seizes you in its powerful current and whirls you away.</p>
-          <p>You have fallen into the great underground river that flows beneath the city.</p>
-          <p>you are pushed along by the fierce current and deposited, bruised and battered, on the banks of he river as it surfaces miles beyond the walls of the city.</p>
-          <p>You crawl up into the muddy bank. You lie there panting and trying to think. You could walk back to the city and maybe still help. You could also try to walk back to the caves and free your parents while most of the dwarves are gone. But either way, you realize, you are probably too late to save the prince.</p>
-          <p>THE END.</p>
-        </div>
-      </div>
-      <!-- <p id="demo">Would you like to try again?</p> -->
+    <div class="col-md-6">
+      <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+      <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
     </div>
-
-    <div class="endFour">
-      <div id="fourthEnd">
-        <div id="P104">
-          <p>“Help! Help! Get me out of here. I’m down in the storm drain,” you cry.</p>
-          <p>After a moment, an ugly dwarf face squints down at you.</p>
-          <p>“It’s just some dumb kid, and a dog. Got themselves stuck in the drain,” says the dwarf., and soon the battle rages on again. You try to get someone to help, but no one listens. After a long time, all is silent.</p>
-          <p>You hear steps in the silence, then a bearded face peers through the grade. It’s Sneed!</p>
-          <p>“Ah, there you are. I must admit, it’s grand seeing you behind bars. I want you to know I’m going to do my best to keep things that way, now that I’m king.”</p>
-          <p>THE END.</p>
-        </div>
-      </div>
-      <!-- <p id="demo">Would you like to try again?</p> -->
-    </div>
+  </div>
+  <div class="row">
+    <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+  </div>
 </div>
-    <div class="endFive">
-      <div id="fifthEnd">
-        <div id="P108">
-        <p>As much as you want to, you cannot leave your mother in tears.</p>
+
+      <div id="dwarfEND05">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+        <p><p>As much as you want to, you cannot leave your mother in tears.</p>
         <p>“Well, maybe it will be all right. Maybe the boulder benders will be able to warn the prince in time,” you say with a sigh.</p>
         <p>“It’s not our fight, Galen. Don’t get involved,” says your mother.  “Maybe you’re right,” you say and grasping your mother’s hand, you lead her out into the dark corridor After long hours of bumbling about in the dark, you find yourself outside, standing on top of the iron-red cliffs.</p>
         <p>Below you, the dwarves army returns victorious.</p>
-        <p>Years later, as apprentice mapmaker to Sneed the Supreme, you wonder for the millionth time if you made a mistake in not going with Bork and Hume. If so, perhaps you will get a chance to correct that mistake. You have been contacted by Bork the Second, and you have agreed to help overthrow the evil Sneed. This time you will succeed.</p>
-        </div> 
-
-        <p>You tried to fight the dwarves but you failed.</p>
-        <img id="winner" src="img/win.jpg" alt="pic of the dwarf" width="480px" height="340px">
+        <p>Years later, as apprentice mapmaker to Sneed the Supreme, you wonder for the millionth time if you made a mistake in not going with Bork and Hume. If so, perhaps you will get a chance to correct that mistake. You have been contacted by Bork the Second, and you have agreed to help overthrow the evil Sneed. This time you will succeed.</p></p>
       </div>
-      <!-- <p id="demo">Would you like to try again?</p> -->
     </div>
+    <div class="col-md-6">
+      <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+      <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+    </div>
+  </div>
+  <div class="row">
+    <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+  </div>
+</div>
 
-
-    <div class="row">
-    <div class="endSix">
-      <div id="sixthEnd">
-        <div id="P127">
-          <p>Pulling the horses into the trees at the edge of the road, you hide and wait until thundering hoofs and booming war drums announce Sneed’s arrival.  “Open the gates!” roars Sneed.</p>
+      <div id="dwarfEND06">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+        <p> <p>Pulling the horses into the trees at the edge of the road, you hide and wait until thundering hoofs and booming war drums announce Sneed’s arrival.  “Open the gates!” roars Sneed.</p>
           <p>“Go away! It’s not the time!” yells the guard.</p>
           <p>“Open the gate or it will be past time for your head to rest on your neck,” snarls Sneed.</p>
           <p>There is a moment’s silence, and then the guard says in a tiny voice, “Oh, maybe it is time after all. I think I see the sun coming up now.” The large wooden gates creak open, and Sneed and his men thunder through into the sleeping city.</p>
@@ -925,24 +874,300 @@
           <p>“I thought he’d have them,” you say. “Help me tie him up. I think we should ride back to the caves, rescue the prince and my parents from the prisons, and throw Snively into the deepest dungeon.”</p>
           <p>“It will also give me a chance to talk to my warriors. Once they know I am free, they will revolt. By morning Iron Mountain will be ours and your parents and the prince will be free and safe.”</p>
           <p>Happily, you turn and ride toward the caves in the mountains.</p>
-          <p>THE END.</p>
-        </div>
-        </div>
-      </div>
-      <!-- <p id="demo">Would you like to try again?</p> -->
-    </div>
-
-    <div class="endSeven">
-      <div id="seventhEnd">
-        <div id="P143">
-          <p>You wriggle out from beneath the blankets and pick up the first heavy thing you find—a shovel. Leaping from the seat of the wagon, you attack the nearest dwarf. Unfortunately, the shovel does little but annoy it.</p>
-          <p>He picks you up, laughs loudly, and thumps you on the top of the head with a heavy fist. Your mother screams, and everything goes black. Maybe you will recover and be able to help your parents escape later, but for now, it's ...</p>
-
-          <p>THE END.</p>
+          <p>THE END.</p></p>
         </div>
       </div>
-      <!-- <p id="demo">Would you like to play again?</p> -->
+      <div class="col-md-6">
+        <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+        <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+      </div>
     </div>
+    <div class="row">
+      <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+    </div>
+  </div>
+
+      <div id="dwarfEND07">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+        <p>Cautiously you edge into the left-hand tunnel. The sound of rushing water grows louder. You are trying to move with care when suddenly your hands slip on a patch of slick moss. You fee yourself beginning to slide. All at once, the pipe ends and you drop through cold, dark space. Splash! You plunge deep into switftly flowing icy water that seizes you in its powerful current and whirls you away.</p>
+          <p>You have fallen into the great underground river that flows beneath the city.</p>
+          <p>you are pushed along by the fierce current and deposited, bruised and battered, on the banks of he river as it surfaces miles beyond the walls of the city.</p>
+          <p>You crawl up into the muddy bank. You lie there panting and trying to think. You could walk back to the city and maybe still help. You could also try to walk back to the caves and free your parents while most of the dwarves are gone. But either way, you realize, you are probably too late to save the prince.</p>
+          <p>THE END.</p></p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+        <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+      </div>
+    </div>
+    <div class="row">
+      <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+    </div>
+  </div>
+
+      <div id="dwarfEND08">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+        <p> You explain the situation. You and the dwarves talk it out. THE END YOU WIN</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+      <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+    </div>
+  </div>
+  <div class="row">
+    <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+  </div>
+</div>
+
+      <div id="dwarfEND09">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+        <p><p>“Help! Help! Get me out of here. I’m down in the storm drain,” you cry.</p>
+        <p>After a moment, an ugly dwarf face squints down at you.</p>
+        <p>“It’s just some dumb kid, and a dog. Got themselves stuck in the drain,” says the dwarf., and soon the battle rages on again. You try to get someone to help, but no one listens. After a long time, all is silent.</p>
+        <p>You hear steps in the silence, then a bearded face peers through the grade. It’s Sneed!</p>
+        <p>“Ah, there you are. I must admit, it’s grand seeing you behind bars. I want you to know I’m going to do my best to keep things that way, now that I’m king.”</p>
+        <p>THE END.</p></p>
+        <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+      <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+    </div>
+  </div>
+  <div class="row">
+    <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+  </div>
+</div>
+<!-- FAIRY ROUTE ENDINGS -->
+      <div id="fairyEND01">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+        <p> You attack the dwarves. You're too small. They squished you. THE END YOU LOSE</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+      <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+    </div>
+  </div>
+  <div class="row">
+    <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+  </div>
+</div>
+
+      <div id="fairyEND02">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+        <p> Druid turns you into a tree. THE END YOU LOSE</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+      <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+    </div>
+  </div>
+  <div class="row">
+    <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+  </div>
+</div>
+
+      <div id="fairyEND03">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+        <p> You run away and nobody belives you. THE END YOU LOSE</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+      <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+    </div>
+  </div>
+  <div class="row">
+    <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+  </div>
+</div>
+
+      <div id="fairyEND04">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+        <p> The witch eats you. THE END YOU LOSE</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+      <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+    </div>
+  </div>
+  <div class="row">
+    <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+  </div>
+</div>
+
+      <div id="fairyEND05">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+        <p> The fairy thanks you for trusting her. She helps you solve the problem. THE END YOU WIN</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+      <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+    </div>
+  </div>
+  <div class="row">
+    <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+  </div>
+</div>
+
+      <div id="fairyEND06">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+        <p> You catch a cold and crippled. THE END YOU LOSE</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+      <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+    </div>
+  </div>
+  <div class="row">
+    <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+  </div>
+</div>
+<!-- LIZARD ROUTE ENDINGS -->
+<div id="lizardEND01">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+      <div class="storyLeft">
+  <p>You sharpen the raft's oar to a brutal point and sneak up on the slumbering beast. It does not occur to you what sort of creature might sleep out in the open, totally alone and unguarded. Letting out a primal, ten-year-old scream, you charge with your makeshift spear. It shatters on contact, splintering into pieces against the armor scales of the beast. You have only a moment to think before it twitches in its sleep, the impact sending you across the width of the river, landing in the silt and mud of the riverbank. As you slowly lose consciousness, you consider that, perhaps, that was a terrible idea and you've thrown away your one chance to save your parents, and your country, from the impending dwarf attack.<br>THE END.</p>
+</div>
+</div>
+<div class="col-md-6">
+<img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+<img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+</div>
+</div>
+<div class="row">
+<button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+</div>
+</div>
+
+<div id="lizardEND02">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+      <div class="storyLeft">
+  <p>A sweet aroma emits from the snakes. As you feel them crawling and tightening around you, a sense of euphoria replaces any fear you should have. Soon, a sweet slumber falls, and then nothing.<br>THE END.</p>
+</div>
+</div>
+<div class="col-md-6">
+<img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+<img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+</div>
+</div>
+<div class="row">
+<button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+</div>
+</div>
+
+<div id="lizardEND03">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+      <div class="storyLeft">
+  <p>you jump into the river to escape the rats but you just find more once you're ashore and they eat you</p>
+</div>
+</div>
+<div class="col-md-6">
+<img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+<img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+</div>
+</div>
+<div class="row">
+<button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+</div>
+</div>
+
+<div id="lizardEND04">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+      <div class="storyLeft">
+  <p>You scream with a bravery you could never have imagined, the day before, and the monster pauses for a moment. It looks at you, quietly clicking its beak, studying you, deciding if it's worth fighting. Perhaps you are small, but also mighty. You scream again, and this time the monster rears back and lets out a cry that nearly deafens you. You cover your ears as the blast from the monster nearly lifts you off your feet, almost making you slip from the raft. But then, in a single motion, the snapping turtle lunges, and the two of you hardly have a moment to contemplate what awaits before disappearing into the black void of its maw, raft and all.<br>THE END.</p>
+</div>
+</div>
+<div class="col-md-6">
+<img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+<img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+</div>
+</div>
+<div class="row">
+<button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+</div>
+</div>
+
+
+<div id="lizardEND05">
+  <div class="row">
+    <div class="col-md-6">
+      <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+      <div class="storyLeft">
+  <p>You accept the lizardmen's help, their king leading a charge on the dwarves. The dwarven rebels were clearly unprepared for such an overwhelming reptilian force, you almost feel bad as the dwarves are either annihilated or sent running into exile in the outer rim of the kingdom, where they will compete with wild animals for food for the rest of their lives.<br>You take this opportunity to sneak away to find your parents still kept tied up in the cellar of the local tavern. You free them and urge them to escape quickly before the lizard king asks you to introduce him to the prince.</p>
+</div>
+</div>
+<div class="col-md-6">
+<img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+<img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+</div>
+</div>
+<div class="row">
+<button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+</div>
+</div>
+
+  <div id="lizardEND06">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+        <div class="storyLeft">
+    <p>The lizard king has no tolerance for racists. His people have long been denounced as savage beasts, and his promise to his people to uplift them and raise them to equality with the human kingdoms leaves no room for a bigot to judge him by the tint of his scales. You are cast out, without hope of stopping the dwarven rebellion.</p>
+  </div>
+</div>
+<div class="col-md-6">
+  <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+  <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+</div>
+</div>
+<div class="row">
+<button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+</div>
+</div>
+<!-- SPECIAL ENDINGS -->
     <div id="haroldStory">
       <p>An ear-piercing clang of metal on metal wakes you from his stupor. An empty whiskey bottle falls off the table with a <strong>thud</strong> as you startle awake. You can hear the roar and screams of a battle outside, and know it is time to take action. Things have not been so good lately, the past ten years or so, but that's no excuse. It's time to be a <strong>hero</strong>.</p>
       <p>Staggering to your feet, you pulls both suspenders up, securing your trousers. One of the buttons securing the strap on the right shoulder pops off, sending the that suspender dangling down by your leg. But there is no time for that now! There's no time for anything except saving the town you love.</p><p>...Okay, perhaps not <strong>loves</strong>. Perhaps love is a strong word, but...</p><p>No! There's no time for this. You charge out the front door where you find...nothing. The battle has already moved on and left him behind. Maybe it's for the best, you think. You aren't really cut out for being a hero, or you probably would have already been one. Besides, you're a little past your prime, don't have any weapons, no training, you're by yourself...</p>
@@ -991,5 +1216,8 @@
       </div>
     </div>
     </div>
+
+    <!-- CONTAINER END  -->
+        </div>
   </body>
 </html>
