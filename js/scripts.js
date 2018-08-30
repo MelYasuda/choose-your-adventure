@@ -313,6 +313,16 @@ function trustLizard(clicked_id){
   $("#waterFallJumpLeft147").hide();
 }
 
+function secretChoice(clicked_id){
+  if (clicked_id === "chooseHarold"){
+    $("#haroldStory").show();
+    $("#gogolStory").hide();
+  } else if (clicked_id === "chooseGogol"){
+    $("#gogolStory").show();
+    $("#haroldStory").hide();
+  }
+  $("#menu").hide();
+}
 
 // user interface
 
@@ -327,6 +337,8 @@ $(document).ready(function(){
     }
   });
 
+
+
   // assign user name to the story and hide the modal button
   $("#name-input").submit(function(event){
     event.preventDefault();
@@ -338,7 +350,7 @@ $(document).ready(function(){
   });
 
   // close modal when submit user name
-  $('#submit-btm').click(function() {
+  $('#submit-btn').click(function() {
    $('#myModal').modal('hide');
   });
 

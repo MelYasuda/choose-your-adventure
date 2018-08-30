@@ -39,24 +39,22 @@
             <button type="submit">Discover your fate.</button>
           </form>
 
-          <div id="secretCharacters">
-            <span id="revealText"><h4>You have done well to make it this far. Now it is time to choose a new hero.<h1>BEHOLD!</h1></h4></span>
-            <div class="row" id="secretCharRows">
-              <!-- <div class="col-md-6"> -->
-                <div id="drunkHarold">
-                  <img src="img/Harold.jpg" alt="He's seen better days" id="haroldPicture">
-                  <h3>Harold</h3>
-                  <p>Abandoned by man and god, Harold suffers from long-term unemployment and now spends his days and nights at the bottom of a whiskey bottle. He was a boxing champion <strong>in his teens</strong>. Still, he is ready to save his home--a home that turned its back on him--from the invading dwarven horde. Even if they do sort of have a point. He has spent the evening telling everyone someone stole his wallet, hoping they might buy him a drink.</p>
-                </div>
-              <!-- </div> -->
+        <div id="secretCharacters">
+          <span id="revealText"><h4>You have done well to make it this far. Now it is time to choose a new hero.<h1>BEHOLD!</h1></h4></span>
+          <div class="row" id="secretCharRows">
+            <div id="drunkHarold">
+              <img src="img/Harold.jpg" alt="He's seen better days" id="haroldPicture">
+              <h3>Harold</h3>
+              <p>Abandoned by man and god, Harold suffers from long-term unemployment and now spends his days and nights at the bottom of a whiskey bottle. He was a boxing champion <strong>in his teens</strong>. Still, he is ready to save his home--a home that turned its back on him--from the invading dwarven horde. Even if they do sort of have a point. He has spent the evening telling everyone someone stole his wallet, hoping they might buy him a drink.</p>
+              <button id="chooseHarold" onclick="secretChoice(this.id)">You try to run away</button>
+            </div>
             <br>
-            <!-- <div class="col-md-6"> -->
-              <div id="gogolTheImmense">
-                <img src="img/gogol-cartoon.jpg" alt="Not All That Immense" id="gogolPicture">
-                <h3>Gogol The Immense</h3>
-                <p id="gogolText">Allegedly ageless, Gogol the Immense is ironically not that tall. The average height of any normal adult, he just hit his growth spurt early in his youth, untold (perhaps) millenia ago, and was given the nickname by his classmates. Also, he's is (probably) an awesome and terrible wizard, who has (maybe) seen kingdoms rise and fall from his magical abode high atop Mount Awful. He has descended from his magical throne to see what all the ruckus is about.</p>
-              </div>
-            <!-- </div> -->
+            <div id="gogolTheImmense">
+              <img src="img/gogol-cartoon.jpg" alt="Not All That Immense" id="gogolPicture">
+              <h3>Gogol The Immense</h3>
+              <p id="gogolText">Allegedly ageless, Gogol the Immense is ironically not that tall. The average height of any normal adult, he just hit his growth spurt early in his youth, untold (perhaps) millenia ago, and was given the nickname by his classmates. Also, he's is (probably) an awesome and terrible wizard, who has (maybe) seen kingdoms rise and fall from his magical abode high atop Mount Awful. He has descended from his magical throne to see what all the ruckus is about.</p>
+              <button id="chooseGogol" onclick="secretChoice(this.id)">You try to run away</button>
+            </div>
           </div>
         </div>
 
