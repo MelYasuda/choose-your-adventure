@@ -209,15 +209,13 @@ function END(clicked_id) {
 
 
 // user interface
-
-
-
 $(document).ready(function(){
   $("#passwordInput").submit(function(event){
     event.preventDefault();
     var Password = $("#passwordText").val();
     if (Password === "Wizard" || Password === "wizard"){
       $("#secretCharacters").show();
+      $("#passwordInput").hide();
     }
   });
 
@@ -229,13 +227,9 @@ $(document).ready(function(){
     var userName = $("#nameText").val();
     $(".user-name").append(userName);
     $("#modal-btn").hide();
-    $(".welcome").fadeIn(3000);
+    $(".welcome").fadeIn(2000);
     $("#startGame").fadeIn(3000);
-  });
-
-  // close modal when submit user name
-  $('#submit-btn').click(function() {
-   $('#myModal').modal('hide');
+    $('#myModal').modal('hide');
   });
 
 });

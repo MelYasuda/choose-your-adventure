@@ -9,27 +9,8 @@
   display: none;
 }
 
-
-#background, #firstChoice, #secondChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #trickGuard2, #attackGuard2, #seventhChoice, #findParents2, #eigthChoice, #ninethChoice, #tenthChoice, #goRight, #eleventhChoice, #princeOne19, #shrinkingBoy92, #letThePixieDoIt116, #pixieGetSmall26,
-#spiderDen{
-  display: none;
-}
-
-#hide2, #escape3, #trickGuard2, #attackGuard2, #findParents2, #goRight2 {
-  display: none;
-}
-
-
-#firstEnd, #secondEnd, #thirdEnd, #fourthEnd, #fifthEnd, #sixthEnd, #seventhEnd, #eighthEnd, #ninethEnd,
-#fairyFirstEnd, #fairySecondEnd, #fairyThirdEnd, #fairyFourthEnd, #fairyFifthEnd, #fairySixthEnd {
-  display: none;
-}
-
-#grownUpsOne86, #riverPrince134, #pastDragon141, #riverSnakes93, #fireSnakes91, #swimForIt66, #islandProspects18, #waterFallJumpLeft147, #giantSteps84, #attackDragon49, #sneakDragon24, #scareRatsOff73, #monstertalk48, #doNothing10, #trustLizards98, #distrustLizards25 {
-  display:none;
-}
-
 #secretCharacters{
+  margin-top: 20%;
   display: none;
 }
 #revealText{
@@ -55,6 +36,7 @@
 .welcome {
   display: none;
   font-size: 30px;
+  color: yellow;
 }
 
 #desk{
@@ -64,39 +46,19 @@ background-image: url("../img/wood6.jpg");
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat, repeat;
-  /*opacity: 0.3;*/
-    /*filter: alpha(opacity=50);*/
+  /* opacity: 0.3;
+    filter: alpha(opacity=50); */
   position: absolute;
-  /*z-index:-4;*/
+  z-index:-4;
   top: 0%;
   left: -50%;
   width: 200%;
   height: 200%;
 
-  /*opacity: -0.7;*/
-  /*min-height: 100%;
-  min-width: 1024px;*/
+  /* opacity: -0.7;
+  min-height: 100%;
+  min-width: 1024px; */
 }
-
-/* .container2 {
-  display: none;
-} */
-
-
-/* #background{
-background-image: url("../img/page1.jpeg");
-background-repeat: no-repeat;
-background-size: contain;
-opacity:0.9;
- position: absolute;
-z-index: -1;
-width: 300%;
-height: 140%;
-margin-top: 2%;
-left:0px;
-top:0px;
-} */
-
 
   p {
   /*margin-left: 16%;*/
@@ -125,6 +87,10 @@ top:0px;
   margin-top: 70px;
 }
 
+label {
+  font-family: 'MedievalSharp', cursive;
+}
+
 #passwordInput{
   color: #10ECE6;
   font-size: 20px;
@@ -143,6 +109,11 @@ top:0px;
     background-color: #F0AE5E;
     font-family: 'MedievalSharp', cursive;
     font-size: 26px;
+}
+
+#passwordInput {
+  margin-top: 30%;
+  position: absolute;
 }
 
   /* button {
@@ -267,11 +238,6 @@ button{
 
 }
 
-button#modal-btn {
-  margin-top: 50px;
-  margin-left: 80px;
-  font-size: 40px;
-}
 
 /*try to style Main Button */
 #startGame{
@@ -285,6 +251,7 @@ border-radius: 45%;
 font-size: 22px;
 margin-left: 7%;
 padding: 7%;
+display: none;
 }
 
 #startGame:hover{
@@ -305,57 +272,10 @@ padding: 7%;
   40%  { opacity: 0.8; }
   60%  { opacity: 0; }
   100% { opacity: 0; }
-} */
+}
 /* end of shiny text
 
-/*Images*/
-/* #warrior{
-  float: right;
-  margin-top: -10%;
-  margin-right: 10%;
-display: none;
-position:relative;
 
- }
-
-#winner{
-  float: right;
-  margin-top: 1%;
-  margin-right: 8%;
-}
-
-#hidepic{
-  float: right;
-  margin-top: 22%;
-  margin-right: 8%;
-}
-
-#think{
-  float: right;
-  margin-top:-4%;
-  margin-right: 10%;
-} */
-
-/* #cover{
-  background-image: url("../img/cover.jpeg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity:0.8;
-   position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  margin-top: 5%;
-
-} */
-
-.row {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  /* background-image: url("../img/page1.jpeg");
-  background-repeat: no-repeat;
-  background-size: contain; */
-}
 
 /* MENU STYLING */
 #cover {
@@ -419,6 +339,13 @@ img.sideImgFormat {
     opacity:0.5;
 }
 
+/*modal styling*/
+button#modal-btn {
+  margin-top: 50px;
+  margin-left: 80px;
+  font-size: 40px;
+}
+
 /*.password{
   font-family: 'MedievalSharp', cursive;
 }*/
@@ -429,14 +356,3 @@ img.sideImgFormat {
   box-shadow: 0 0 20px 10px #E1C698;
 
 }*/
-
-@media only screen and (max-width: 1024px) {
-    #background {
-        visibility: collapse;
-        width: 0%;
-    }
-
-    #background {
-        width: 100%;
-    }
-} */
