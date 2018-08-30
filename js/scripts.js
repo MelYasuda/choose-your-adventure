@@ -219,6 +219,14 @@ function END(clicked_id) {
   pageturn();
 }
 
+function secretChoice(clicked_id) {
+  if (clicked_id === "drunkHarold") {
+    $("#haroldStory").show();
+  } else if (clicked_id === "chooseGogol") {
+    $("#gogolStory").show();
+  }
+  $("secretCharacters").hide();
+}
 
 // user interface
 $(document).ready(function(){
