@@ -42,6 +42,10 @@
   color: yellow;
 }
 
+body {
+  background-color: #000000;
+}
+
 #desk{
 background-image: url("../img/wood6.jpg");
 -webkit-background-size: cover;
