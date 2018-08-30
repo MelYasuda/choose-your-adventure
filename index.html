@@ -743,9 +743,6 @@
           <button id="noTrustLizard" onclick="END(this.id)">Who are they kidding? Everyone knows Lizardmen are prohibitively dishonest. They're probably just trying to lull you into a false sense of security, so they can eat you. Which they couldn't just do right now if they wanted. It's better to not think about that sort of thing.</button>
         </div>
       </div>
-<!-- CONTAINER END  -->
-    </div>
-
 <!-- INTRO ENDINGS -->
     <div id="introEND01">
       <div class="row">
@@ -765,26 +762,33 @@
       </div>
     </div>
 <!-- DWARF ROUTE ENDINGS -->
+<!-- YOU DON"T TRUST THE OLD DWARF -->
       <div id="dwarfEND01">
         <div class="row">
           <div class="col-md-6">
             <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
             <div class="storyLeft">
-        <p><p>“No! Why should I trust you?” you exclaim. “You're a dwarf! This is probably a trick to get me killed. Go away!”</p>
-        <p>The old dwarf tries hard to convince you that he is an enemy of the evil Sneed, but you are too scared and tired to even listen. The old dwarf finally accepts the fact he has lost. Sagging with defeat, he sinks to the floor and, wrapping his arms around his knees, mumbles softly to himself.</p>
-        <p>Early the next morning you are awakened by the sound of thousands of dwarves marching off to battle. The old dwarf stand forlornly at the mouth of the empty cavern, listening to them go. A thread of doubt creeps into your mind, and you wonder if maybe, just maybe, you made the wrong decision.</p>
-        <p>THE END.</p></p>
+              <p class="panel panel-default">“No! Why should I trust you?” you exclaim.
+              “You're a dwarf! This is probably a trick to get me killed. Go away!” The
+              old dwarf tries hard to convince you that he is an enemy of the evil Sneed,
+              but you are too scared and tired to even listen. The old dwarf finally accepts
+              the fact he has lost. Sagging with defeat, he sinks to the floor and, wrapping
+              his arms around his knees, mumbles softly to himself. Early the next morning you
+              are awakened by the sound of thousands of dwarves marching off to battle. The old
+              dwarf stand forlornly at the mouth of the empty cavern, listening to them go. A thread
+              of doubt creeps into your mind, and you wonder if maybe, just maybe, you made the wrong
+              decision. THE END</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
+        </div>
       </div>
-    </div>
-    <div class="col-md-6">
-      <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
-      <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
-    </div>
-  </div>
-  <div class="row">
-    <button class="animated infinite pulse" onclick="start()"> Back to Start</button>
-  </div>
-</div>
 
       <div id="dwarfEND03">
         <div class="row">
@@ -1212,5 +1216,8 @@
       </div>
     </div>
     </div>
+
+    <!-- CONTAINER END  -->
+        </div>
   </body>
 </html>
