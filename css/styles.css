@@ -1,7 +1,11 @@
 #intro01, #intro02, #intro03,
+#introEND01,
 #dwarf01, #dwarf02, #dwarf03, #dwarf04, #dwarf05, #dwarf06, #dwarf07, #dwarf08, #dwarf09, #dwarf10, #dwarf11, #dwarf12,
-#lizard01, #lizard02, #lizard03, #lizard04, #lizard05, #lizard06, #lizard07, #lizard08, #lizard09, #lizard10,
-#fairy01, #fairy02, #fairy03, #fairy04, #fairy05 {
+#dwarfEND01, #dwarfEND02, #dwarfEND03, #dwarfEND04, #dwarfEND05, #dwarfEND06, #dwarfEND07, #dwarfEND08, #dwarfEND09,
+#lizard01, #lizard02, #lizard03, #lizard04, #lizard05, #lizard06, #lizard07, #lizard08, #lizard09, #lizard10, #lizard11,
+#lizardEND01, #lizardEND02, #lizardEND03, #lizardEND04, #lizardEND05, #lizardEND06,
+#fairy01, #fairy02, #fairy03, #fairy04, #fairy05,
+#fairyEND01, #fairyEND02, #fairyEND03, #fairyEND04, #fairyEND05, #fairyEND06 {
   display: none;
 }
 

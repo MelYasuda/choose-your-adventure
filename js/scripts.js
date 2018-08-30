@@ -26,6 +26,7 @@ function intro(clicked_id) {
 function dwarfRoute(clicked_id) {
   if (clicked_id === "dwarf" || clicked_id === "rejectWhimsy" || clicked_id === "rejectSandy" || clicked_id === "byeSandy") {
     $("#dwarf01").show();
+    $("#fairy01, #lizard01").hide();
   } else if (clicked_id === "trust") {
     $("#dwarf01").hide();
     $("#dwarf02").show();
@@ -132,7 +133,8 @@ function lizardRoute(clicked_id) {
     $("#lizard08, #lizard10, #jumpLeft2, #jumpLeftPic").hide();
     $("#lizard09, #jumpRight2, #jumpRightPic").show();
   } else if (clicked_id === "waterfall") {
-    
+    $("#lizard09").hide();
+    $("#lizard11").show();
   }
   $("#intro03").hide();
 }
@@ -140,189 +142,71 @@ function lizardRoute(clicked_id) {
 
 function END(clicked_id) {
   if(clicked_id === "fight" || clicked_id === "fight2") {
-    $("#firstEnd").show();
-    $("#intro01, #secondChoice").hide();
+    $("#introEND01").show();
+    $("#intro01, #intro02").hide();
   } else if (clicked_id === "notrust") {
-    $("#secondEnd").show();
+    $("#dwarfEND01").show();
     $("#dwarf01").hide();
   } else if (clicked_id === "nomission") {
-    $("#thirdEnd").show();
+    $("#dwarfEND03").show();
     $("#dwarf02").hide();
   } else if (clicked_id === "stopSneed") {
-    $("#fourthEnd").show();
-    $("#seventhChoice").hide();
+    $("#dwarfEND04").show();
+    $("#dwarf05").hide();
   } else if (clicked_id === "pickMother") {
-    $("#fifthEnd").show();
-    $("#findParents2").hide();
+    $("#dwarfEND05").show();
+    $("#dwarf06").hide();
   } else if (clicked_id === "waitTillMorning") {
-    $("#sixthEnd").show();
-    $("#ninethChoice").hide();
+    $("#dwarfEND06").show();
+    $("#dwarf09").hide();
   } else if (clicked_id === "goLeft") {
-    $("#seventhEnd").show();
-    $("#tenthChoice").hide();
+    $("#dwarfEND07").show();
+    $("#dwarf10").hide();
   } else if (clicked_id === "keepTricking") {
-    $("#eighthEnd").show();
-    $("#eleventhChoice").hide();
+    $("#dwarfEND08").show();
+    $("#dwarf12").hide();
   } else if (clicked_id === "askForRescue") {
-    $("#ninethEnd").show();
-    $("#eleventhChoice").hide();
+    $("#dwarfEND09").show();
+    $("#dwarf12").hide();
   } else if (clicked_id === "ignoreWhimsy") {
-    $("#fairyFirstEnd").show();
-    $("#shrinkingBoy92").hide();
+    $("#fairyEND01").show();
+    $("#fairy02").hide();
   } else if (clicked_id === "goDruid") {
-    $("#fairySecondEnd").show();
-    $("#letThePixieDoIt116").hide();
+    $("#fairyEND02").show();
+    $("#fairy03").hide();
   } else if (clicked_id === "runaway") {
-    $("#fairyThirdEnd").show();
-    $("#letThePixieDoIt116").hide();
+    $("#fairyEND03").show();
+    $("#fiary03").hide();
   } else if (clicked_id === "goWitch") {
-    $("#fairyFourthEnd").show();
-    $("#pixieGetSmall26").hide();
+    $("#fairyEND04").show();
+    $("#fairy04").hide();
   } else if (clicked_id === "sleepInDen") {
-    $("#fairyFifthEnd").show();
-    $("#spiderDen").hide();
+    $("#fairyEND05").show();
+    $("#fairy05").hide();
   } else if (clicked_id === "sleepOutside") {
-    $("#fairySixthEnd").show();
-    $("#spiderDen").hide();
+    $("#fairyEND06").show();
+    $("#fairy05").hide();
+  } else if (clicked_id === "fightDragon") {
+    $("#lizardEND01").show();
+    $("#lizard02").hide();
+  } else if (clicked_id === "hopeSandy") {
+    $("#lizardEND02").show();
+    $("#lizard05").hide();
+  } else if (clicked_id === "jumpInRiver") {
+    $("#lizardEND03").show();
+    $("#lizard07").hide();
+  } else if (clicked_id === "monsterChat") {
+    $("#lizardEND04").show();
+    $("#lizard10").hide();
+  } else if (clicked_id === "trustLizard") {
+    $("#lizardEND05").show();
+    $("#lizard11").hide();
+  } else if (clicked_id === "noTrustLizard") {
+    $("#lizardEND06").show();
+    $("#lizard11").hide();
   }
 }
 
-
-  //PRINCE--Pixie Storyline
-  function pixieChoices19(clicked_id){
-    if(clicked_id === "trustWhimsy"){
-      $("#shrinkingBoy92").show();
-      $("#princeOne19").hide();
-      // $("#dwarvesCaughtOne34").hide();
-    } else if (clicked_id === "LetWhimsy") {
-      $("#letThePixieDoIt116").show();
-      $("#shrinkingBoy92").hide();
-    } else if (clicked_id === "stayWithPixy") {
-      $("#pixieGetSmall26").show();
-      $("#letThePixieDoIt116").hide();
-    } else if (clicked_id === "stayWithPixy2") {
-      $("#spiderDen").show();
-      $("#pixieGetSmall26").hide();
-    }
-  }
-
-
-// GROWN-UPS -- Lizard Men Storyline
-function grownUps86(clicked_id){
-  if(clicked_id === "trustSandy") {
-    $("#riverPrince134").show();
-    $("#dwarvesCaughtOne34").hide();
-  } else if (clicked_id === "rejectSandy") {
-    $("#riverPrince134").hide();
-    $("#dwarvesCaughtOne34").show();
-  }
-  $("#grownUpsOne86").hide();
-}
-
-function riverPrince134(clicked_id){
-  if(clicked_id === "turnAround"){
-    $("#dwarvesCaughtReturn72").show();
-    $("#attackDragon49", "#sneakDragon24", "#pastDragon141").hide();
-    // $("#sneakDragon24").hide();
-    // $("#pastDragon141").hide();
-  } else if (clicked_id === "fightDragon"){
-    $("#attackDragon49").show();
-    $("#sneakDragon24", "#pastDragon141", "#dwarvesCaughtReturn72").hide();
-    // $("#pastDragon141").hide();
-    // $("#dwarvesCaughtReturn72").hide();
-  } else if (clicked_id === "avoidDragon"){
-    $("#sneakDragon24").show();
-    $("#pastDragon141", "#dwarvesCaughtReturn72", "attackDragon49").hide();
-    // $("#dwarvesCaughtReturn72").hide();
-    // $("#attackDragon49").hide();
-  } else if (clicked_id === "carryRaft"){
-    $("#pastDragon141").show();
-    $("#dwarvesCaughtReturn72", "#attackDragon49", "#sneakDragon24").hide();
-    // $("#attackDragon49").hide();
-    // $("#sneakDragon24").hide();
-  }
-  $("#riverPrince134").hide();
-}
-
-function rightRiverBank141(clicked_id){
-  if (clicked_id === "rollIntoRiver"){
-    $("#riverSnakes93").show();
-    $("#doNothing10").hide();
-  } else if (clicked_id === "confused"){
-    $("#riverSnakes93").hide();
-    $("#doNothing10").show();
-  }
-  $("#pastDragon141").hide();
-}
-
-function swampRats114(clicked_id){
-  if (clicked_id === "jumpInRiver"){
-    $("#swimForIt66").show();
-    $("#scareRatsOff73").hide();
-  } else if (clicked_id === "scareRats") {
-    $("#scareRatsOff73").show();
-    $("#swimForIt66").hide();
-  }
-  $("#riverSnakes93").hide();
-}
-
-function waterFall70(clicked_id){
-  if (clicked_id === "jumpLeft"){
-    $("#waterFallJumpLeft147").show();
-    $("#giantSteps84", "#islandProspects18").hide();
-    // $("#islandProspects18").hide();
-  } else if (clicked_id === "jumpRight") {
-    $("#giantSteps84").show();
-    $("#islandProspects18", "#waterFallJumpLeft147").hide();
-    // $("#waterFallJumpLeft147").hide();
-  } else if (clicked_id === "goToIsland") {
-    $("#islandProspects18").show();
-    $("#waterFallJumpLeft147", "#giantSteps84").hide();
-    // $("#giantSteps84").hide();
-  }
-  $("#swimForIt66").hide();
-}
-
-function islandThing18(clicked_id){
-  if (clicked_id === "waterfall"){
-    $("#waterFallJumpLeft147").show();
-    $("#giantSteps84", "#monstertalk48").hide();
-    // $("#monstertalk48").hide();
-  } else if (clicked_id === "giantSteps"){
-    $("#giantSteps84").show();
-    $("#monstertalk48", "#waterFallJumpLeft147").hide();
-    // $("#waterFallJumpLeft147").hide();
-  } else if (clicked_id === "monsterChat"){
-    $("#monstertalk48").show();
-    $("#waterFallJumpLeft147", "#giantSteps84").hide();
-    // $("#giantSteps84").hide();
-  }
-  $("#islandProspects18").hide();
-}
-
-//end - lizard men
-function trustLizard(clicked_id){
-  if (clicked_id === "trustLizardmen"){
-    $("#trustLizards98").show();
-    $("#distrustLizards").hide();
-  } else if (clicked_id === "neverTrustLizardmen"){
-    $("#distrustLizards25").show();
-    $("#trustLizards98").hide();
-  }
-  $("#giantSteps84").hide();
-  $("#waterFallJumpLeft147").hide();
-}
-
-function secretChoice(clicked_id){
-  if (clicked_id === "chooseHarold"){
-    $("#haroldStory").show();
-    $("#gogolStory").hide();
-  } else if (clicked_id === "chooseGogol"){
-    $("#gogolStory").show();
-    $("#haroldStory").hide();
-  }
-  $("#menu").hide();
-}
 
 // user interface
 
