@@ -6,9 +6,9 @@
 
 A Javascript-powered Choose Your Own Adventure website that allows you to explore a branching narrative.
 
-## *Behavior-driven Development*
+## *Specifications*
 
-| Specs         |Input Example| Output Example|
+| Behavior         |Input Example| Output Example|
 |:-------------:|:-------------:|:-------------:|
 | Player is able to click through a single storyline.| Upon start, Player clicks button on each "page" to proceed. | Player is able to proceed through storyline and come to a linear conclusion without issue. |
 | Player is able to make choices and "alter" their storyline. | Player chooses option "A" (vs "B" or "C") | Result is path "a" (vs respective path "b" or "c") |
@@ -21,6 +21,15 @@ A Javascript-powered Choose Your Own Adventure website that allows you to explor
 | An "auto-lose" character | Choose auto-lose character | Always leads to negative outcome/ending. |
 | Turn page animation | Click a path option button | Pages of book simulate what it looks like to actually turn a page(s). |
 | Turn page audio | Click a path option button | Audio that simulates what it sounds like to actually turn a page(s) plays. |
+
+## *Bugs & known issues*
+1. Typos and/or filler text snippets accidentally left in.
+2. Scroll textbox is not responsive/scale with change of browser.
+3. Page turn animation effect does not work.
+4. If player would like to make an alternate decision, the player must reset the game to the beginning. Unable to go back to the previous branch.
+5. Soundtrack does not play upon load.
+6. Some images may not be oriented properly relative to the book background.
+7. Some paths may abruptly end on a blank page.
 
 ## *Setup/Installation Requirements*
 
