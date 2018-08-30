@@ -116,7 +116,7 @@
               mapmaker will be useful to our new kingdom. Soon we will launch our attack, With the prince in our
               hands, the kingdom is ours! Drive the wagon into the rocks and search it for gold and maps. Then burn
               it!”
-              <br>&nbsp;&nbsp;You've been told stories of heroes protecting the defenseless. Powerful knights fighting goblins, their armor gleaming. You look down at Woofy and your tattered shirt, then out at the ringmail armor covering the Dwarven rebels. Anger broils, but you feel Woofy's breath on your arm and it gives you pause. You can...</p>
+              <br>&nbsp;&nbsp;You've been told stories of heroes protecting the defenseless. Powerful knights fighting goblins, their armor gleaming. You look down at Woofy and your tattered shirt, then out at the ringmail armor covering the Dwarven rebels. Anger broils as you see your mother's arm twisted as she cries out in pain, but you feel Woofy's breath on your arm and it gives you pause. You can...</p>
             </div>
           </div>
           <div class="col-md-6">
@@ -127,7 +127,7 @@
           <div class="row">
 
             <button id="fight" onclick="END(this.id)">Fight the dwarves, despite the overwhelming odds.</button>
-            <button id="hide" onclick="intro(this.id)">Continue to hide in the wagon, and hope they forget to check for anyone else. Or gold. Or maps. Or to dash it against rocks. Or to burn it. Hmm...</button>
+            <button id="hide" onclick="intro(this.id)">Continue to hide in the wagon, and hope they forget to check for anyone else. Or gold. Or maps. Or to dash it against rocks. Or to burn it. Umm...</button>
             <button id="escape" onclick="intro(this.id)">Make a break for it with Woofy and try to escape.</button>
           </div>
         </div>
@@ -137,7 +137,7 @@
           <div class="col-md-6">
             <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
             <div class="storyLeft">
-              <p class="panel panel-default">you are hiding in the wagon</p>
+              <p class="panel panel-default">You're frozen in indecision, but time is running out. You see two dwarves approaching, their heavy armor clanging with each step. You can...</p>
             </div>
             </div>
             <div class="col-md-6">
@@ -146,8 +146,8 @@
             </div>
           </div>
         <div class="row">
-          <button id="fight2" onclick="END(this.id)">You're hiding and you decide to fight now</button>
-          <button id="escape2" onclick="intro(this.id)">You try to run away</button>
+          <button id="fight2" onclick="END(this.id)">Fight now, despite all the evidence of this being an awful idea, and you being ten.</button>
+          <button id="escape2" onclick="intro(this.id)">Try to run away, buy some time to get a plan, and come back to save your parents, which sounds better on parchment. </button>
         </div>
       </div>
 <!-- INTRO THIRD CHOICE - You escaped MAJOR ROUTE SELECT -->
@@ -156,7 +156,7 @@
           <div class="col-md-6">
             <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
             <div class="storyLeft">
-              <p class="panel panel-default">You have run away and the dwarves are gone. What now? major choice select</p>
+              <p class="panel panel-default">You sneak away through the tall grass, taking refuge behind a boulder protruding from the ground. From there, you watch as the dwarves burn your family wagon, and most of your worldly possessions. It's time to make a decision. </p>
             </div>
           </div>
           <div class="col-md-6">
@@ -165,9 +165,9 @@
           </div>
           </div>
           <div class="row">
-            <button id="dwarf" onclick="dwarfRoute(this.id)"> Go after the dwarves yourself</button>
-            <button id="lizard" onclick="lizardRoute(this.id)">Run itno the countryside looking for adults to help</button>
-            <button id="fairy" onclick="fairyRoute(this.id)">Go to the city yourself to warn the prince</button>
+            <button id="dwarf" onclick="dwarfRoute(this.id)">You change your mind, and go after the dwarves yourself. You'll defeat them with nothing but your wits and unfounded bravery.</button>
+            <button id="lizard" onclick="lizardRoute(this.id)">The land is known for its generous people. You'll go into the countryside and gather a militia to come stop the dwarves, allowing you to warn the prince in time.</button>
+            <button id="fairy" onclick="fairyRoute(this.id)">Go directly to the city and warn the prince yourself. You can make sure the army will be ready for the incoming dwarven coup.</button>
           </div>
         </div>
 <!-- DWARF ROUTE FIRST CHOICE -  -->
@@ -176,7 +176,7 @@
           <div class="col-md-6">
             <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
             <div class="storyLeft">
-              <p class="panel panel-default">You went after the dwarves and were captured. You meet an old dwarf who wants your help.</p>
+              <p class="panel panel-default">You went after the dwarves and were captured. Being honest with yourself, as you sit in the mud, bound in rope, you aren't sure what else you expected. But providence reveals itself to you as you meet an old dwarf who wants your help. The rebels are no friend of his; they are just as keen to punish his clan as the humans. He says he is eager to see them get their comeuppance, and he is recruiting children to do the work for him.</p>
             </div>
           </div>
           <div class="col-md-6">
@@ -185,8 +185,8 @@
           </div>
           </div>
           <div class="row">
-            <button id="trust" onclick="dwarfRoute(this.id)">You decide to trust the old dwarf</button>
-            <button id="notrust" onclick="END(this.id)">You decide you must not trust any dwarves</button>
+            <button id="trust" onclick="dwarfRoute(this.id)">You appreciate the old dwarf's honesty about only hiring child mercenaries that don't know how to negotiate their own wages. Someone that honest about their hiring practices must be honest about everything else, too. Trust him.</button>
+            <button id="notrust" onclick="END(this.id)">You know what your sword arm is worth, and this guy isn't paying. Also, anyone could see you just got caught <strong>immediately</strong> after going after the dwarves yourself. This is either a trick, or he is a fool. Do not trust him.</button>
           </div>
         </div>
 <!-- DWARF ROUTE SECOND CHOICE -->
@@ -195,7 +195,7 @@
           <div class="col-md-6">
             <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
             <div class="storyLeft">
-              <p class="panel panel-default">mission You trust the dwarf and he explains he needs help on a dangerous mission. Do you accept or is it too scarey?</p>
+              <p class="panel panel-default">The elder dwarf explains, there's only one way out of the prison, and that's if he gives you the key. But keys aren't cheap - this one, for example, is made out of iron, and even though iron is the cheapest and most accessible metal, metalworking is still a prized profession. Anyway, if you want to be free, you need to help him with a dangerous mission that would normally be assigned to an adult who specializes in this kind of thing.</p>
             </div>
           </div>
           <div class="col-md-6">
@@ -204,8 +204,8 @@
           </div>
           </div>
           <div class="row">
-            <button id="mission" onclick="dwarfRoute(this.id)">You decide to go on the mission.</button>
-            <button id="nomission" onclick="END(this.id)">You decide it's too dangerous and you just want to rescue your parents.</button>
+            <button id="mission" onclick="dwarfRoute(this.id)">You don't really understand anything he told you, and agree, despite a gnawing feeling of hesitance somewhere in the back of your mind.</button>
+            <button id="nomission" onclick="END(this.id)">You attempt to negotiate your fee, but the dwarf just complains about kids only caring about money these days. You're stuck in jail, in iron shackles nearly too heavy to lift, wondering how you can save your parents.</button>
           </div>
         </div>
 <!-- DWARF ROUTE THIRD CHOICE -->
@@ -214,7 +214,7 @@
           <div class="col-md-6">
             <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
             <div class="storyLeft">
-              <p class="panel panel-default">You accept the mission and how need to handle a guard</p>
+              <p class="panel panel-default">You've never heard the word <strong>apprehension</strong>, but you know how it feels. You walk up to the guard, and...</p>
             </div>
           </div>
           <div class="col-md-6">
@@ -223,8 +223,8 @@
           </div>
           </div>
           <div class="row">
-            <button id="trickGuard" onclick="dwarfRoute(this.id)">You decide to trick the guard</button>
-            <button id="attackGuard" onclick="dwarfRoute(this.id)">You decide to attack the guard</button>
+            <button id="trickGuard" onclick="dwarfRoute(this.id)">Despite having never lied once in your life, and growing up in a staunchly religious household where even a simple fib got you double chores, you decide tricking a dwarf guard that probably almost lost an eye in a card game once. That's how you interpret the droop in his left eye, anyway.</button>
+            <button id="attackGuard" onclick="dwarfRoute(this.id)">Attacking the guard seems like the best idea. He'll never expect it.</button>
           </div>
         </div>
 <!-- DWARF ROUTE FOURTH CHOICE -->
@@ -233,8 +233,8 @@
           <div class="col-md-6">
             <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
             <div class="storyLeft">
-              <p id="trickGuard2" class="panel panel-default">you trick the dwarf but he is sneaky</p>
-              <p id="attackGuard2" class="panel panel-default">you attack the dwarf but you tripp</p>
+              <p id="trickGuard2" class="panel panel-default">If only you'd read more books, like your mother always wanted. The guard listens to your tail, and flicks you in the ear repeatedly until you retreat back to your corner. It really stings.</p>
+              <p id="attackGuard2" class="panel panel-default">You attack the dwarf guard, but he punches your entire face with his giant fist. As your body stiffens like a board, and you fall backwards, you begin to think that perhaps you should have been a scholar like your mother wanted.</p>
             </div>
           </div>
           <div class="col-md-6">
