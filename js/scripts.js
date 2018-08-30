@@ -220,10 +220,6 @@ function END(clicked_id) {
 }
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 252119be2792b9f952d89715b78ebc1e31c7fc0e
 // user interface
 $(document).ready(function(){
   $("#passwordInput").submit(function(event){
