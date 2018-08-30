@@ -105,7 +105,11 @@ top:0px;
   font-family: 'MedievalSharp', cursive;
   font-size: 160%;
   font-weight: bold;
+<<<<<<< HEAD
   /*color:yellow;*/
+=======
+  text-align: left;
+>>>>>>> latesttest
   /*float:  left;*/
   /*text-align:left;*/
 }
@@ -389,6 +393,7 @@ p.panel {
   max-height: 100%;
   opacity:0.7;
   border-color: #E5B77F;
+  text-align: left;
 }
 
 div.storyLeft {
