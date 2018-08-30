@@ -14,7 +14,7 @@ function pageturn() {
 
 function start() {
     $("#intro01").show();
-    $("#introEND01, #dwarfEND01, #dwarfEND02, #dwarfEND03, #dwarfEND04, #dwarfEND05, #dwarfEND06, #dwarfEND07, #dwarfEND08, #dwarfEND09, #lizardEND01, #lizardEND02, #lizardEND03, #lizardEND04, #lizardEND05, #lizardEND06, #fairy01, #fairy02, #fairy03, #fairy04, #fairy05").hide();
+    $("#introEND01, #dwarfEND01, #dwarfEND02, #dwarfEND03, #dwarfEND04, #dwarfEND05, #dwarfEND06, #dwarfEND07, #dwarfEND08, #dwarfEND09, #lizardEND01, #lizardEND02, #lizardEND03, #lizardEND04, #lizardEND05, #lizardEND06, #fairyEND01, #fairyEND02, #fairyEND03, #fairyEND04, #fairyEND05").hide();
     pageturn();
 }
 // INTRO
