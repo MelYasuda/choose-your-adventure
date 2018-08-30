@@ -343,7 +343,7 @@ $(document).ready(function(){
     var userName = $("#nameText").val();
     $(".user-name").append(userName);
     $("#modal-btn").hide();
-    $(".welcome").fadeIn(3000);
+    $(".welcome").fadeIn(2000);
     $("#startGame").fadeIn(3000);
     $('#myModal').modal('hide');
   });
