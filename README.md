@@ -3,8 +3,9 @@
 ##### By Catherine Bradley, Mel Yasuda, Victoria Oh, Regina Nurieva, and David Mortkowitz 30/08/2018.
 
 ## *Description*
-
 A Javascript-powered Choose Your Own Adventure website that allows you to explore a branching narrative.
+
+A structure hierarchy can be [found here](https://docs.google.com/spreadsheets/d/1Zd9EcBgLgCjJfib7R2PkwFMDRbXAdpBJpQ0MGw0BcZs/edit#gid=0).
 
 ## *Specifications*
 
@@ -16,6 +17,7 @@ A Javascript-powered Choose Your Own Adventure website that allows you to explor
 | Player is able to reset the story. | Player clicks "reset" button to start over. | Click "reset" | Takes player back to title page. |
 | Program will receive the player's name and replace the adventurer with the player's name throughout the story. | Bob | "Does Bob choose to fight the Dwarves?" |
 | Program has locked player characters, which are accessible with access code. | e.g. code: "epic0du5Win" | access to additional characters. |
+| When something other than the password is entered, it lets the player know it is wrong. | not the password | e.g. "please enter a valid password" |
 | "Winning" the game provides an "unlock" code. | Positive storyline outcome | e.g. code: "epic0du5Win" |
 | An "auto-win" character | Choose auto-win character | Always leads to positive outcome/ending. |
 | An "auto-lose" character | Choose auto-lose character | Always leads to negative outcome/ending. |
@@ -29,7 +31,13 @@ A Javascript-powered Choose Your Own Adventure website that allows you to explor
 4. If player would like to make an alternate decision, the player must reset the game to the beginning. Unable to go back to the previous branch.
 5. Soundtrack does not play upon load.
 6. Some images may not be oriented properly relative to the book background.
-7. Some paths may abruptly end on a blank page.
+7. Whitespace is visible when scrolling to the far right.
+8. The metallic effect loops but experiences a delay when it restarts.
+9. Password/hero reveal section shifts after name is entered.
+10. Portion of the hero reveal section is difficult to read - styling or placement needs to be edited.
+11. There is no effect/validation of the password is wrong.
+12. Past user input for password remains in input field.
+
 
 ## *Setup/Installation Requirements*
 
