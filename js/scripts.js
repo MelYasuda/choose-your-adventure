@@ -6,9 +6,16 @@
 //     autoCenter: true
 // });
 
+
+function pageturn() {
+  var pageturn = document.getElementById("pageturn");
+  pageturn.play();
+}
+
 function start() {
     $("#intro01").show();
     $("#introEND01, #dwarfEND01, #dwarfEND02, #dwarfEND03, #dwarfEND04, #dwarfEND05, #dwarfEND06, #dwarfEND07, #dwarfEND08, #dwarfEND09, #lizardEND01, #lizardEND02, #lizardEND03, #lizardEND04, #lizardEND05, #lizardEND06, #fairy01, #fairy02, #fairy03, #fairy04, #fairy05").hide();
+    pageturn();
 }
 // INTRO
 function intro(clicked_id) {
@@ -21,6 +28,7 @@ function intro(clicked_id) {
     $("#intro01, #intro02").hide();
   }
   $("#menu").hide();
+  pageturn();
 }
 // DWARF ROUTE
 function dwarfRoute(clicked_id) {
@@ -72,6 +80,7 @@ function dwarfRoute(clicked_id) {
     $("#dwarf12").show();
   }
   $("#intro03").hide();
+  pageturn();
 }
 // FAIRY ROUTE
 function fairyRoute(clicked_id) {
@@ -91,6 +100,7 @@ function fairyRoute(clicked_id) {
     $("#fairy05").show();
   }
   $("#intro03").hide();
+  pageturn();
 }
 // LIZARD ROUTE
 function lizardRoute(clicked_id) {
@@ -137,6 +147,7 @@ function lizardRoute(clicked_id) {
     $("#lizard11").show();
   }
   $("#intro03").hide();
+  pageturn();
 }
 
 
@@ -205,13 +216,12 @@ function END(clicked_id) {
     $("#lizardEND06").show();
     $("#lizard11").hide();
   }
+  pageturn();
 }
 
 
+
 // user interface
-
-
-
 $(document).ready(function(){
   $("#passwordInput").submit(function(event){
     event.preventDefault();
@@ -220,7 +230,6 @@ $(document).ready(function(){
       $("#secretCharacters").show();
     }
   });
-
 
 
   // assign user name to the story and hide the modal button
