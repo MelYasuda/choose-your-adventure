@@ -220,6 +220,7 @@ function END(clicked_id) {
 }
 
 
+
 // user interface
 $(document).ready(function(){
   $("#passwordInput").submit(function(event){
@@ -230,6 +231,8 @@ $(document).ready(function(){
       $("#passwordInput").hide();
     }
   });
+
+
 
 
   // assign user name to the story and hide the modal button
