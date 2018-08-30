@@ -421,7 +421,7 @@ img.sideImgFormat {
 
 }*/
 
-@media only screen and (max-width: 1024px) {
+/*@media only screen and (max-width: 1024px) {
     #background {
         visibility: collapse;
         width: 0%;
@@ -430,4 +430,4 @@ img.sideImgFormat {
     #background {
         width: 100%;
     }
-} */
+}*/
