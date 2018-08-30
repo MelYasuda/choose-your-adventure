@@ -26,6 +26,7 @@
 }
 
 #secretCharacters{
+  margin-top: 20%;
   display: none;
 }
 #revealText{
@@ -53,6 +54,9 @@
   font-size: 30px;
 }
 
+label {
+  font-family: 'MedievalSharp', cursive;
+}
 /* .container2 {
   display: none;
 } */
@@ -103,6 +107,11 @@ top:0px;
     background-color: #F0AE5E;
     font-family: 'MedievalSharp', cursive;
     font-size: 26px;
+}
+
+#passwordInput {
+  margin-top: 30%;
+  position: absolute;
 }
 
   /* button {
@@ -227,11 +236,6 @@ button{
 
 }
 
-button#modal-btn {
-  margin-top: 50px;
-  margin-left: 80px;
-  font-size: 40px;
-}
 
 /*try to style Main Button */
 #startGame{
@@ -245,6 +249,7 @@ border-radius: 45%;
 font-size: 22px;
 margin-left: 7%;
 padding: 7%;
+display: none;
 }
 
 #startGame:hover{
@@ -376,6 +381,13 @@ img.sideImgFormat {
   max-height: 80%;
   transform: rotate(-2deg);
     opacity:0.5;
+}
+
+/*modal styling*/
+button#modal-btn {
+  margin-top: 50px;
+  margin-left: 80px;
+  font-size: 40px;
 }
 
 /*.password{

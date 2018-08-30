@@ -132,7 +132,7 @@ function lizardRoute(clicked_id) {
     $("#lizard08, #lizard10, #jumpLeft2, #jumpLeftPic").hide();
     $("#lizard09, #jumpRight2, #jumpRightPic").show();
   } else if (clicked_id === "waterfall") {
-    
+
   }
   $("#intro03").hide();
 }
@@ -325,15 +325,13 @@ function secretChoice(clicked_id){
 }
 
 // user interface
-
-
-
 $(document).ready(function(){
   $("#passwordInput").submit(function(event){
     event.preventDefault();
     var Password = $("#passwordText").val();
     if (Password === "Wizard" || Password === "wizard"){
       $("#secretCharacters").show();
+      $("#passwordInput").hide();
     }
   });
 
@@ -347,11 +345,7 @@ $(document).ready(function(){
     $("#modal-btn").hide();
     $(".welcome").fadeIn(3000);
     $("#startGame").fadeIn(3000);
-  });
-
-  // close modal when submit user name
-  $('#submit-btn').click(function() {
-   $('#myModal').modal('hide');
+    $('#myModal').modal('hide');
   });
 
 });
