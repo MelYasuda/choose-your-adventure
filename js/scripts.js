@@ -18,29 +18,13 @@ function intro(clicked_id) {
     $("#intro01").hide();
   } else if (clicked_id === "escape" || clicked_id === "escape2") {
     $("#intro03").show();
-    $("#intro01").hide();
-    $("#intro02").hide();
+    $("#intro01, #intro02").hide();
   }
   $("#menu").hide();
 }
-
-// function intro(clicked_id) {
-//   var show ="";
-//   var hide ="";
-//   if (clicked_id === "hide") {
-//     var show = "#intro02"
-//     var hide = "#intro01"
-//   } else if (clicked_id === "escape" || clicked_id === "escape2") {
-//     var show = "#intro03"
-//     var hide = "#intro01" + "#intro02"
-//   }
-//   $("#intro01", show).show();
-//   $("#menu", hide).hide();
-//   console.log(show);
-// }
-
+// DWARF ROUTE
 function dwarfRoute(clicked_id) {
-  if (clicked_id === "dwarf") {
+  if (clicked_id === "dwarf" || clicked_id === "ReturnDwarf") {
     $("#dwarf01").show();
   } else if (clicked_id === "trust") {
     $("#dwarf01").hide();
@@ -79,41 +63,36 @@ function dwarfRoute(clicked_id) {
     $("#dwarf10").hide();
     $("#dwarf11").show();
   } else if (clicked_id === "turnAroundPipe") {
-    $("#dwarf10").show();
-    $("#goRightPipe").text("");
-  } else if (clicked_id === "goStraightPipe") {
     $("#dwarf11").hide();
+    $("#dwarf10").show();
+    $("#goRightPipe").remove();
+  } else if (clicked_id === "goStraightPipe") {
+    $("#dwarf10").hide();
     $("#dwarf12").show();
   }
-    $("#intro03").hide();
+  $("#intro03").hide();
 }
-
-
-function dwarfRoute2(clicked_id) {
-  if (clicked_id === "continue1" || clicked_id === "continue2") {
-    $("#trickGuard2, #attackGuard2").hide();
-    $("#seventhChoice").show();
-  } else if (clicked_id === "findParents") {
-    $("#findParents2").show();
-    $("#seventhChoice").hide();
-  } else if (clicked_id === "goDwarf" || clicked_id === "pickFather") {
-    $("#findParents2, #seventhChoice").hide();
-    $("#eigthChoice").show();
-  } else if (clicked_id === "swerveHorse" || clicked_id === "stayOnHorse") {
-    $("#ninethChoice").show();
-    $("#eigthChoice").hide();
-  } else if (clicked_id === "FindAnotherWay" || clicked_id === "turnAround") {
-    $("#tenthChoice").show();
-    $("#ninethChoice").hide();
-    $("#goRight2").hide();
-  } else if (clicked_id === "goRight") {
-    $("#goRight2").show();
-    $("#tenthChoice").hide();
-  } else if (clicked_id === "goStraight") {
-    $("#eleventhChoice").show();
-    $("#tenthChoice").hide();
+// FAIRY ROUTE
+function fairyRoute(clicked_id) {
+  if (clicked_id === "fairy") {
+    $("#fairy01").show();
+  } else if (clicked_id === "trustWhimsy") {
+    $("#fairy01").hide();
+    $("#fairy02").show();
+  } else if (clicked_id === "letWhimsy") {
+    $("#fairy02").hide();
+    $("#fairy03").show();
+  } else if (clicked_id === "stayWithWhimsy") {
+    $("#fairy03").hide();
+    $("#fairy04").show();
+  } else if (clicked_id === "believeWhimsy") {
+    $("#fairy04").hide();
+    $("#fairy05").show();
   }
+  $("#intro03").hide();
 }
+
+
 
 function END(clicked_id) {
   if(clicked_id === "fight" || clicked_id === "fight2") {

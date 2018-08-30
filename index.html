@@ -126,325 +126,378 @@
           </div>
         </div>
 <!-- INTRO SECOND CHOICE - Hiding in the wagon after the dwarves attacked -->
-        <div id="intro02">
-          <div class="row">
-            <div class="col-md-6">
-              <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
-              <div class="storyLeft">
-                <p class="panel panel-default">you are hiding in the wagon</p>
-              </div>
+      <div id="intro02">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">you are hiding in the wagon</p>
+            </div>
             </div>
             <div class="col-md-6">
               <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
               <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
             </div>
-            </div>
-            <div class="row">
-              <button id="fight2" onclick="END(this.id)">You're hiding and you decide to fight now</button>
-              <button id="escape2" onclick="intro(this.id)">You try to run away</button>
+          </div>
+        <div class="row">
+          <button id="fight2" onclick="END(this.id)">You're hiding and you decide to fight now</button>
+          <button id="escape2" onclick="intro(this.id)">You try to run away</button>
+        </div>
+      </div>
+<!-- INTRO THIRD CHOICE - You escaped MAJOR ROUTE SELECT -->
+      <div id="intro03">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">You have run away and the dwarves are gone. What now? major choice select</p>
             </div>
           </div>
-<!-- INTRO THIRD CHOICE - You escaped MAJOR ROUTE SELECT -->
-          <div id="intro03">
-            <div class="row">
-              <div class="col-md-6">
-                <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
-                <div class="storyLeft">
-                  <p class="panel panel-default">You have run away and the dwarves are gone. What now? major choice select</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
-                <img class="sideImgFormat" src="img/think.jpg" alt="hidinginwoods">
-              </div>
-              </div>
-              <div class="row">
-                <button id="dwarf" onclick="dwarfRoute(this.id)"> Go after the dwarves yourself</button>
-                <button id="grownUpsTrack" onclick="majorChoice(this.id)">Run itno the countryside looking for adults to help</button>
-                <button id="princeTrack" onclick="majorChoice(this.id)">Go to the city yourself to warn the prince</button>
-              </div>
-            </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/think.jpg" alt="hidinginwoods">
+          </div>
+          </div>
+          <div class="row">
+            <button id="dwarf" onclick="dwarfRoute(this.id)"> Go after the dwarves yourself</button>
+            <button id="grownUpsTrack" onclick="majorChoice(this.id)">Run itno the countryside looking for adults to help</button>
+            <button id="fairy" onclick="fairyRoute(this.id)">Go to the city yourself to warn the prince</button>
+          </div>
+        </div>
 <!-- DWARF ROUTE FIRST CHOICE -  -->
-            <div id="dwarf01">
-              <div class="row">
-                <div class="col-md-6">
-                  <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
-                  <div class="storyLeft">
-                    <p class="panel panel-default">You went after the dwarves and were captured. You meet an old dwarf who wants your help.</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
-                  <img class="sideImgFormat" src="img/dwarve.jpg" alt="hidinginwoods">
-                </div>
-                </div>
-                <div class="row">
-                  <button id="trust" onclick="dwarfRoute(this.id)">You decide to trust the old dwarf</button>
-                  <button id="notrust" onclick="END(this.id)">You decide you must not trust any dwarves</button>
-                </div>
-              </div>
+      <div id="dwarf01">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">You went after the dwarves and were captured. You meet an old dwarf who wants your help.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/dwarve.jpg" alt="hidinginwoods">
+          </div>
+          </div>
+          <div class="row">
+            <button id="trust" onclick="dwarfRoute(this.id)">You decide to trust the old dwarf</button>
+            <button id="notrust" onclick="END(this.id)">You decide you must not trust any dwarves</button>
+          </div>
+        </div>
 <!-- DWARF ROUTE SECOND CHOICE -->
-              <div id="dwarf02">
-                <div class="row">
-                  <div class="col-md-6">
-                    <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
-                    <div class="storyLeft">
-                      <p class="panel panel-default">mission You trust the dwarf and he explains he needs help on a dangerous mission. Do you accept or is it too scarey?</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
-                    <img class="sideImgFormat" src="img/fire.jpg" alt="hidinginwoods">
-                  </div>
-                  </div>
-                  <div class="row">
-                    <button id="mission" onclick="dwarfRoute(this.id)">You decide to go on the mission.</button>
-                    <button id="nomission" onclick="END(this.id)">You decide it's too dangerous and you just want to rescue your parents.</button>
-                  </div>
-                </div>
+      <div id="dwarf02">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">mission You trust the dwarf and he explains he needs help on a dangerous mission. Do you accept or is it too scarey?</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/fire.jpg" alt="hidinginwoods">
+          </div>
+          </div>
+          <div class="row">
+            <button id="mission" onclick="dwarfRoute(this.id)">You decide to go on the mission.</button>
+            <button id="nomission" onclick="END(this.id)">You decide it's too dangerous and you just want to rescue your parents.</button>
+          </div>
+        </div>
 <!-- DWARF ROUTE THIRD CHOICE -->
-                  <div id="dwarf03">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
-                        <div class="storyLeft">
-                          <p class="panel panel-default">You accept the mission and how need to handle a guard</p>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
-                        <img class="sideImgFormat" src="img/Dwarf.jpg" alt="hidinginwoods">
-                      </div>
-                      </div>
-                      <div class="row">
-                        <button id="trickGuard" onclick="dwarfRoute(this.id)">You decide to trick the guard</button>
-                        <button id="attackGuard" onclick="dwarfRoute(this.id)">You decide to attack the guard</button>
-                      </div>
-                    </div>
+      <div id="dwarf03">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">You accept the mission and how need to handle a guard</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/Dwarf.jpg" alt="hidinginwoods">
+          </div>
+          </div>
+          <div class="row">
+            <button id="trickGuard" onclick="dwarfRoute(this.id)">You decide to trick the guard</button>
+            <button id="attackGuard" onclick="dwarfRoute(this.id)">You decide to attack the guard</button>
+          </div>
+        </div>
 <!-- DWARF ROUTE FOURTH CHOICE -->
-                    <div id="dwarf04">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
-                          <div class="storyLeft">
-                            <p id="trickGuard2" class="panel panel-default">you trick the dwarf but he is sneaky</p>
-                            <p id="attackGuard2" class="panel panel-default">you attack the dwarf but you tripp</p>
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
-                          <img id="attackpic" class="sideImgFormat" src="img/win.jpg" alt="hidinginwoods">
-                          <img id="trickpic" class="sideImgFormat" src="img/boy.jpg" alt="hidinginwoods">
-                        </div>
-                        </div>
-                        <div class="row">
-                          <button id="attackTrick" onclick="dwarfRoute(this.id)">turn the page to find out!</button>
-                        </div>
-                      </div>
+      <div id="dwarf04">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p id="trickGuard2" class="panel panel-default">you trick the dwarf but he is sneaky</p>
+              <p id="attackGuard2" class="panel panel-default">you attack the dwarf but you tripp</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img id="attackpic" class="sideImgFormat" src="img/win.jpg" alt="hidinginwoods">
+            <img id="trickpic" class="sideImgFormat" src="img/boy.jpg" alt="hidinginwoods">
+          </div>
+          </div>
+          <div class="row">
+            <button id="attackTrick" onclick="dwarfRoute(this.id)">turn the page to find out!</button>
+          </div>
+        </div>
 <!-- DWARF ROUTE FIFTH CHOICE -->
-                      <div id="dwarf05">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
-                            <div class="storyLeft">
-                              <p class="panel panel-default">you got past hte dwarf and resced bork from jail. He wants you to go with them</p>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
-                            <img class="sideImgFormat" src="img/sekernik.jpg" alt="hidinginwoods">
-                          </div>
-                          <div class="row">
-                            <button id="goDwarf" onclick="dwarfRoute(this.id)">You want to go with the dwarves to warn the price of SNEED</button>
-                            <button id="findParents" onclick="dwarfRoute(this.id)">You just want to find your parents</button>
-                            <button id="stopSneed" onclick="END(this.id)">Let's just go stop Sneed the bad guy right now</button>
-                          </div>
-                        </div>
-                      </div>
+      <div id="dwarf05">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">you got past hte dwarf and resced bork from jail. He wants you to go with them</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/sekernik.jpg" alt="hidinginwoods">
+          </div>
+          <div class="row">
+            <button id="goDwarf" onclick="dwarfRoute(this.id)">You want to go with the dwarves to warn the price of SNEED</button>
+            <button id="findParents" onclick="dwarfRoute(this.id)">You just want to find your parents</button>
+            <button id="stopSneed" onclick="END(this.id)">Let's just go stop Sneed the bad guy right now</button>
+          </div>
+        </div>
+      </div>
 <!-- DWARF ROUTE SIXTH CHOICE -->
-                        <div id="dwarf06">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
-                              <div class="storyLeft">
-                                <p class="panel panel-default">you want to find your parents so they take you to their cell. father go mother stay</p>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
-                              <img class="sideImgFormat" src="img/squad.jpg" alt="hidinginwoods">
-                            </div>
-                            <div class="row">
-                              <button id="pickFather" onclick="dwarfRoute(this.id)">Leave your parents and go with the Dwarves</button>
-                              <button id="pickMother" onclick="END(this.id)">Stay with your parents</button>
-                            </div>
-                          </div>
-                        </div>
+      <div id="dwarf06">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">you want to find your parents so they take you to their cell. father go mother stay</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/squad.jpg" alt="hidinginwoods">
+          </div>
+          <div class="row">
+            <button id="pickFather" onclick="dwarfRoute(this.id)">Leave your parents and go with the Dwarves</button>
+            <button id="pickMother" onclick="END(this.id)">Stay with your parents</button>
+          </div>
+        </div>
+      </div>
 <!-- DWARF ROUTE SEVENTH CHOICE -->
-                          <div id="dwarf07">
-                            <div class="row">
-                              <div class="col-md-6">
-                                <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
-                                <div class="storyLeft">
-                                  <p class="panel panel-default">you ride with the dwarves to warn the pice you are being chased go straight or go right</p>
-                                </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
-                                  <img class="sideImgFormat" src="img/Orf.jpg" alt="hidinginwoods">
-                                </div>
-                              </div>
-                              <div class="row">
-                                <button id="swerveHorse" onclick="dwarfRoute(this.id)">You swerve the horse</button>
-                                <button id="stayOnHorse" onclick="dwarfRoute(this.id)">Stay on your horse</button>
-                              </div>
-                            </div>
+      <div id="dwarf07">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">you ride with the dwarves to warn the pice you are being chased go straight or go right</p>
+            </div>
+            </div>
+            <div class="col-md-6">
+              <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+              <img class="sideImgFormat" src="img/Orf.jpg" alt="hidinginwoods">
+            </div>
+          </div>
+          <div class="row">
+            <button id="swerveHorse" onclick="dwarfRoute(this.id)">You swerve the horse</button>
+            <button id="stayOnHorse" onclick="dwarfRoute(this.id)">Stay on your horse</button>
+          </div>
+        </div>
 <!-- DWARF ROUTE EIGHTH CHOICE -->
-                          <div id="dwarf08">
-                            <div class="row">
-                              <div class="col-md-6">
-                                <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
-                                <div class="storyLeft">
-                                  <p id="swerveHorse2" class="panel panel-default">you swerve your horse and lose the guard chasing you, you continue to the city</p>
-                                  <p id="stayOnHorse2" class="panel panel-default">you stay the course on your horse and bork saves you you continue on to the city</p>
-                                </div>
-                              </div>
-                              <div class="col-md-6">
-                                <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
-                                <img id="swervepic" class="sideImgFormat" src="img/win.jpg" alt="hidinginwoods">
-                                <img id="stayhorsepic" class="sideImgFormat" src="img/boy.jpg" alt="hidinginwoods">
-                              </div>
-                            </div>
-                            <div class="row">
-                              <button id="stayServe" onclick="dwarfRoute(this.id)">turn the page to continue on to the city</button>
-                            </div>
-                          </div>
+      <div id="dwarf08">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p id="swerveHorse2" class="panel panel-default">you swerve your horse and lose the guard chasing you, you continue to the city</p>
+              <p id="stayOnHorse2" class="panel panel-default">you stay the course on your horse and bork saves you you continue on to the city</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img id="swervepic" class="sideImgFormat" src="img/win.jpg" alt="hidinginwoods">
+            <img id="stayhorsepic" class="sideImgFormat" src="img/boy.jpg" alt="hidinginwoods">
+          </div>
+        </div>
+        <div class="row">
+          <button id="stayServe" onclick="dwarfRoute(this.id)">turn the page to continue on to the city</button>
+        </div>
+      </div>
 <!-- DWARF ROUTE NINETH CHOICE -->
-                          <div id="dwarf09">
-                            <div class="row">
-                              <div class="col-md-6">
-                                <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
-                                <div class="storyLeft">
-                                  <p class="panel panel-default">you arrive at the gate but it won't open until morning do you wait or find another way in</p>
-                                </div>
-                                </div>
-                                <div class="col-md-6">
-                                  <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
-                                  <img class="sideImgFormat" src="img/Orf.jpg" alt="hidinginwoods">
-                                </div>
-                              </div>
-                              <div class="row">
-                                <button id="waitTillMorning" onclick="END(this.id)"> You wait for the gate to open in the morning</button>
-                                <button id="sneakCityDwarf" onclick="dwarfRoute(this.id)">You try to find another way into the city</button>
-                              </div>
-                            </div>
+      <div id="dwarf09">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">you arrive at the gate but it won't open until morning do you wait or find another way in</p>
+            </div>
+            </div>
+            <div class="col-md-6">
+              <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+              <img class="sideImgFormat" src="img/Orf.jpg" alt="hidinginwoods">
+            </div>
+          </div>
+          <div class="row">
+            <button id="waitTillMorning" onclick="END(this.id)"> You wait for the gate to open in the morning</button>
+            <button id="sneakCityDwarf" onclick="dwarfRoute(this.id)">You try to find another way into the city</button>
+          </div>
+        </div>
 <!-- DWARF ROUTE TENTH CHOICE -->
-                            <div id="dwarf10">
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
-                                  <div class="storyLeft">
-                                    <p class="panel panel-default">you decide to find another way around into the castle to warn the prince you go into a pipe an te swarves cannot follow</p>
-                                  </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
-                                    <img class="sideImgFormat" src="img/Orf.jpg" alt="hidinginwoods">
-                                  </div>
-                                </div>
-                                <div class="row">
-                                  <button id="goLeft" onclick="END(this.id)"> Go left towards the sound of running water</button>
-                                  <button id="goRightPipe" onclick="dwarfRoute(this.id)">Go right towards an open space.</button>
-                                  <button id="goStraightPipe" onclick="dwarfRoute(this.id)">Continue straight</button>
-                                </div>
-                              </div>
+      <div id="dwarf10">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">you decide to find another way around into the castle to warn the prince you go into a pipe an te swarves cannot follow</p>
+            </div>
+            </div>
+            <div class="col-md-6">
+              <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+              <img class="sideImgFormat" src="img/Orf.jpg" alt="hidinginwoods">
+            </div>
+          </div>
+          <div class="row">
+            <button id="goLeft" onclick="END(this.id)"> Go left towards the sound of running water</button>
+            <button id="goRightPipe" onclick="dwarfRoute(this.id)">Go right towards an open space.</button>
+            <button id="goStraightPipe" onclick="dwarfRoute(this.id)">Continue straight</button>
+          </div>
+        </div>
 <!-- DWARF ROUTE ELEVNTH CHOICE -->
-                              <div id="dwarf11">
-                                <div class="row">
-                                  <div class="col-md-6">
-                                    <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
-                                    <div class="storyLeft">
-                                      <p class="panel panel-default">you almost fall into a pit once you have calmed down you turn raound and make another choice</p>
-                                    </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                      <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
-                                      <img class="sideImgFormat" src="img/Orf.jpg" alt="hidinginwoods">
-                                    </div>
-                                  </div>
-                                  <div class="row">
-                                    <button id="turnAroundPipe" onclick="dwarfRoute(this.id)"> Turn Around</button>
-                                  </div>
-                                </div>
+      <div id="dwarf11">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">you almost fall into a pit once you have calmed down you turn raound and make another choice</p>
+            </div>
+            </div>
+            <div class="col-md-6">
+              <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+              <img class="sideImgFormat" src="img/Orf.jpg" alt="hidinginwoods">
+            </div>
+          </div>
+          <div class="row">
+            <button id="turnAroundPipe" onclick="dwarfRoute(this.id)"> Turn Around</button>
+          </div>
+        </div>
 <!-- DWARF ROUTE TWELTH CHOICE -->
-                                <div id="dwarf12">
-                                  <div class="row">
-                                    <div class="col-md-6">
-                                      <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
-                                      <div class="storyLeft">
-                                        <p class="panel panel-default">You have reached underneath the prince's throne. The evil dwarves are there and
-                                        are throwing rocks at the prince. Galen sees a pipe and shouts into it “STOP
-                                        THROWING ROCKS” and his voice is amplified throughout the throne room. Nobody
-                                        knows where his voice is coming from.</p>
-                                      </div>
-                                      </div>
-                                      <div class="col-md-6">
-                                        <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
-                                        <img class="sideImgFormat" src="img/Orf.jpg" alt="hidinginwoods">
-                                      </div>
-                                    </div>
-                                    <div class="row">
-                                      <button id="keepTricking" onclick="END(this.id)"> You wish to keep tricking the dwarves</button>
-                                      <button id="askForRescue" onclick="END(this.id)"> You want to tell someone to rescue you from the drainage pipes</button>
-                                    </div>
-                                  </div>
-
+      <div id="dwarf12">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">You have reached underneath the prince's throne. The evil dwarves are there and
+              are throwing rocks at the prince. Galen sees a pipe and shouts into it “STOP
+              THROWING ROCKS” and his voice is amplified throughout the throne room. Nobody
+              knows where his voice is coming from.</p>
+            </div>
+            </div>
+            <div class="col-md-6">
+              <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+              <img class="sideImgFormat" src="img/Orf.jpg" alt="hidinginwoods">
+            </div>
+          </div>
+          <div class="row">
+            <button id="keepTricking" onclick="END(this.id)"> You wish to keep tricking the dwarves</button>
+            <button id="askForRescue" onclick="END(this.id)"> You want to tell someone to rescue you from the drainage pipes</button>
+          </div>
+        </div>
+<!-- FAIRY ROUTE FIRST CHOICE -->
+      <div id="fairy01">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">you decide to warn the prince yourself and meet a fairy named whimsy</p>
+            </div>
+            </div>
+            <div class="col-md-6">
+              <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+              <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+            </div>
+          </div>
+        <div class="row">
+          <button id="trustWhimsy" onclick="fairyRoute(this.id)"> You decide to trust the fairy and go with her</button>
+          <button id="returnDwarf" onclick="dwarfRoute(this.id)">You decide against it and go find the swarves</button>
+        </div>
+      </div>
+<!-- FAIRY ROUTE SECOND CHOICE -->
+      <div id="fairy02">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">you go with the fairy and see two dwarves</p>
+            </div>
+            </div>
+            <div class="col-md-6">
+              <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+              <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+            </div>
+          </div>
+        <div class="row">
+          <button id="letWhimsy" onclick="fairyRoute(this.id)"> Let Whimsy handle it</button>
+          <button id="ignoreWhimsy" onclick="END(this.id)">Attack the dwarves</button>
+        </div>
+      </div>
+<!-- FAIRY ROUTE THIRD CHOICE -->
+      <div id="fairy03">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">you let whismy take care of the dwarves and follow her and meet a druid</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button id="goDruid" onclick="END(this.id)"> Do you want to go with Druid</button>
+          <button id="stayWithWhimsy" onclick="fairyRoute(this.id)">Stay with the pixy</button>
+          <button id="runaway" onclick="END(this.id)">Run away from both</button>
+        </div>
+      </div>
+<!-- FAIRY ROUTE FOURTH CHOICE -->
+      <div id="fairy04">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">you let whimsy shink you and you see a witch</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button id="goWitch" onclick="END(this.id)"> Go with the witch</button>
+          <button id="believeWhimsy" onclick="fairyRoute(this.id)">Stay with the pixy</button>
+        </div>
+      </div>
+<!-- FAIRY ROUTE FIFTH CHOICE -->
+      <div id="fairy05">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">you take whimsy's advice and not go with the witch. you continue on but she wants to sleep in a spider den</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button id="sleepInDen" onclick="END(this.id)"> Trust the fairy</button>
+          <button id="sleepOutside" onclick="END(this.id)">Don't trust her and sleep outside</button>
+        </div>
+      </div>
 
         <!-- containerend  -->
     </div>
 
-
-
-      <div id="princeOne19">
-        <p>You have decided to go to warn the prince you meet a fairy</p>
-        <button id="trustWhimsy" onclick="pixieChoices19(this.id)"> You decide to trust the fairy and be shrunk</button>
-        <button id="returnDwarf" onclick="dwarfRoute(this.id)">You decide to change your mind and follow the dwarves</button>
-      </div>
-
-      <div id="shrinkingBoy92">
-        <p>You're shrunk and small. You're hiding and seeing two dwarves.</p>
-        <button id="LetWhimsy" onclick="pixieChoices19(this.id)"> Let Whimsy handle it</button>
-        <button id="ignoreWhimsy" onclick="END(this.id)">Attack the dwarves</button>
-      </div>
-
-      <div id="letThePixieDoIt116">
-        <p>You meet Druid</p>
-        <button id="goDruid" onclick="END(this.id)"> Do you want to go with Druid</button>
-        <button id="stayWithPixy" onclick="pixieChoices19(this.id)">Stay with the pixy</button>
-        <button id="runaway" onclick="END(this.id)">Run away from both</button>
-      </div>
-
-      <div id="pixieGetSmall26">
-        <p>You get shrunk and you meet a whitch</p>
-        <button id="goWitch" onclick="END(this.id)"> Go with the witch</button>
-        <button id="stayWithPixy2" onclick="pixieChoices19(this.id)">Stay with the pixy</button>
-      </div>
-
-      <div id="spiderDen">
-        <p>You continue with fairy and she want to stay in a spider den</p>
-        <button id="sleepInDen" onclick="END(this.id)"> Trust the fairy</button>
-        <button id="sleepOutside" onclick="END(this.id)">Don't trust her and sleep outside</button>
-      </div>
-
-      <!-- <div id="spiderDenDetour1">
-        <p>You spend the night in the den. You had a good night of sleep</p>
-        <button id="sleepInDen2" onclick="pixieChoices19(this.id)"> Start the day!</button>
-      </div>
-
-      <div id="spiderDenDetour2">
-        <p>You spend the night outside. You're tired</p>
-        <button id="sleepOutside2" onclick="pixieChoices19(this.id)"> Start the day!</button>
-      </div> -->
 
 
 <!-- LIZARD MEN CHOICE -->
