@@ -53,6 +53,27 @@
   font-size: 30px;
 }
 
+#desk{
+background-image: url("../img/wood6.jpg");
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  /*opacity: 0.3;*/
+    /*filter: alpha(opacity=50);*/
+  position: absolute;
+  /*z-index:-4;*/
+  top: 0%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+
+  /*opacity: -0.7;*/
+  /*min-height: 100%;
+  min-width: 1024px;*/
+}
+
 /* .container2 {
   display: none;
 } */
@@ -80,16 +101,27 @@ top:0px;
   font-family: 'MedievalSharp', cursive;
   font-size: 160%;
   font-weight: bold;
+  /*color:yellow;*/
   /*float:  left;*/
   /*text-align:left;*/
 }
+.intro{
+  color:yellow;
+}
 #menu h3{
   font-family: 'MedievalSharp', cursive;
-  font-size: 60px;
-  -webkit-text-fill-color: #8D381E;
+  font-size: 70px;
+  -webkit-text-fill-color: #F25004;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   margin-top: 70px;
+}
+
+#passwordInput{
+  color: #10ECE6;
+  font-size: 20px;
+  font-family: 'MedievalSharp', cursive;
+  margin-top: 10%;
 }
 
 
