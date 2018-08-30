@@ -1,14 +1,11 @@
-#intro01, #intro02, #intro03 {
+#intro01, #intro02, #intro03,
+#dwarf01, #dwarf02, #dwarf03, #dwarf04, #dwarf05, #dwarf06, #dwarf07, #dwarf08 {
   display: none;
 }
 
-#dwarf01, #dwarf02, #dwarf03 {
-  display: none;
-}
 
 #background, #firstChoice, #secondChoice, #thirdChoice, #fourthChoice, #fifthChoice, #sixthChoice, #trickGuard2, #attackGuard2, #seventhChoice, #findParents2, #eigthChoice, #ninethChoice, #tenthChoice, #goRight, #eleventhChoice, #princeOne19, #shrinkingBoy92, #letThePixieDoIt116, #pixieGetSmall26,
 #spiderDen{
->>>>>>> eed2ad5ca8147cbb986d04e9857c8c16c659c697
   display: none;
 }
 

@@ -1,10 +1,10 @@
 
 //Turn Pages//
-$("#flipbook").turn({
-    width: 400,
-    height: 300,
-    autoCenter: true
-});
+// $("#flipbook").turn({
+//     width: 400,
+//     height: 300,
+//     autoCenter: true
+// });
 
 function start() {
     $("#intro01").show();
@@ -24,31 +24,72 @@ function intro(clicked_id) {
   $("#menu").hide();
 }
 
-function dwarfRoute(clicked_id) {
+// function intro(clicked_id) {
+//   var show ="";
+//   var hide ="";
+//   if (clicked_id === "hide") {
+//     var show = "#intro02"
+//     var hide = "#intro01"
+//   } else if (clicked_id === "escape" || clicked_id === "escape2") {
+//     var show = "#intro03"
+//     var hide = "#intro01" + "#intro02"
+//   }
+//   $("#intro01", show).show();
+//   $("#menu", hide).hide();
+//   console.log(show);
+// }
 
-  if (clicked_id === "returnDwarf") {
+function dwarfRoute(clicked_id) {
+  if (clicked_id === "dwarf") {
     $("#dwarf01").show();
-    $("#princeOne19").hide();
   } else if (clicked_id === "trust") {
     $("#dwarf01").hide();
     $("#dwarf02").show();
   } else if (clicked_id === "mission") {
-    $("#sixthChoice").show();
     $("#dwarf02").hide();
+    $("#dwarf03").show();
   } else if (clicked_id === "trickGuard") {
-    $("#trickGuard2").show();
-    $("#sixthChoice").hide();
-    $("#dwarf02").hide();
+    $("#dwarf03, #attackGuard2, #attackpic").hide();
+    $("#dwarf04, #trickGuard2, #trickpic").show();
   } else if (clicked_id === "attackGuard") {
-    $("#attackGuard2").show();
-    $("#sixthChoice").hide();
-    $("#dwarf02").hide();
+    $("#dwarf03, #trickGuard2, #trickpic").hide();
+    $("#dwarf04, #attackGuard2, #attackpic").show();
+  } else if (clicked_id === "attackTrick") {
+    $("#dwarf04").hide();
+    $("#dwarf05").show();
+  } else if (clicked_id === "findParents") {
+    $("#dwarf05").hide();
+    $("#dwarf06").show();
+  } else if (clicked_id === "goDwarf" || clicked_id === "pickFather") {
+    $("#dwarf05, #dwarf06").hide();
+    $("#dwarf07").show();
+  } else if (clicked_id === "swerveHorse") {
+    $("#dwarf07, #stayOnHorse2, #stayhorsepic").hide();
+    $("#dwarf08, #swerveHorse2, #swervepic").show();
+  } else if (clicked_id === "stayOnHorse") {
+    $("#dwarf07, #swerveHorse2, #swervepic").hide();
+    $("#dwarf08, #stayOnHorse2, #stayhorsepic").show();
+  } else if (clicked_id === "stayServe") {
+    $("#dwarf08").hide();
+    $("#dwarf09").show();
+  } else if (clicked_id === "sneakCityDwarf") {
+    $("#dwarf09").hide();
+    $("#dwarf10").show();
+  } else if (clicked_id === "goRightPipe") {
+    $("#dwarf10").hide();
+    $("#dwarf11").show();
+  } else if (clicked_id === "turnAroundPipe") {
+    $("#dwarf10").show();
+    $("#goRightPipe").text("");
+  } else if (clicked_id === "goStraightPipe") {
+    $("#dwarf11").hide();
+    $("#dwarf12").show();
   }
-  $("#intro03").hide();
+    $("#intro03").hide();
 }
 
 
-function dwarfRoute(clicked_id) {
+function dwarfRoute2(clicked_id) {
   if (clicked_id === "continue1" || clicked_id === "continue2") {
     $("#trickGuard2, #attackGuard2").hide();
     $("#seventhChoice").show();
