@@ -160,7 +160,7 @@
           </div>
           <div class="row">
             <button id="dwarf" onclick="dwarfRoute(this.id)"> Go after the dwarves yourself</button>
-            <button id="grownUpsTrack" onclick="majorChoice(this.id)">Run itno the countryside looking for adults to help</button>
+            <button id="lizard" onclick="lizardRoute(this.id)">Run itno the countryside looking for adults to help</button>
             <button id="fairy" onclick="fairyRoute(this.id)">Go to the city yourself to warn the prince</button>
           </div>
         </div>
@@ -414,7 +414,7 @@
           </div>
         <div class="row">
           <button id="trustWhimsy" onclick="fairyRoute(this.id)"> You decide to trust the fairy and go with her</button>
-          <button id="returnDwarf" onclick="dwarfRoute(this.id)">You decide against it and go find the swarves</button>
+          <button id="rejectWhimsy" onclick="dwarfRoute(this.id)">You decide against it and go find the swarves</button>
         </div>
       </div>
 <!-- FAIRY ROUTE SECOND CHOICE -->
@@ -494,6 +494,238 @@
           <button id="sleepOutside" onclick="END(this.id)">Don't trust her and sleep outside</button>
         </div>
       </div>
+<!-- LIZARD ROUTE FIRST CHOICE -->
+      <div id="lizard01">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">Better go find some adults, who will act selflessly and
+                 assist you with the power of altruism. Instead, you encounter a boy your age, who somehow
+                 possesses a raft and is equally as confident in his ability to solve deep-seated, decades-long
+                 political unrest and social distress, bubbling up to the surface in the form of war. A solution
+                 is clearly in sight, if you can trust him. He wants to use his raft to reach the city</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button id="trustSandy" onclick="lizardRoute(this.id)">Trust this strange boy and take him at his word.</button>
+          <button id="rejectSandy" onclick="dwarfRoute(this.id)">Even in times like these, trusting strangers is dangerous. Better not risk it. He may just hold you back.</button>
+        </div>
+      </div>
+<!-- LIZARD ROUTE SECOND CHOICE -->
+      <div id="lizard02">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">You go with Sandy on his raft. While on the river you run into a sleeping dragon</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button id="turnFromDragon" onclick="lizardRoute(this.id)">Nope! Nope. No. Dealing with dwarves head-on is better than this. No, sir. Nope. Not today.</button><br>
+          <button id="fightDragon" onclick="END(this.id)">Even a large enemy can be felled if taken by surprise. Sharpen the raft's oar, flex your grown-up muscles, and charge its blindside!</button>
+          <button id="avoidDragon" onclick="lizardRoute(this.id)">There is a gap in the rocks under the dragon. You can probably fit, and if you're a little lucky the dragon won't wake up.</button><br>
+          <button id="carryRaft" onclick="lizardRoute(this.id)">Burdened with an unusual sense of consequence, you decide to carry your raft down the bank of the river. Take the long way around to avoid that big fella.</button>
+        </div>
+      </div>
+<!-- LIZARD ROUTE THIRD CHOICE -->
+      <div id="lizard03">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">This is silly, you decide to turn Around
+              and say good bye to Sandy and look for the dwarves</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button id="byeSandy" onclick="lizardRoute(this.id)">go back and try to find the dwarves</button>
+        </div>
+      </div>
+<!-- LIZARD ROUTE FOURTH CHOICE -->
+      <div id="lizard04">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p id="avoidDragon2" class="panel panel-default">You decide go slip past the dragon and make it!</p>
+              <p id="carryRaft2" class="panel panel-default">You carry the raft around the dragon and make it!</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img id="avoidDragonPic" class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+            <img id="carryRaftPic" class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button id="pastDragon" onclick="lizardRoute(this.id)">continue on your journey</button>
+        </div>
+      </div>
+<!-- LIZARD ROUTE FIFTH CHOICE -->
+      <div id="lizard05">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">you're past the dragon (strangled by snakes) ....After an afternoon of you two hauling a raft
+              around on land and contemplating how that's exactly opposite of how rafts are supposed to work,
+              you and Sandy are finally out of the enormous dragon's sight. You find a bend in the river to
+              put the raft back into water, secure it with some rope, and set up camp. That night, as you sleep,
+              you feel a tickle in your ear. Waking up, you find yourself covered in snakes longer than your pa
+              is tall. Dang.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button id="rollInRiver" onclick="lizardRoute(this.id)">There's nothing snakes hate more than water. Roll into the river and get them off of you! Did pa ever get around to teaching you to swim?</button><br>
+          <button id="hopeSandy" onclick="END(this.id)">This is really too much. You don't know what to do.</button>
+          <button id="rollInFire" onclick="lizardRoute(this.id)">roll into the embers of your campsite</button>
+        </div>
+      </div>
+<!-- LIZARD ROUTE SIXTH CHOICE -->
+      <div id="lizard06">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p id="rollInRiver2" class="panel panel-default">you fall into the river and get away from the snakes!</p>
+              <p id="rollInFire2" class="panel panel-default">you roll into the fire and burn those snakes off of you!</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img id="rollRiverPic" class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+            <img id="rollFirePic" class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button id="pastSnakes" onclick="lizardRoute(this.id)">you make it past those snakes...contine on</button>
+        </div>
+      </div>
+<!-- LIZARD ROUTE SEVENTH CHOICE -->
+      <div id="lizard07">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">You dive into the river, and almost drown finding your
+              way back to shore. The snake released you, but you bumped your head on a rock, and feel
+              a little funny. That was terrible. Just as you begin to wonder if your misery is a
+              device of your own making, a new, small noise catches your ear. Sandy comes running up with
+              a burning branch and one singed eyebrow. He chased off the rest of the snakes with a
+              burning branch. For a moment, you wish you had thought of that. You ask him if he can hear
+              a peculiar chittering, but he doesn't hear it. Maybe it's your imagination after a snake
+              tongue tickled your eardrum a few minutes ago.<br>Nope! It's swamp rats, absolutely everywhere.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button id="jumpInRiver" onclick="END(this.id)">Jumping in the river isn't always an option, but it's mighty handy (if possibly repetitive) right now. But you can't depend on others forever, and someday you'll have to learn to fight your own battles, too.</button><br>
+          <button id="scareRats" onclick="lizardRoute(this.id)">Flex your practically-adult muscles and scare them off.</button>
+        </div>
+      </div>
+<!-- LIZARD ROUTE EIGHTH CHOICE -->
+      <div id="lizard08">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">The water carries you down again, the swamp rats clawing
+              and gnawing at you in a panic. They're tossed away in the current, as you bounce off large
+              stones, stronger than the current. You knew if you went to the well too many times, it
+              would come back to bite you. Going to the well too many times, and the swamp rats, both.<br>Minutes
+              later, you wash up on shore, sore and winded, but alive. A few minutes more pass before a
+              one-eyebrowed Sandy drifts up in his raft. You climb on just in time to see a mass of white fur
+              in the water, as the swamp rats have gathered together to better float toward you. Taking a loose
+              branch, you help Sandy push off as fast as you can, and soon the white mass of fur in the water
+              grows smaller and smaller, and is soon a distant memory.<br>But ahead, you hear the roar of a waterfall,
+              and you rue this relentless, cursed life.!</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button id="jumpLeft" onclick="lizardRoute(this.id)">Take on the waterfall, driving the draft off the left edge into the mist, like an invincible creature with no concept of fear or mortality.</button>
+          <button id="jumpRight" onclick="lizardRoute(this.id)">Or go to the right, which may or may not be totally different than the left side of the watefall. It's not the destination, it's the journey.</button>
+          <button id="goIsland" onclick="lizardRoute(this.id)">There is a suspiciously peaceful-looking island in the center of the river. You feel yourself growing more and more into a cynical adult every moment as it grows larger, realizing nothing is this easy, and it's more likely the gods might be testing you than a satisfying solution might present itself so readily.</button>
+        </div>
+      </div>
+<!-- LIZARD ROUTE NINETH CHOICE -->
+      <div id="lizard09">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p id="jumpLeft2" class="panel panel-default">you jump left into the waterfall</p>
+              <p id="jumpRight2" class="panel panel-default">you jump right and just go into the waterfall anyway</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img id="jumpLeftPic" class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+            <img id="jumpRightPic" class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button id="waterfall" onclick="lizardRoute(this.id)">you survive the fall continue on...</button>
+        </div>
+      </div>
+<!-- LIZARD ROUTE TENTH CHOICE -->
+      <div id="lizard10">
+        <div class="row">
+          <div class="col-md-6">
+            <img class="openBookLeft" src="img/openbookLeft.png" alt="menuBookCover">
+            <div class="storyLeft">
+              <p class="panel panel-default">Despite your best judgment, fear of the waterfall
+              drives you to the island. Crashing your raft into the point, you and Sandy clamber
+              up onto the slick-stone shore. No sooner do you gain your footing than the entire island
+              lurches to the side, knocking you over. Ahead of you, an enormous head rises up out of the
+              water and turns to you, its enormous eyes peering down at you. The island begins to look
+              more like a shell by the moment, as its enormous beak clacks and it lets out a shriek that
+              sends you rolling backwards.<br>You scream for Sandy to run for it, and the two of you dive
+              back on your raft, landing in the rapids just as the monster disappears from view. Moments pass
+              before it rises back up, facing you this time, you raft drifting closer and closer to the
+              waterfall.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img class="openBookRight" src="img/openbook.png" alt="rightSideofBook">
+            <img class="sideImgFormat" src="img/hidepic.png" alt="firstimage">
+          </div>
+        </div>
+        <div class="row">
+          <button id="jumpLeft3" onclick="lizardRoute(this.id)">Test your fate and take your raft off the waterfall.</button><br>
+          <button id="jumpRight3" onclick="lizardRoute(this.id)">As you round the subtle bend toward the waterfall, you see how the river splits in two, toward giant steps, rushing down in rapids.</button><br>
+          <button id="monsterChat" onclick="END(this.id)">You've had enough. You make an intimidation check against the castle-sized snapping turtle.</button>
+        </div>
+      </div>
 
         <!-- containerend  -->
     </div>
@@ -501,46 +733,7 @@
 
 
 <!-- LIZARD MEN CHOICE -->
-<div id="grownUpsOne86">
-  <p>Better go find some adults, who will act selflessly and assist you with the power of altruism. Instead, you encounter a boy your age, who somehow possesses a raft and is equally as confident in his ability to solve deep-seated, decades-long political unrest and social distress, bubbling up to the surface in the form of war. A solution is clearly in sight, if you can trust him.</p><br>
-  <button id="trustSandy" onclick="grownUps86(this.id)">Trust this strange boy and take him at his word.</button><br>
-  <button id="rejectSandy" onclick="grownUps86(this.id)">Even in times like these, trusting strangers is dangerous. Better not risk it. He may just hold you back.</button>
-</div>
 
-<div id="riverPrince134">
-  <p>What's the worst that could happen? You and Sandy set off to handle this thing. But you almost immediately encounter what is very clearly a black dragon, and in turn your likely doom, far sooner than you thought something like this might happen. Like ever.</p><br>
-  <button id="turnAround" onclick="riverPrince134(this.id)">Nope! Nope. No. Dealing with dwarves head-on is better than this. No, sir. Nope. Not today.</button><br>
-  <button id="fightDragon" onclick="riverPrince134(this.id)">Even a large enemy can be felled if taken by surprise. Sharpen the raft's oar, flex your grown-up muscles, and charge its blindside!</button><br>
-  <button id="avoidDragon" onclick="riverPrince134(this.id)">There is a gap in the rocks under the dragon. You can probably fit, and if you're a little lucky the dragon won't wake up.</button><br>
-  <button id="carryRaft" onclick="riverPrince134(this.id)">Burdened with an unusual sense of consequence, you decide to carry your raft down the bank of the river. Take the long way around to avoid that big fella.</button>
-</div>
-
-<div id="pastDragon141">
-  <p>After an afternoon of you two hauling a raft around on land and contemplating how that's exactly opposite of how rafts are supposed to work, you and Sandy are finally out of the enormous dragon's sight. You find a bend in the river to put the raft back into water, secure it with some rope, and set up camp. That night, as you sleep, you feel a tickle in your ear. Waking up, you find yourself covered in snakes longer than your pa is tall. Dang.<br>
-  <button id="rollIntoRiver" onclick="rightRiverBank141(this.id)">There's nothing snakes hate more than water. Roll into the river and get them off of you! Did pa ever get around to teaching you to swim?</button><br>
-  <button id="confused" onclick="rightRiverBank141(this.id)">This is really too much. You don't know what to do.</button>
-</div>
-
-<div id="riverSnakes93">
-  <p>You dive into the river, and almost drown finding your way back to shore. The snake released you, but you bumped your head on a rock, and feel a little funny. That was terrible. Just as you begin to wonder if your misery is a device of your own making, a new, small noise catches your ear. Sandy comes running up with a burning branch and one singed eyebrow. He chased off the rest of the snakes with a burning branch. For a moment, you wish you had thought of that. You ask him if he can hear a peculiar chittering, but he doesn't hear it. Maybe it's your imagination after a snake tongue tickled your eardrum a few minutes ago.<br>Nope! It's swamp rats, absolutely everywhere.</p><br>
-  <button id="jumpInRiver" onclick="swampRats114(this.id)">Jumping in the river isn't always an option, but it's mighty handy (if possibly repetitive) right now. But you can't depend on others forever, and someday you'll have to learn to fight your own battles, too.</button><br>
-  <button id="scareRats" onclick="swampRats114(this.id)">Flex your practically-adult muscles and scare them off.</button>
-</div>
-
-
-
-<div id="swimForIt66">
-  <p>The water carries you down again, the swamp rats clawing and gnawing at you in a panic. They're tossed away in the current, as you bounce off large stones, stronger than the current. You knew if you went to the well too many times, it would come back to bite you. Going to the well too many times, and the swamp rats, both.<br>Minutes later, you wash up on shore, sore and winded, but alive. A few minutes more pass before a one-eyebrowed Sandy drifts up in his raft. You climb on just in time to see a mass of white fur in the water, as the swamp rats have gathered together to better float toward you. Taking a loose branch, you help Sandy push off as fast as you can, and soon the white mass of fur in the water grows smaller and smaller, and is soon a distant memory.<br>But ahead, you hear the roar of a waterfall, and you rue this relentless, cursed life.</p>
-  <button id="jumpLeft" onclick="waterFall70(this.id)">Take on the waterfall, driving the draft off the left edge into the mist, like an invincible creature with no concept of fear or mortality.</button>
-  <button id="giantSteps84" onclick="waterFall70(this.id)">Or go to the right, which may or may not be totally different than the left side of the watefall. It's not the destination, it's the journey.</button>
-  <button id="goToIsland" onclick="waterFall70(this.id)">There is a suspiciously peaceful-looking island in the center of the river. You feel yourself growing more and more into a cynical adult every moment as it grows larger, realizing nothing is this easy, and it's more likely the gods might be testing you than a satisfying solution might present itself so readily.</button>
-</div>
-<div id="islandProspects18">
-  <p>Despite your best judgment, fear of the waterfall drives you to the island. Crashing your raft into the point, you and Sandy clamber up onto the slick-stone shore. No sooner do you gain your footing than the entire island lurches to the side, knocking you over. Ahead of you, an enormous head rises up out of the water and turns to you, its enormous eyes peering down at you. The island begins to look more like a shell by the moment, as its enormous beak clacks and it lets out a shriek that sends you rolling backwards.<br>You scream for Sandy to run for it, and the two of you dive back on your raft, landing in the rapids just as the monster disappears from view. Moments pass before it rises back up, facing you this time, you raft drifting closer and closer to the waterfall.</p><br>
-  <button id="waterfall" onclick="islandThing18(this.id)">Test your fate and take your raft off the waterfall.</button><br>
-  <button id="giantSteps84" onclick="islandThing18(this.id)">As you round the subtle bend toward the waterfall, you see how the river splits in two, toward giant steps, rushing down in rapids.</button><br>
-  <button id="monsterChat" onclick="islandThing18(this.id)">You've had enough. You make an intimidation check against the castle-sized snapping turtle.</button>
-</div>
 
 <div id="waterFallJumpLeft147">
   <p>The immensity of your bad idea is cushioned by the waterfall not really being that bad. You fall off the ledge and plunge into a warm-water lagoon, your raft and Sandy landing several feet away and rising to the surface.<br>As Sandy bobs up to the surface, he lets out a shriek that would be the envy of any passing bird of prey. Looking down, you see large, green humanoid hands reaching up out of the water. Panicking and doggy paddling away, you look back and see six lizardmen with royal armor of sorts, looking you in the eye. They invite you into their lair, where they would like to warm you, feed you, and hear your story.<br>Just as you agree, you see Sandy climbing out of the lagoon and running off into the trees at a full sprint. You call for him once, then decide he's probably had enough for one adventure, and turn away. Between avoiding a dragon, snakes, rats, facing the monster in the river, and going over the waterfall, you feel yourself flush with a newfound confidence. You hold your head high as you follow the lizardguard around the waterfall and into their lair in the mountain side.<br>Inside, you are fed a steaming tincture that burns your mouth, and seems to eat through your very being. But soon you are healed of your injuries and pains from the previous day. You think back on everything you've seen, and this is relatively desirable. They hear your tale, and offer to strike down your enemies in exchange for a hearing with the prince, hoping to establish trade and raise the economic prospects for their people.</p><br>

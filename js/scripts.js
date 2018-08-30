@@ -24,7 +24,7 @@ function intro(clicked_id) {
 }
 // DWARF ROUTE
 function dwarfRoute(clicked_id) {
-  if (clicked_id === "dwarf" || clicked_id === "ReturnDwarf") {
+  if (clicked_id === "dwarf" || clicked_id === "rejectWhimsy" || clicked_id === "rejectSandy" || clicked_id === "byeSandy") {
     $("#dwarf01").show();
   } else if (clicked_id === "trust") {
     $("#dwarf01").hide();
@@ -91,7 +91,51 @@ function fairyRoute(clicked_id) {
   }
   $("#intro03").hide();
 }
-
+// LIZARD ROUTE
+function lizardRoute(clicked_id) {
+  if (clicked_id === "lizard") {
+    $("#lizard01").show();
+  } else if (clicked_id === "trustSandy") {
+    $("#lizard01").hide();
+    $("#lizard02").show();
+  } else if (clicked_id === "turnFromDragon") {
+    $("#lizard02").hide();
+    $("#lizard03").show();
+  } else if (clicked_id === "avoidDragon") {
+    $("#lizard02, #carryRaft2, #carryRaftPic").hide();
+    $("#lizard04, #avoidDragon2, #avoidDragonPic").show();
+  } else if (clicked_id === "carryRaft") {
+    $("#lizard02, #avoidDragon2, #avoidDragonPic").hide();
+    $("#lizard04, #carryRaft2, #carryRaftPic").show();
+  } else if (clicked_id === "pastDragon") {
+    $("#lizard04").hide();
+    $("#lizard05").show();
+  } else if (clicked_id === "rollInRiver") {
+    $("#lizard05, #rollInFire2, #rollFirePic").hide();
+    $("#lizard06, #rollInRiver2, #rollRiverPic").show();
+  } else if (clicked_id === "rollInFire") {
+    $("#lizard05, #rollInRiver2, #rollRiverPic").hide();
+    $("#lizard06, #rollInFire2, #rollFirePic").show();
+  } else if (clicked_id === "pastSnakes") {
+    $("#lizard06").hide();
+    $("#lizard07").show();
+  } else if (clicked_id === "scareRats") {
+    $("#lizard07").hide();
+    $("#lizard08").show();
+  } else if (clicked_id === "goIsland") {
+    $("#lizard08").hide();
+    $("#lizard10").show();
+  } else if (clicked_id === "jumpLeft" || clicked_id === "jumpLeft3") {
+    $("#lizard08, #lizard10, #jumpRight2, #jumpRightPic").hide();
+    $("#lizard09, #jumpLeft2, #jumpLeftPic").show();
+  } else if (clicked_id === "jumpRight" || clicked_id === "jumpRight3") {
+    $("#lizard08, #lizard10, #jumpLeft2, #jumpLeftPic").hide();
+    $("#lizard09, #jumpRight2, #jumpRightPic").show();
+  } else if (clicked_id === "waterfall") {
+    
+  }
+  $("#intro03").hide();
+}
 
 
 function END(clicked_id) {
