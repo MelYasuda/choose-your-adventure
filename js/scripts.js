@@ -220,12 +220,13 @@ function END(clicked_id) {
 }
 
 function secretChoice(clicked_id) {
-  if (clicked_id === "drunkHarold") {
+  if (clicked_id === "chooseHarold") {
     $("#haroldStory").show();
   } else if (clicked_id === "chooseGogol") {
     $("#gogolStory").show();
   }
   $("secretCharacters").hide();
+  $("#menu").hide();
 }
 
 // user interface
