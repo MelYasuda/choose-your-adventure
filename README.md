@@ -5,7 +5,11 @@
 ## *Description*
 A Javascript-powered Choose Your Own Adventure website that allows you to explore a branching narrative.
 
-A structure hierarchy can be [found here](https://docs.google.com/spreadsheets/d/1Zd9EcBgLgCjJfib7R2PkwFMDRbXAdpBJpQ0MGw0BcZs/edit#gid=0).
+https://dmortkowitz.github.io/choose-your-adventure
+
+<!-- TBD
+A structure hierarchy can be [found here ()](https://docs.google.com/spreadsheets/d/1Zd9EcBgLgCjJfib7R2PkwFMDRbXAdpBJpQ0MGw0BcZs/edit#gid=0).
+-->
 
 ## *Specifications*
 
@@ -31,7 +35,7 @@ A structure hierarchy can be [found here](https://docs.google.com/spreadsheets/d
 4. If player would like to make an alternate decision, the player must reset the game to the beginning. Unable to go back to the previous branch.
 5. Soundtrack does not play upon load.
 6. Some images may not be oriented properly relative to the book background.
-7. Whitespace is visible when scrolling to the far right.
+7. "Whitespace" (now just black) is visible when scrolling to the far right - background should be responsive/fill the page.
 8. The metallic effect loops but experiences a delay when it restarts.
 9. Password/hero reveal section shifts after name is entered.
 10. Portion of the hero reveal section is difficult to read - styling or placement needs to be edited.
